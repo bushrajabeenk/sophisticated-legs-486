@@ -4,7 +4,7 @@ import products from "./productData";
 import ProductCard from "../products/ProductCard";
 const Product = () => {
 
-    const [data, setData] = React.useState(products);
+    
 
     
    
@@ -16,7 +16,7 @@ const Product = () => {
       <div className={styles.productDiv}>
         <p>Fruits and Vegetables(631)</p>
         <div className={styles.mappingDiv}>
-          {data.map((e, index) => {
+          {products.map((e, index) => {
             return (
                 <>
                 <ProductCard data={e} />
