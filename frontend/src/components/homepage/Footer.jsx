@@ -49,7 +49,7 @@ const SocialButton = ({ children, label, href }) => {
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
+      bg={useColorModeValue("white", "white")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
@@ -116,9 +116,9 @@ export default function Footer() {
           align={{ md: "center" }}
         >
           <Stack direction={"row"} spacing={10}>
-            <Text>POPULAR CATEGORIES:</Text>
+            <Text style={{ textAlign: "left" }}>POPULAR CATEGORIES:</Text>
             <Stack direction={"row"}>
-              <Text>
+              <Text style={{ textAlign: "left" }}>
                 Fruits & Vegetables, Basmati Rice, Green Tea, OTC, Cheese, Dry
                 Fruits, Foodgrains, Oil & Masala, Chocolates & Sweets, Soft
                 Drinks, Energy Drinks, Bakery, Cakes & Dairy, Olive Oils,
@@ -127,13 +127,7 @@ export default function Footer() {
             </Stack>
           </Stack>
         </Container>
-      </Box>
 
-      <Box
-        borderTopWidth={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
-      >
         <Container
           as={Stack}
           maxW={"6xl"}
@@ -143,10 +137,10 @@ export default function Footer() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Stack direction={"row"} spacing={10}>
-            <Text>POPULAR BRANDS:</Text>
+          <Stack direction={"row"} spacing={6}>
+            <Text style={{ textAlign: "justify" }}>POPULAR BRANDS:</Text>
             <Stack direction={"row"}>
-              <Text>
+              <Text style={{ textAlign: "left" }}>
                 BB Royal, Amul, Haldirams , Tropicana, Kelloggs, Dettol, MTR,
                 BRU, McCain, Ariel, Britannia, Nescafe , Colgate, Horlicks,
                 Galaxy, Complan,
@@ -154,26 +148,20 @@ export default function Footer() {
             </Stack>
           </Stack>
         </Container>
-      </Box>
 
-      <Box
-        borderTopWidth={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
-      >
         <Container
           as={Stack}
           maxW={"6xl"}
           py={4}
           direction={{ base: "column", md: "row" }}
-          spacing={4}
+          spacing={14}
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Stack direction={"row"} spacing={10}>
-            <Text>CITIES WE SERVE:</Text>
+          <Stack direction={"row"} spacing={24}>
+            <Text style={{ textAlign: "left" }}>CITIES WE SERVE:</Text>
             <Stack direction={"row"}>
-              <Text>
+              <Text style={{ textAlign: "left" }}>
                 Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore,
                 Madurai, Coimbatore, Vijayawada-Guntur, Kolkata,
                 Ahmedabad-Gandhinagar, Nashik Business, Lucknow-Kanpur, Gurgaon,
@@ -192,13 +180,7 @@ export default function Footer() {
             </Stack>
           </Stack>
         </Container>
-      </Box>
 
-      <Box
-        borderTopWidth={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
-      >
         <Container
           as={Stack}
           maxW={"6xl"}
@@ -209,7 +191,7 @@ export default function Footer() {
           align={{ md: "center" }}
         >
           <Stack direction={"row"} spacing={10}>
-            <Text>PAYMENT OPTIONS:</Text>
+            <Text style={{ textAlign: "left" }}>PAYMENT OPTIONS:</Text>
             <Stack direction={"row"} spacing={4}>
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />
@@ -226,9 +208,8 @@ export default function Footer() {
       </Box>
 
       <Box
-        borderTopWidth={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
+        bg={useColorModeValue("beige.700", "beige.200")}
+        color={useColorModeValue("gray.700", "gray.200")}
       >
         <Container
           as={Stack}
