@@ -1,4 +1,4 @@
-// import { ReactNode } from "react";
+import { ReactNode } from "react";
 import {
   Box,
   Container,
@@ -13,7 +13,6 @@ import {
 import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import AppStoreBadge from "../assets/AppStoreBadge";
 import PlayStoreBadge from "../assets/PlayStoreBadge";
-
 
 const ListHeader = ({ children }) => {
   return (
@@ -47,7 +46,7 @@ const SocialButton = ({ children, label, href }) => {
   );
 };
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -80,8 +79,8 @@ export const Footer = () => {
 
           <Stack align={"flex-start"}>
             <ListHeader>Install App</ListHeader>
-            <AppStoreBadge />
-            <PlayStoreBadge />
+            {/* <AppStoreBadge />
+            <PlayStoreBadge /> */}
           </Stack>
         </SimpleGrid>
       </Container>
@@ -116,4 +115,4 @@ export const Footer = () => {
       </Box>
     </Box>
   );
-};
+}
