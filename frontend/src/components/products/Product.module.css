@@ -1,0 +1,109 @@
+.mainContainer{
+    width:1080px;
+    margin:auto;
+    display: flex;
+}
+
+
+.productMainDiv {
+  width: 220px;
+}
+
+.productSubDiv {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+}
+.mappingDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.productMainDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.productImage {
+  width: 150px;
+  margin: auto;
+}
+
+.fresho {
+  color: grey;
+  font-size: 12px;
+}
+
+.productName {
+  margin-top: -10px;
+}
+
+.kgPrice {
+  width: 100%;
+  border-radius: 0px;
+}
+.priceSection{
+    margin-top: 0px;
+}
+
+.stdDiv {
+  display: flex;
+  gap: 5px;
+  margin-top: -35px;
+}
+
+.dlyTime {
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.qtyAddDiv {
+  display: flex;
+  gap: 5px;
+}
+.prctymbtn {
+  background-color: #f4f3f2;
+  padding: 5px;
+}
+.mrp {
+  font-size: 12px;
+  color: grey;
+  margin-top: 0px;
+}
+.qtyDiv {
+  display: flex;
+  font-size: 12px;
+  border: 2px solid black;
+  height: 20px;
+  align-items: center;
+  border-radius: 5px;
+}
+.qty {
+  background-color: rgb(225, 219, 219);
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  color: grey;
+}
+.truckimg:hover {
+  color: green;
+}
+
+.Inputnumber {
+  width: 50px;
+  height: 15px;
+  outline: none;
+  border: none;
+}
+
+.addButtonDiv {
+  border: 2px solid black;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  width: 60px;
+  background-color: orange;
+}
