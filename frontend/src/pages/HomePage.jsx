@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Footer } from ".././components/homepage/Footer";
 
 export const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <Footer />
+    </div>
+  );
+};
