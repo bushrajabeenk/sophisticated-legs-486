@@ -55,32 +55,48 @@ export default function Footer() {
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
+            <ListHeader>bigbasket</ListHeader>
             <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Blog</Link>
-            <Link href={"#"}>Careers</Link>
-            <Link href={"#"}>Contact Us</Link>
-          </Stack>
-
-          <Stack align={"flex-start"}>
-            <ListHeader>Support</ListHeader>
-            <Link href={"#"}>Help Center</Link>
-            <Link href={"#"}>Safety Center</Link>
-            <Link href={"#"}>Community Guidelines</Link>
-          </Stack>
-
-          <Stack align={"flex-start"}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={"#"}>Cookies Policy</Link>
+            <Link href={"#"}>In News</Link>
+            <Link href={"#"}>Green bigbasket</Link>
             <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Law Enforcement</Link>
+            <Link href={"#"}>Affiliate</Link>
+            <Link href={"#"}>Terms and Conditions</Link>
+            <Link href={"#"}>Careers At bigbasket</Link>
+            <Link href={"#"}>bb Instant</Link>
+            <Link href={"#"}>bb Daily</Link>
+            <Link href={"#"}>bb Blog</Link>
+            <Link href={"#"}>bbnow</Link>
           </Stack>
 
           <Stack align={"flex-start"}>
-            <ListHeader>Install App</ListHeader>
-            {/* <AppStoreBadge />
-            <PlayStoreBadge /> */}
+            <ListHeader>Help</ListHeader>
+            <Link href={"#"}>FAQs</Link>
+            <Link href={"#"}>Contact Us</Link>
+            <Link href={"#"}>bb Wallet FAQs</Link>
+            <Link href={"#"}>bb Wallet T&Cs</Link>
+            <Link href={"#"}>Vendor Connect</Link>
+          </Stack>
+
+          <Stack align={"flex-start"}>
+            <ListHeader>Download Our App</ListHeader>
+            <AppStoreBadge />
+            <PlayStoreBadge />
+          </Stack>
+
+          <Stack align={"flex-start"}>
+            <ListHeader>Get Social With Us</ListHeader>
+            <Stack direction={"row"} spacing={4}>
+              <SocialButton label={"Twitter"} href={"#"}>
+                <FaTwitter />
+              </SocialButton>
+              <SocialButton label={"YouTube"} href={"#"}>
+                <FaYoutube />
+              </SocialButton>
+              <SocialButton label={"Instagram"} href={"#"}>
+                <FaInstagram />
+              </SocialButton>
+            </Stack>
           </Stack>
         </SimpleGrid>
       </Container>
@@ -99,18 +115,133 @@ export default function Footer() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
-              <FaInstagram />
-            </SocialButton>
+          <Stack direction={"row"} spacing={10}>
+            <Text>POPULAR CATEGORIES:</Text>
+            <Stack direction={"row"}>
+              <Text>
+                Fruits & Vegetables, Basmati Rice, Green Tea, OTC, Cheese, Dry
+                Fruits, Foodgrains, Oil & Masala, Chocolates & Sweets, Soft
+                Drinks, Energy Drinks, Bakery, Cakes & Dairy, Olive Oils,
+                Sunflower Oils, Liquid Soaps & Bars,
+              </Text>
+            </Stack>
           </Stack>
+        </Container>
+      </Box>
+
+      <Box
+        borderTopWidth={1}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+      >
+        <Container
+          as={Stack}
+          maxW={"6xl"}
+          py={4}
+          direction={{ base: "column", md: "row" }}
+          spacing={4}
+          justify={{ md: "space-between" }}
+          align={{ md: "center" }}
+        >
+          <Stack direction={"row"} spacing={10}>
+            <Text>POPULAR BRANDS:</Text>
+            <Stack direction={"row"}>
+              <Text>
+                BB Royal, Amul, Haldirams , Tropicana, Kelloggs, Dettol, MTR,
+                BRU, McCain, Ariel, Britannia, Nescafe , Colgate, Horlicks,
+                Galaxy, Complan,
+              </Text>
+            </Stack>
+          </Stack>
+        </Container>
+      </Box>
+
+      <Box
+        borderTopWidth={1}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+      >
+        <Container
+          as={Stack}
+          maxW={"6xl"}
+          py={4}
+          direction={{ base: "column", md: "row" }}
+          spacing={4}
+          justify={{ md: "space-between" }}
+          align={{ md: "center" }}
+        >
+          <Stack direction={"row"} spacing={10}>
+            <Text>CITIES WE SERVE:</Text>
+            <Stack direction={"row"}>
+              <Text>
+                Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore,
+                Madurai, Coimbatore, Vijayawada-Guntur, Kolkata,
+                Ahmedabad-Gandhinagar, Nashik Business, Lucknow-Kanpur, Gurgaon,
+                Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore,
+                Chandigarh Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi,
+                Krishna District, Bhubaneshwar-Cuttack, Guwahati, Renigunta,
+                Hubli, Davanagere, Trichy, Amravati, Raipur, Rajkot, Gwalior,
+                Bareilly, Allahabad, Hyderabad Rural, Bangalore Rural, Chennai
+                Rural, Vizag Rural, Lucknow Rural, Noida Rural, Ahmedabad Rural,
+                Bhopal Rural, Bhubaneswar Rural, Coimbatore Rural, Chandigarh
+                Rural, Gurugram Rural, Guwahati Rural, Indore Rural, Kochi
+                Rural, Kolkata Rural, Mumbai Rural, Mysore Rural, Nagpur Rural,
+                Patna Rural, Pune Rural, Surat Rural, Vadodara Rural, Jaipur
+                Rural, Ranchi, Nashik, Agra,{" "}
+              </Text>
+            </Stack>
+          </Stack>
+        </Container>
+      </Box>
+
+      <Box
+        borderTopWidth={1}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+      >
+        <Container
+          as={Stack}
+          maxW={"6xl"}
+          py={4}
+          direction={{ base: "column", md: "row" }}
+          spacing={4}
+          justify={{ md: "space-between" }}
+          align={{ md: "center" }}
+        >
+          <Stack direction={"row"} spacing={10}>
+            <Text>PAYMENT OPTIONS:</Text>
+            <Stack direction={"row"} spacing={4}>
+              <SocialButton label={"Twitter"} href={"#"}>
+                <FaTwitter />
+              </SocialButton>
+              <SocialButton label={"YouTube"} href={"#"}>
+                <FaYoutube />
+              </SocialButton>
+              <SocialButton label={"Instagram"} href={"#"}>
+                <FaInstagram />
+              </SocialButton>
+            </Stack>
+          </Stack>
+        </Container>
+      </Box>
+
+      <Box
+        borderTopWidth={1}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+      >
+        <Container
+          as={Stack}
+          maxW={"6xl"}
+          py={4}
+          direction={{ base: "column", md: "row" }}
+          spacing={4}
+          justify={{ md: "space-between" }}
+          align={{ md: "center" }}
+        >
+          <Text>
+            Copyright © 2021-2023 Supermarket Grocery Supplies Pvt Ltd
+          </Text>
         </Container>
       </Box>
     </Box>
