@@ -55,7 +55,9 @@ export default function Footer() {
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
-            <ListHeader>bigbasket</ListHeader>
+            <ListHeader>
+              <Text style={{ color: "#6CD138" }}>bigbasket</Text>
+            </ListHeader>
             <Link href={"#"}>About Us</Link>
             <Link href={"#"}>In News</Link>
             <Link href={"#"}>Green bigbasket</Link>
@@ -70,7 +72,9 @@ export default function Footer() {
           </Stack>
 
           <Stack align={"flex-start"}>
-            <ListHeader>Help</ListHeader>
+            <ListHeader>
+              <Text style={{ color: "#6CD138" }}>Help</Text>
+            </ListHeader>
             <Link href={"#"}>FAQs</Link>
             <Link href={"#"}>Contact Us</Link>
             <Link href={"#"}>bb Wallet FAQs</Link>
@@ -79,13 +83,17 @@ export default function Footer() {
           </Stack>
 
           <Stack align={"flex-start"}>
-            <ListHeader>Download Our App</ListHeader>
+            <ListHeader>
+              <Text style={{ color: "#6CD138" }}>Download Our App</Text>
+            </ListHeader>
             <AppStoreBadge />
             <PlayStoreBadge />
           </Stack>
 
           <Stack align={"flex-start"}>
-            <ListHeader>Get Social With Us</ListHeader>
+            <ListHeader>
+              <Text style={{ color: "#6CD138" }}>Get Social With Us</Text>
+            </ListHeader>
             <Stack direction={"row"} spacing={4}>
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />
@@ -115,8 +123,10 @@ export default function Footer() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Stack direction={"row"} spacing={10}>
-            <Text style={{ textAlign: "left" }}>POPULAR CATEGORIES:</Text>
+          <Stack direction={"row"} spacing={20}>
+            <Text style={{ textAlign: "left", color: "#6CD138" }}>
+              POPULAR CATEGORIES:
+            </Text>
             <Stack direction={"row"}>
               <Text style={{ textAlign: "left" }}>
                 Fruits & Vegetables, Basmati Rice, Green Tea, OTC, Cheese, Dry
@@ -137,8 +147,10 @@ export default function Footer() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Stack direction={"row"} spacing={6}>
-            <Text style={{ textAlign: "justify" }}>POPULAR BRANDS:</Text>
+          <Stack direction={"row"} spacing={8}>
+            <Text style={{ textAlign: "justify", color: "#6CD138" }}>
+              POPULAR BRANDS:
+            </Text>
             <Stack direction={"row"}>
               <Text style={{ textAlign: "left" }}>
                 BB Royal, Amul, Haldirams , Tropicana, Kelloggs, Dettol, MTR,
@@ -158,8 +170,10 @@ export default function Footer() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Stack direction={"row"} spacing={24}>
-            <Text style={{ textAlign: "left" }}>CITIES WE SERVE:</Text>
+          <Stack direction={"row"} spacing={32}>
+            <Text style={{ textAlign: "left", color: "#6CD138" }}>
+              CITIES WE SERVE:
+            </Text>
             <Stack direction={"row"}>
               <Text style={{ textAlign: "left" }}>
                 Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore,
@@ -191,7 +205,9 @@ export default function Footer() {
           align={{ md: "center" }}
         >
           <Stack direction={"row"} spacing={10}>
-            <Text style={{ textAlign: "left" }}>PAYMENT OPTIONS:</Text>
+            <Text style={{ textAlign: "left", color: "#6CD138" }}>
+              PAYMENT OPTIONS:
+            </Text>
             <Stack direction={"row"} spacing={4}>
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />
