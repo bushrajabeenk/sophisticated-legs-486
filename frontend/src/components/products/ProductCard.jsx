@@ -8,12 +8,12 @@ const ProductCard = ({ data }) => {
   return (
     <div className={styles.productMainDiv}>
       <div className={styles.productSubDiv}>
-        <div className={styles.productDiscount}></div>
+        <div className={styles.productDiscount}><p>Get {data.offer}% off</p><img src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png" width="0px" height="0px" alt="" /> </div>
         <div className={styles.productImage}>
           <img src={data.imageUrl} width="100%" alt="image" />
         </div>
         <img
-          src="	https://www.bbassets.com/static/v2578/custPage/build/content/img/vegicon.svg"
+          src="	"
           alt=""
         />
         <p className={styles.fresho}>Fresho</p>{" "}
