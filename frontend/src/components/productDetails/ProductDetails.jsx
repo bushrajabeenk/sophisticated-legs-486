@@ -3,7 +3,7 @@ import { Info } from './Info'
 
 export const ProductDetails = () => {
   return (
-    <div>ProductDetails
+    <div>
         <Info/>
     </div>
   )
