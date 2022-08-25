@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  width: 82%;
   box-sizing: border-box;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   gap: 5px;
@@ -309,11 +307,11 @@ export const Info = () => {
               <p>2 Kg</p>
             </div>
             <InFlex>
-              <p>Rs 55.50</p>
+              <p>Rs 55.00</p>
               <p style={{ color: "#979797" }}>
                 <s>MRP: Rs 73.14</s>
               </p>
-              <p style={{ color: "#ba5252", fontWeight: "500" }}>24% Off</p>
+              <p style={{ color: "#ba5252", fontWeight: "500" }}>23% Off</p>
             </InFlex>
             <div>
               <i
@@ -325,14 +323,14 @@ export const Info = () => {
 
           <Flex>
             <div>
-              <p>2 Kg</p>
+              <p>5 Kg</p>
             </div>
             <InFlex>
-              <p>Rs 55.50</p>
+              <p>Rs 140.00</p>
               <p style={{ color: "#979797" }}>
                 <s>MRP: Rs 73.14</s>
               </p>
-              <p style={{ color: "#ba5252", fontWeight: "500" }}>24% Off</p>
+              <p style={{ color: "#ba5252", fontWeight: "500" }}>23% Off</p>
             </InFlex>
             <div>
               <i
@@ -344,14 +342,14 @@ export const Info = () => {
 
           <Flex>
             <div>
-              <p>2 Kg</p>
+              <p>1 Kg</p>
             </div>
             <InFlex>
-              <p>Rs 55.50</p>
+              <p>Rs 28.00</p>
               <p style={{ color: "#979797" }}>
                 <s>MRP: Rs 73.14</s>{" "}
               </p>
-              <p style={{ color: "#ba5252", fontWeight: "500" }}>24% Off</p>
+              <p style={{ color: "#ba5252", fontWeight: "500" }}>23% Off</p>
             </InFlex>
             <div>
               <i
