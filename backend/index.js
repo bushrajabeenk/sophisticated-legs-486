@@ -27,6 +27,7 @@ const UserSchema = new Schema(
           quantity: Number,
         },
       ],
+      email: String
     }
   )
 const UserModel = model("UserModel", UserSchema, "user");
@@ -40,6 +41,13 @@ const ProductSchema = new Schema({
     Category: String
 })
 const Product = mongoose.model("Product", ProductSchema);
+//----------------------------------cart Schema-----------------------------------
+// const CartSchema =new Schema({
+//     userId: String,
+//     cart:[{productId: Schema.Types.ObjectId, quantity: Number}]
+// })
+
+
 // ------------------------------------------product api--------------------------------
 
 app.get('/products', async(req, res) => {
@@ -57,7 +65,12 @@ app.get('/probycat/:catagory', async(req, res) => {
     res.send(products)
 })
     
-
+// ------------------------------cart -------------need rework ------------------------------
+app.get('/cart/:id', async(req, res) => {
+    const id=req.params.id
+    const cart= await User.findOne({_id:id})
+    res.send(cart)
+})
 
 
 
