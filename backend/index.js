@@ -30,7 +30,7 @@ const UserSchema = new Schema(
       email: String
     }
   )
-const UserModel = model("UserModel", UserSchema, "user");
+const User = model("User", UserSchema);
 // ----------------------------------product Schema--------------------------------
 const ProductSchema = new Schema({
     Title: String,
@@ -81,24 +81,27 @@ app.get('/cart/:id', async(req, res) => {
 
 app.post('/getemail',async(req,res)=>{
     const {email}=req.body
-    let user=await UserModel.findOne({email})
+    let user=await User.findOne({email})
+  let otp= mail(email)
     if(user){
-        const token=jwt.sign({email:user.email},'secret')
+        const token=jwt.sign({email:user.email,otp},'secret')
         res.send(token)
     }
     else{
-        res.send('NONE')    
+        const token=jwt.sign({otp},'secret')
+        res.send(token)
+
+        res.send('NONE')
+
     
     }
     })
 
 app.post("login",async(req,res)=>{
-    let {email,name}=req.body
-    const user=await UserModel(
-    // ------------------------------make user------------------------------
     
-    )
+    const user=await new User(req.body)
     user.save()
+   
     let token=jwt.sign({email:email},'secret')
     res.send(token)
     
