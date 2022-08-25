@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from ".././components/homepage/Footer";
-// import Navbar from "../../../../k_fw16_583/Navbar";
+import Navbar from "../components/homepage/Navbar";
 
 export const HomePage = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Footer />
     </div>
   );
