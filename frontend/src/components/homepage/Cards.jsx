@@ -1,4 +1,3 @@
-
 import React,{ useState }  from 'react'
 import { Box, VStack, Text,Image, HStack,InputGroup,InputRightAddon,InputLeftAddon,Input, Button } from '@chakra-ui/react'
 import Carousel from "react-elastic-carousel";
@@ -14,8 +13,6 @@ const Cards = () => {
     { width: 500, itemsToShow: 3, itemsToScroll: 3 },
     { width: 768, itemsToShow: 5, itemsToScroll: 5 },
   ];
-  
-  let data = db.slice(0,11)
 
   var getInitials = function (string) {
     var names = string.split(' ');
@@ -47,6 +44,8 @@ const Cards = () => {
     return initials;
 };
 
+let data = db.slice(0,11)
+
   
   return (
     <div style={{ margin: "1% 7%", border: "solid gainsboro 1px" }}>
@@ -60,8 +59,8 @@ const Cards = () => {
       minWidth="12rem"
       border='1px'
       borderColor='gray.400'
-      p='1rem'
-      ml='2px'
+      p='1.5rem'
+      // ml='2px'
         key={item.ObjectId}
       >
         <VStack w={'9rem'} lineHeight='15px'>
@@ -70,14 +69,16 @@ const Cards = () => {
           </Text>
           <Image src={item.Image_url} objectFit='contain' />
           <Text textAlign='left'>{getInitials(item.Title)}</Text>
-          <HStack textAlign='left' spacing={0}>
+          <VStack w="120%" bg='gray.50'  
+                 >
+          <HStack textAlign='left'  spacing={0}>
             {/* <VStack> */}
-              <Text textAlign='left' ml='-25px' fontSize='11px' style={{textDecoration: "line-through"}}>MRP:Rs {`${item.Price+Math.floor(Math.random() * 30)}`}</Text>
-              <Text textAlign='left' as='h6'>Rs {item.Price}</Text>
+              <Text textAlign='left' ml='-25px' fontSize='11px' style={{textDecoration: "line-through",  textAlign:'left'}}>MRP:Rs {`${item.Price+Math.floor(Math.random() * 30)}`}</Text>
+              <Text  as='h6'>Rs {item.Price}</Text>
               {/*
             </VStack> */}
           </HStack>
-          <HStack letterSpacing='0' mt='-2rem'>
+          <HStack letterSpacing='0' mt='-10px'>
           <ImTruck style={{ fontSize: '2.5rem',':hover': {
          color: 'green.400',
     }}}
@@ -93,6 +94,7 @@ const Cards = () => {
               ADD
             </Button>
           </HStack>
+          </VStack>
         </VStack>
         
       </Box>
@@ -101,7 +103,6 @@ const Cards = () => {
   </Carousel>
   </div>
 )}
-
 
 
 export default Cards
