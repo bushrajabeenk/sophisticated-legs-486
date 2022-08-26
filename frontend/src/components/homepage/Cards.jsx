@@ -1,3 +1,4 @@
+
 import React,{ useState }  from 'react'
 import { Box, VStack, Text,Image, HStack,InputGroup,InputRightAddon,InputLeftAddon,Input, Button } from '@chakra-ui/react'
 import Carousel from "react-elastic-carousel";
@@ -98,6 +99,7 @@ const Cards = () => {
   </Carousel>
   </div>
 )}
+
 
 
 export default Cards
