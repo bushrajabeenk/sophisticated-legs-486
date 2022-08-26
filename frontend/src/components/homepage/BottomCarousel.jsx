@@ -1,9 +1,9 @@
-import React from 'react';
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import React from "react";
+import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { MdArrowBackIosNew,MdArrowForwardIos } from "react-icons/md"
+import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 // And react-slick as our Carousel Lib
-import Slider from 'react-slick';
+import Slider from "react-slick";
 
 // Settings for the slider
 const settings = {
@@ -25,24 +25,25 @@ export default function BottomCarousel() {
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
+  const top = useBreakpointValue({ base: "90%", md: "50%" });
+  const side = useBreakpointValue({ base: "30%", md: "10px" });
 
   // These are the images used in the slide
   const cards = [
-    'https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250722_400.jpg',
-    'https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250722_400.jpg',
-    'https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_bcd_250722_400.jpg',
-    'https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250722_400.jpg',
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250722_400.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250722_400.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_bcd_250722_400.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250722_400.jpg",
   ];
 
   return (
     <Box
-      position={'relative'}
-    //   height={'800px'}
-      width={'80%'}
-      m='auto'
-      overflow={'hidden'}>
+      position={"relative"}
+      //   height={'800px'}
+      width={"80%"}
+      m="auto"
+      overflow={"hidden"}
+    >
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -60,15 +61,16 @@ export default function BottomCarousel() {
         aria-label="left-arrow"
         // colorScheme="messenger"
         // borderRadius="full"
-       
+
         position="absolute"
         left={side}
         // top={top}
         // bottom={bottom}
-        mt='14rem'
-        transform={'translate(0%, -50%)'}
+        mt="14rem"
+        transform={"translate(0%, -50%)"}
         zIndex={2}
-        onClick={() => slider?.slickPrev()}>
+        onClick={() => slider?.slickPrev()}
+      >
         <MdArrowBackIosNew />
       </IconButton>
       {/* Right Icon */}
@@ -79,22 +81,23 @@ export default function BottomCarousel() {
         position="absolute"
         right={side}
         // top={top}
-        mt='14rem'
-        transform={'translate(0%, -50%)'}
+        mt="14rem"
+        transform={"translate(0%, -50%)"}
         zIndex={2}
-        onClick={() => slider?.slickNext()}>
+        onClick={() => slider?.slickNext()}
+      >
         <MdArrowForwardIos />
       </IconButton>
       {/* Slider */}
-      <Slider {...settings} ref={(slider) => setSlider(slider)} >
+      <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={"6xl"}
             position="relative"
-            boxSize={'md'}
-            border='1px'
-            borderColor='gray.200'
+            boxSize={"md"}
+            border="1px"
+            borderColor="gray.200"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             // backgroundSize="contain"

@@ -5,13 +5,13 @@ const Beverages = () => {
   return (
     <Box w={"80%"} m="auto" mt="2rem">
       <Center fontWeight={"bold"} fontSize={"20px"}>
-      Beverages
+        Beverages
       </Center>
       <hr />
       <HStack>
         <Box
-          border='1px'
-          borderColor='gray.50'
+          border="1px"
+          borderColor="gray.50"
           w={{ md: "35rem" }}
           _hover={{
             boxShadow: "dark-lg",
@@ -26,8 +26,8 @@ const Beverages = () => {
         <VStack>
           <HStack>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -40,8 +40,8 @@ const Beverages = () => {
               />
             </Box>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -56,8 +56,8 @@ const Beverages = () => {
           </HStack>
           <HStack>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -70,8 +70,8 @@ const Beverages = () => {
               />
             </Box>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",

@@ -10,8 +10,8 @@ const Makeup = () => {
       <hr />
       <HStack>
         <Box
-          border='1px'
-          borderColor='gray.50'
+          border="1px"
+          borderColor="gray.50"
           w={{ md: "35rem" }}
           _hover={{
             boxShadow: "dark-lg",
@@ -26,8 +26,8 @@ const Makeup = () => {
         <VStack>
           <HStack>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -40,8 +40,8 @@ const Makeup = () => {
               />
             </Box>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -56,8 +56,8 @@ const Makeup = () => {
           </HStack>
           <HStack>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -70,8 +70,8 @@ const Makeup = () => {
               />
             </Box>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",

@@ -183,7 +183,7 @@ export const Info = () => {
         <div>
           <GreenBottom>Category</GreenBottom>
           <UL>
-            <LI1 style={{fontWeight:500}}>Fruits & Vegetables</LI1>
+            <LI1 style={{ fontWeight: 500 }}>Fruits & Vegetables</LI1>
             <LI1>
               <UL>
                 <LI2>Fresh Vegetables</LI2>

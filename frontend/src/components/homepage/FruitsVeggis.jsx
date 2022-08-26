@@ -1,5 +1,3 @@
-
-
 import { HStack, VStack, Box, Center, Image } from "@chakra-ui/react";
 import React from "react";
 
@@ -7,13 +5,13 @@ const FruitsVeggis = () => {
   return (
     <Box w={"80%"} m="auto" mt="2rem">
       <Center fontWeight={"bold"} fontSize={"20px"}>
-      Fruits & Vegitables
+        Fruits & Vegitables
       </Center>
       <hr />
       <HStack>
         <Box
-          border='1px'
-          borderColor='gray.50'
+          border="1px"
+          borderColor="gray.50"
           w={{ md: "35rem" }}
           _hover={{
             boxShadow: "dark-lg",
@@ -28,8 +26,8 @@ const FruitsVeggis = () => {
         <VStack>
           <HStack>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -42,8 +40,8 @@ const FruitsVeggis = () => {
               />
             </Box>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -58,8 +56,8 @@ const FruitsVeggis = () => {
           </HStack>
           <HStack>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",
@@ -72,8 +70,8 @@ const FruitsVeggis = () => {
               />
             </Box>
             <Box
-             border='1px'
-             borderColor='gray.50'
+              border="1px"
+              borderColor="gray.50"
               w={{ md: "15rem" }}
               _hover={{
                 boxShadow: "dark-lg",

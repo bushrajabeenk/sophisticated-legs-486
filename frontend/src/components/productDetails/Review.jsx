@@ -16,14 +16,13 @@ const Wrapper = styled.div`
 const IMG = styled.img`
   width: 100px;
   border-radius: 12px;
-  opacity: .6
+  opacity: 0.6;
 `;
 
 const ParaDiv = styled.div`
-font-size: 14px;
-color: #4a4a4a;
-
-`
+  font-size: 14px;
+  color: #4a4a4a;
+`;
 export const Review = () => {
   return (
     <div>
@@ -38,8 +37,8 @@ export const Review = () => {
         <ParaDiv>
           <p>Want to rate this product ?</p>
           <p>
-            You can rate and review this product <br/> only after purchasing from
-            bigbasket
+            You can rate and review this product <br /> only after purchasing
+            from bigbasket
           </p>
         </ParaDiv>
       </Wrapper>
