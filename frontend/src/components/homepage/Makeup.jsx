@@ -1,13 +1,11 @@
-
-
 import { HStack, VStack, Box, Center, Image } from "@chakra-ui/react";
 import React from "react";
 
-const FruitsVeggis = () => {
+const Makeup = () => {
   return (
     <Box w={"80%"} m="auto" mt="2rem">
       <Center fontWeight={"bold"} fontSize={"20px"}>
-      Fruits & Vegitables
+        Beauty & Hygiene
       </Center>
       <hr />
       <HStack>
@@ -21,7 +19,7 @@ const FruitsVeggis = () => {
           }}
         >
           <Image
-            src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/e1a00954-68f4-4295-a01a-2319ef66f039/hp_orhanice-fnv-fnvStorefront_m_250822_560x378_01.jpg"
+            src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/6d0206b0-a6e1-4c4e-9a2a-c8426acbeea5/t1_hp_b&h_c_makeup_378_250822.jpg"
             objectFit="contain"
           />
         </Box>
@@ -37,7 +35,7 @@ const FruitsVeggis = () => {
               }}
             >
               <Image
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/e1a00954-68f4-4295-a01a-2319ef66f039/hp_fresh-fruits-fnvStorefront_m_250822_275x184_02.jpg"
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/6d0206b0-a6e1-4c4e-9a2a-c8426acbeea5/t1_hp_b&h_c_min-30_184_250822.jpg"
                 objectFit="contain"
               />
             </Box>
@@ -51,7 +49,7 @@ const FruitsVeggis = () => {
               }}
             >
               <Image
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/e1a00954-68f4-4295-a01a-2319ef66f039/hp_fresh-veggs-fnvStorefront_m_250822_275x184_03.jpg"
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/6d0206b0-a6e1-4c4e-9a2a-c8426acbeea5/t1_hp_b&h_c_under-199_184_250822.jpg"
                 objectFit="contain"
               />
             </Box>
@@ -67,7 +65,7 @@ const FruitsVeggis = () => {
               }}
             >
               <Image
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/e1a00954-68f4-4295-a01a-2319ef66f039/hp_cuts-sporouts-fnvStorefront_m_250822_275x184_04.jpg"
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/6d0206b0-a6e1-4c4e-9a2a-c8426acbeea5/t1_hp_b&h_c_scent_184_250822.jpg"
                 objectFit="contain"
               />
             </Box>
@@ -81,7 +79,7 @@ const FruitsVeggis = () => {
               }}
             >
               <Image
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/e1a00954-68f4-4295-a01a-2319ef66f039/hp_exotic-fnv-fnvStorefront_m_250822_275x184_05.jpg"
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/0c1dea6d-a98b-470b-9df5-9991a2f1356c/6d0206b0-a6e1-4c4e-9a2a-c8426acbeea5/t1_hp_b&h_c_shaving_184_250822.jpg"
                 objectFit="contain"
               />
             </Box>
@@ -92,4 +90,4 @@ const FruitsVeggis = () => {
   );
 };
 
-export default FruitsVeggis;
+export default Makeup;
