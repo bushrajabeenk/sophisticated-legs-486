@@ -3,7 +3,7 @@ import React,{ useState }  from 'react'
 import { Box, VStack, Text,Image, HStack,InputGroup,InputRightAddon,InputLeftAddon,Input, Button } from '@chakra-ui/react'
 import Carousel from "react-elastic-carousel";
 // import Item from 'react-elastic-carousel'
-import data from './db.json'
+import db from './db.json'
 import {ImTruck} from 'react-icons/im'
 import {RiShoppingBasket2Fill} from 'react-icons/ri'
 
@@ -14,6 +14,8 @@ const Cards = () => {
     { width: 500, itemsToShow: 3, itemsToScroll: 3 },
     { width: 768, itemsToShow: 5, itemsToScroll: 5 },
   ];
+  
+  let data = db.slice(0,11)
 
   var getInitials = function (string) {
     var names = string.split(' ');
