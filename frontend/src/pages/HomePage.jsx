@@ -1,4 +1,4 @@
-import React from "react";
+
 import Footer from ".././components/homepage/Footer";
 import Navbar from "../components/homepage/Navbar";
 import BankOffers from "../components/homepage/BankOffers";
