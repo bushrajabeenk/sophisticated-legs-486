@@ -2,16 +2,32 @@ import React, { useState } from "react";
 import style from "./otp.module.css";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { HStack, PinInput, PinInputField } from "@chakra-ui/react";
-const Otp = ({email , setShow}) => {
- 
-    const [pin,setPin]=useState('')
-    email='dineshsingh9582@gmail.com'
-    function ChangeHandler(input){
-        setPin(input)
-    }
-    function OtpHandler(){
+import { useSelector } from "react-redux";
 
+
+
+const Otp = ({email , setShow,setShow1,text,isOpen}) => {
+  const [pin,setPin]=useState('')
+  email=text
+  const data=useSelector(state=>state.auth.token)
+  function ChangeHandler(input){
+    setPin(input)
+  }
+  function OtpHandler(){
+    if(pin==data.otp&&!data.email){
+setShow1(false)
+setShow(false)
     }
+    else if(data.email){
+      console.log('data.email',data.email)
+// close the box
+isOpen()
+    }
+    
+  }
+  
+
+
 
   return (
     <div>
@@ -45,7 +61,7 @@ const Otp = ({email , setShow}) => {
 <button className={style.changebtn1}> Resend OTP</button>
   </center>
         </div>
-        <button className={style.varbtn} onClick={()=>OtpHandler}>Veify & Continue</button>
+        <button className={style.varbtn} onClick={OtpHandler}>Veify & Continue</button>
       </div>
     </div>
   );

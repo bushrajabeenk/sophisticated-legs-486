@@ -9,7 +9,7 @@ import {
 const initState = {
   loading: false,
   error: false,
- email:'',
+  // to convert string to boolean value
 token:""
 };
 

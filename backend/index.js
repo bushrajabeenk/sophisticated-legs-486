@@ -3,8 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const nodeMailer = require("nodemailer");
-const cors = require("cors");
 // const dotenv = require("dotenv").config();
+const cors = require("cors");
 const { Schema, model } = require("mongoose");
 const connection = require("./db");
 app.use(express.json());
@@ -675,11 +675,11 @@ app.post("/getemail", async (req, res) => {
   });
 
   if (user) {
-    const token = jwt.sign({ email: user.email, otp: otp }, "secret");
-    res.send(token);
+    // const token = jwt.sign({ email: user.email, otp: otp }, "secret");
+    res.send({email: user.email, otp: otp});
   } else {
-    const token = jwt.sign({ otp }, "secret");
-    res.send(token);
+    // const token = jwt.sign({ otp }, "secret");
+    res.send({otp});
   }
 });
 
@@ -687,7 +687,7 @@ app.post("/login", async (req, res) => {
   const user = await new User(req.body);
   user.save();
 
-  let token = jwt.sign({ email: email }, "secret");
+  let token = jwt.sign({ email: user.email }, "secret");
   res.send(token);
 });
 

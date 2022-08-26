@@ -2,6 +2,9 @@ import React from "react";
 import style from "./signup.module.css";
 
 const Signup = () => {
+  function submitHandler(){
+    
+  }
   return (
     <div>
       <h3 className={style.heading}>
@@ -17,8 +20,7 @@ const Signup = () => {
         <input type="text" name="" id="" placeholder="Email" className={style.einput}/>
 
         </div>
-        <button className={style.varbtn}>
-            Sart Shopping
+        <button className={style.varbtn} onClick={submitHandler}>
         </button>
       </div>
     </div>

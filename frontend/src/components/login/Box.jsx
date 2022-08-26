@@ -16,8 +16,9 @@ import Otp from "./Otp";
 import Signup from "./Signup";
 const Box = () => {
   const [show, setShow] = useState(true);
+  const [show1, setShow1] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const [text,settext]=useState('')
   return (
     <>
       <Button onClick={onOpen}>Login</Button>
@@ -40,8 +41,9 @@ const Box = () => {
           />
           <div className={style.flexbox}>
             <div className={style.leftbox}>
-              {show ? <Email setShow={setShow}/> : <Otp setShow={setShow}/>}
-     
+              {show&&show1 ? <Email setShow={setShow} text={text} settext={settext}/> :null}
+              {!show&&show1?  <Otp setShow={setShow} text={text} isOpen={onClose} setShow1={setShow1}/>:null}
+      {!show&&!show1?<Signup ></Signup>:null}
               </div>
             <div className={style.rightbox}>
              <Rightbox  ></Rightbox>

@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import { RiCreativeCommonsZeroLine } from 'react-icons/ri'
+import { useDispatch } from 'react-redux'
+import { loginAPI } from '../../redux/auth/auth.actions'
 import style from './box.module.css'
-const Email = ({setShow}) => {
+const Email = ({setShow,text,settext}) => {
+  const ref=useRef()
+  
+  const dispatch=useDispatch()
     function MailHandler(){
-        setShow(false)
+
+      setShow(false)
+      dispatch(loginAPI(text))
+
+}
+
+
+
+function changeHandler(){
+      settext(ref.current.value)
+    
 
     }
   return (
@@ -12,6 +28,8 @@ const Email = ({setShow}) => {
     <input
       className={style.input}
       type="text"
+    ref={ref}
+    onChange={changeHandler}
       placeholder="Enter Email Address"
     />
     <button className={style.Lbtn}>Login using Mobile Number</button>
