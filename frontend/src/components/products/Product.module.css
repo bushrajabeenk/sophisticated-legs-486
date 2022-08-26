@@ -1,8 +1,9 @@
 .mainContainer{
-    width:1080px;
+    width:1180px;
     margin:auto;
     display: flex;
     gap: 10px;
+ 
 }
 .productDiscount{
   text-align: right;
@@ -12,6 +13,15 @@
   justify-content: flex-end;
 height: 20px;
 align-items: center;
+}
+
+.productDiv{
+  width: 900px;
+  /* border: 2px solid grey; */
+}
+.filterDiv{
+  width: 250px;
+
 }
 
 .productDiscount>img{
@@ -146,6 +156,7 @@ align-items: center;
   border-radius: 5px;
   width: 60px;
   background-color: #f8d979;
+  cursor: pointer;
 }
 
 
@@ -161,6 +172,15 @@ align-items: center;
   color: grey;
 }
 
+.chekbox{
+  width: 20px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.select{
+  margin-top: 20px;
+}
 
 .typeAndSort{
   display: flex;
@@ -183,4 +203,8 @@ align-items: center;
  
   border: 0.1px solid grey;
 
+}
+
+.inline{
+  text-decoration: underline;
 }
