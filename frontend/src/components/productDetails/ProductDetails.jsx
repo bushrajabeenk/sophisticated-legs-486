@@ -16,7 +16,7 @@ export const ProductDetails = () => {
       <Info />
       <Details />
       <Review />
-      <Similar/>
+      <Similar />
     </Wrapper>
   );
 };

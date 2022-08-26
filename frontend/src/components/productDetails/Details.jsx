@@ -7,7 +7,6 @@ export const HeadLine = styled.p`
   margin-top: 100px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
-
 `;
 
 const Container = styled.div`
@@ -23,7 +22,7 @@ const Flex = styled.div`
   margin: 0;
   padding: 0;
 
-  & i{
+  & i {
     color: #999;
     font-size: 24px;
   }
@@ -33,7 +32,7 @@ const Ul = styled.ul`
   margin: 0;
   padding: 0;
   padding: 0 15px;
-  width:90%;
+  width: 90%;
   color: #666;
   font-size: 13px;
 `;
