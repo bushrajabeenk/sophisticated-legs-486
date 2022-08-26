@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const nodeMailer = require("nodemailer");
 const cors = require("cors");
-const dotenv = require("dotenv").config();
+// const dotenv = require("dotenv").config();
 const { Schema, model } = require("mongoose");
 const connection = require("./db");
 app.use(express.json());
