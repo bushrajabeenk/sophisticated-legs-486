@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Details } from "./Details";
 import { Info } from "./Info";
+import { Review } from "./Review";
+import { Similar } from "./Similar";
 
 const Wrapper = styled.div`
   width: 82%;
@@ -13,6 +15,8 @@ export const ProductDetails = () => {
     <Wrapper>
       <Info />
       <Details />
+      <Review />
+      <Similar/>
     </Wrapper>
   );
 };

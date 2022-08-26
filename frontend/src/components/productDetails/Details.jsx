@@ -1,16 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeadLine = styled.p`
+export const HeadLine = styled.p`
   font-size: 24px;
   color: #222222;
   margin-top: 100px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+
 `;
 
 const Container = styled.div`
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 0 15px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 `;
 const Flex = styled.div`
