@@ -1,9 +1,10 @@
 import React from "react";
-import products from "./productData";
+
 import styles from "../products/Product.module.css";
 
+
 const ProductCard = ({ data }) => {
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className={styles.productMainDiv}>
@@ -30,7 +31,7 @@ const ProductCard = ({ data }) => {
                 Rs. {data.mrp[0]}{" "}
               </span>
             </span>
-            <span> Rs.{data.mrp[1]}</span>
+            <span className={styles.price}> Rs {data.mrp[1]}</span>
           </p>
           <div className={styles.stdDiv}>
             <img
@@ -48,10 +49,11 @@ const ProductCard = ({ data }) => {
               <div className={styles.qty}>
                 <p>Qty</p>
               </div>
-              <input type="number" className={styles.Inputnumber} />
+              <input type="text" className={styles.Inputnumber} />
             </div>
             <div className={styles.addButtonDiv}>
               <p>ADD</p>
+              
             </div>
           </div>
         </div>

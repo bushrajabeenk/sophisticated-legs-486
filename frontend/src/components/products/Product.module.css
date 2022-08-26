@@ -2,6 +2,7 @@
     width:1080px;
     margin:auto;
     display: flex;
+    gap: 10px;
 }
 .productDiscount{
   text-align: right;
@@ -57,8 +58,17 @@ align-items: center;
 
 .productName {
   margin-top: -10px;
+  font-size: 14px;
 }
-
+.price{
+  font-size: 14px;
+ 
+}
+.hrLine{
+  width: 100%;
+  border:0.5px solid grey;
+  margin-bottom: 20px;
+}
 .kgPrice {
   width: 100%;
   border-radius: 0px;
@@ -81,6 +91,7 @@ align-items: center;
 .qtyAddDiv {
   display: flex;
   gap: 5px;
+ 
 }
 .prctymbtn {
   background-color: #f4f3f2;
@@ -94,7 +105,7 @@ align-items: center;
 .qtyDiv {
   display: flex;
   font-size: 12px;
-  border: 0.5px solid black;
+  border: 0.5px solid grey;
   height: 20px;
   align-items: center;
   border-radius: 5px;
@@ -115,10 +126,14 @@ align-items: center;
 }
 
 .Inputnumber {
-  width: 50px;
+  text-align: center;
+  width: 40px;
   height: 15px;
   outline: none;
   border: none;
+  border-top-right-radius:5px ;
+  border-bottom-right-radius:5px ;
+
 }
 
 .addButtonDiv {
@@ -126,6 +141,8 @@ align-items: center;
   height: 20px;
   align-items: center;
   display: flex;
+  font-size: 14px;
+  padding-left: 5px;
   border-radius: 5px;
   width: 60px;
   background-color: #f8d979;
@@ -142,4 +159,28 @@ align-items: center;
 .checkboxText{
   font-size: 14px;
   color: grey;
+}
+
+
+.typeAndSort{
+  display: flex;
+ justify-content: space-between;
+}
+
+.topTruck{
+  border-bottom:1px solid #84c225;
+  width: 120px;
+  /* font-size: 10px; */
+  display: flex;
+  gap: 10px;
+  padding-bottom: -10px;
+  height: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.divider{
+ 
+  border: 0.1px solid grey;
+
 }

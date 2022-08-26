@@ -3,13 +3,33 @@ import styles from "../products/Product.module.css";
 import products from "./productData";
 import ProductCard from "../products/ProductCard";
 const Product = () => {
+
+  const [data,setData] = React.useState(products);
+
+  function SortD(val) {
+    console.log(val)
+    let buy = data.sort((a, b) => {
+      if (val == "lth") {
+        return a.mrp[1] - b.mrp[1];
+      } else if(val == "htl") {
+        return b.mrp[1] - a.mrp[1];
+      }
+    });
+
+    setData([...data]);
+  }
+
+
   return (
     <div className={styles.mainContainer}>
       <div className={styles.filterDiv}>
         <div>
           <p>Category</p>
           <div className={styles.line}></div>
-          <p className={styles.checkboxText}>Fruits & Vegetables</p> 
+          <div>
+            <p className={styles.checkboxText}>Fruits & Vegetables</p>
+            <p></p>
+          </div>
         </div>
         <div>
           <p>Brand</p>
@@ -24,16 +44,20 @@ const Product = () => {
           <p>Price</p>
           <div className={styles.line}></div>
           <div className={styles.checkboxText}>
-            <input type="checkbox" />Less than Rs 20
+            <input type="checkbox" />
+            Less than Rs 20
           </div>
           <div className={styles.checkboxText}>
-            <input type="checkbox" />Rs 21 to Rs 50
+            <input type="checkbox" />
+            Rs 21 to Rs 50
           </div>
           <div className={styles.checkboxText}>
-            <input type="checkbox" />Rs 51 to Rs 100
+            <input type="checkbox" />
+            Rs 51 to Rs 100
           </div>
           <div className={styles.checkboxText}>
-            <input type="checkbox" />Rs 101 to Rs 200
+            <input type="checkbox" />
+            Rs 101 to Rs 200
           </div>
         </div>
         <div>
@@ -43,8 +67,8 @@ const Product = () => {
             <input type="checkbox" /> 5% - 10%
           </div>
           <div className={styles.checkboxText}>
-            <input type="checkbox" />15% - 20%
-            
+            <input type="checkbox" />
+            15% - 20%
           </div>
         </div>
         <div>
@@ -59,18 +83,39 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <div className={styles.divider}></div>
       <div className={styles.productDiv}>
-        <p>Fruits and Vegetables(631)</p>
+        <div className={styles.typeAndSort}>
+          <p>Fruits and Vegetables(631)</p>
+          <div className={styles.select}>
+            <select name="" id=""  onChange={(e)=>{SortD(e.target.value)}}>
+              <option value="popularity">Popularity</option>
+              <option value="lth">Price low-to-high</option>
+              <option value="htl">Price high-to-low</option>
+              <option value="alphabetical">Alphabetical</option>
+            </select>
+          </div>
+        </div>
+        <div className={styles.topTruck}>
+          <img
+            width="20px"
+            src="https://www.bbassets.com/static/v2580/custPage/build/content/img/standard-del.svg"
+            alt=""
+          />
+          <h6 >ALL PRODUCTS</h6>
+        </div>
+        <div className={styles.hrLine}></div>
         <div className={styles.mappingDiv}>
-          {products.map((e, index) => {
+          {data.map((e, index) => {
             return (
               <>
-                <ProductCard data={e} />
+                <ProductCard key={index} data={e} />
               </>
             );
           })}
         </div>
       </div>
+      
     </div>
   );
 };
