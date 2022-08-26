@@ -90,7 +90,9 @@ let data = db.slice(0,11)
               <InputLeftAddon children='Qty' />
               <Input placeholder='1' />              
             </InputGroup>
-            <Button rightIcon={<RiShoppingBasket2Fill />} colorScheme='green' variant='outline'>
+            <Button rightIcon={<RiShoppingBasket2Fill />} backgroundColor='yellow.300' _hover={{
+              backgroundColor:'yellow.200'
+            }}  variant='outline'>
               ADD
             </Button>
           </HStack>
