@@ -13,7 +13,8 @@ import FruitsVeggis from "../components/homepage/FruitsVeggis";
 import HomeKitchen from "../components/homepage/HomeKitchen";
 import Makeup from "../components/homepage/Makeup";
 import Snak from "../components/homepage/Snak";
-
+import { Box } from "@chakra-ui/react";
+import CaptionCarousel from '../components/homepage/TopCarasoule'
 export const HomePage = () => {
   return (
     <Box>

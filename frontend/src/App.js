@@ -1,11 +1,13 @@
 import React from 'react'
-import { HomePage } from './pages/HomePage'
+import Product from './components/products/Product'
+
 
 const App = () => {
   return (
     <div>
-        <HomePage></HomePage>
-        <Login></Login>
+     
+        <Product />
+        
     </div>
   )
 }

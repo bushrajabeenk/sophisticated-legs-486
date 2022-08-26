@@ -4,10 +4,7 @@ import {
   Box,
   IconButton,
   useBreakpointValue,
-  Stack,
-  Heading,
-  Text,
-  Container,
+  
   Divider,
   Image,
 } from "@chakra-ui/react";
