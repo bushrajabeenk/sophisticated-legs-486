@@ -10,6 +10,7 @@ const connection = require("./db");
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
+require("dotenv").config();
 // -------------------------------------for dotenv --------------------------------
 
 let PORT = 8080;
@@ -80,10 +81,10 @@ app.post("/getemail", async (req, res) => {
     port: 587, //465
     auth: {
       user: "cyno28cyno@gmail.com",
-      pass: "jzxcwjdofqvdkmar",
+      pass: process.env.PASS,
     },
   });
-  let otp = Math.floor(Math.random() * 10000);
+  let otp = Math.floor(Math.random() * 1000000);
 
   const info = await mail.sendMail({
     from: "BigBasket",
@@ -710,9 +711,7 @@ app.post('/cart/updateone',async(req,res)=>{
 }
     await User.findOneAndUpdate({ _id: id },cart);
     res.send("done")
-    
-
-})
+    })
 
 // -------------------------------connection --------------------
 
