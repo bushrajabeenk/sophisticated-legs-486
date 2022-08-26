@@ -82,77 +82,63 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul
-          style={{ listStyleType: "none", display: "flex" }}
-          className={styles.ulnav}
-        >
-          <div className={styles.navbar}>
-            <div className={styles.dropdown}>
-              <button className={styles.dropbtn}>SHOP BY CATEGORY</button>
-              <div className={styles.dropdowncontent}>
-                <div className={styles.row}>
-                  <div className={styles.column}>
-                    <a href="">Fruits & Vegetables</a>
-                    <a href="">Foodgrains, Oil & Masala</a>
-                    <a href="">Bakery, Cakes & Dairy</a>
-                    <a href="">Beverages</a>
-                    <a href="">Snacks & Branded Foods</a>
-                    <a href="">Beauty & Hygiene</a>
-                    <a href="">Cleaning & Household</a>
-                    <a href="">Kitche, Garden & Pets</a>
-                    <a href="">Eggs, Meat & Fish</a>
-                    <a href="">Gourmet & World Food</a>
-                    <a href="">Baby Care</a>
-                    <a href="">View All</a>
-                  </div>
-                  <div className={styles.column}>
-                    <a href="">Fresh Vegetables</a>
-                    <a href="">Herbs & Seasonings</a>
-                    <a href="">Fresh Fruits</a>
-                    <a href="">Exotic Fruits & Veggies</a>
-                    <a href="">Cuts & Sprouts</a>
-                    <a href="">Flower Bouqets, Bunches</a>
-                  </div>
-                  <div className={styles.column}>
-                    <a href="">Potato Onion & Tomato</a>
-                    <a href="">Cucumber &amp; Capsicum</a>
-                    <a href="">Beans Brinjals & Okra</a>
-                    <a href="">Leafy Vegetables</a>
-                    <a href="">Cabbage & Cauliflower</a>
-                    <a href="">Root Vegetables</a>
-                    <a href="">Gourd, Pumpkin, Drumstick</a>
-                    <a href="">Specialty</a>
-                  </div>
-                  <div className={styles.column}>
-                    <a href="">Popular Searches</a>
-                    <a href="">Vegetables</a>
-                    <a href="">Cucumber</a>
-                    <a href="">Vegetable</a>
-                    <a href="">Chinese Cabbage</a>
-                    <a href="">Vege</a>
-                    <a href="">Veg</a>
-                  </div>
-                  <div className={styles.column}>
-                    <img src="" alt="navbarimg" />
+        <div className={styles.div2}>
+          <ul style={{ listStyleType: "none" }} className={styles.ulnav}>
+            <div className={styles.navbar}>
+              <div className={styles.dropdown}>
+                <button className={styles.dropbtn}>SHOP BY CATEGORY</button>
+                <div className={styles.dropdowncontent}>
+                  <div className={styles.row}>
+                    <div className={styles.column}>
+                      <a href="">Fruits & Vegetables</a>
+                      <a href="">Foodgrains, Oil & Masala</a>
+                      <a href="">Bakery, Cakes & Dairy</a>
+                      <a href="">Beverages</a>
+                      <a href="">Snacks & Branded Foods</a>
+                      <a href="">Beauty & Hygiene</a>
+                      <a href="">Cleaning & Household</a>
+                      <a href="">Kitche, Garden & Pets</a>
+                      <a href="">Eggs, Meat & Fish</a>
+                      <a href="">Gourmet & World Food</a>
+                      <a href="">Baby Care</a>
+                      <a href="">View All</a>
+                    </div>
+                    <div className={styles.column}>
+                      <a href="">Fresh Vegetables</a>
+                      <a href="">Herbs & Seasonings</a>
+                      <a href="">Fresh Fruits</a>
+                      <a href="">Exotic Fruits & Veggies</a>
+                      <a href="">Cuts & Sprouts</a>
+                      <a href="">Flower Bouqets, Bunches</a>
+                    </div>
+                    <div className={styles.column}>
+                      <a href="">Potato Onion & Tomato</a>
+                      <a href="">Cucumber &amp; Capsicum</a>
+                      <a href="">Beans Brinjals & Okra</a>
+                      <a href="">Leafy Vegetables</a>
+                      <a href="">Cabbage & Cauliflower</a>
+                      <a href="">Root Vegetables</a>
+                      <a href="">Gourd, Pumpkin, Drumstick</a>
+                      <a href="">Specialty</a>
+                    </div>
+                    <div className={styles.column}>
+                      <a href="">Popular Searches</a>
+                      <a href="">Vegetables</a>
+                      <a href="">Cucumber</a>
+                      <a href="">Vegetable</a>
+                      <a href="">Chinese Cabbage</a>
+                      <a href="">Vege</a>
+                      <a href="">Veg</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
+          </ul>
           <div className={styles.navbar}>
-            <div className={styles.dropdown}>
-              <button className={styles.dropbtn}>OFFERS</button>
-            </div>
+            <button className={styles.dropbtnoffer}>OFFERS</button>
           </div>
-        </ul>
-
-        {/* <button
-          //   onClick={Scroll}
-          className={styles.scroll}
-        >
-          <i className="fa-solid fa-angle-up"></i>
-        </button> */}
+        </div>
       </div>
     </div>
   );
