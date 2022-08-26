@@ -1,0 +1,120 @@
+.mainDiv{
+    width:1080px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.detailsDiv{
+    background-color: antiquewhite;
+}
+
+.addressDiv{
+    border: 1px solid grey;
+    width: 700px;
+}
+
+.personalContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.firstName{
+    width: 150px;
+    height: 20px;
+    
+}
+
+.lastName{
+    width: 150px;
+    height: 20px;
+}
+
+.number{
+    width: 320px;
+    height: 20px;
+}
+
+.addressContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.houseNumber{
+    width: 150px;
+    height: 20px;
+}
+
+.appName{
+    width: 500px;
+    height: 20px;
+}
+
+.streetDiv{
+    display: flex;
+    gap: 20px;
+}
+
+.cityDiv{
+    display: flex;
+    gap: 20px;
+}
+
+.streetName{
+    width: 325px;
+    height: 20px;
+}
+
+.landmark{
+    width: 325px;
+    height: 20px;
+}
+
+
+.cityName{
+    width: 150px;
+    height: 20px;
+}
+
+.areaName{
+    width: 320px;
+    height: 20px;
+}
+
+.pinCode{
+    width: 150px;
+    height: 20px;
+}
+
+.voucher{
+    background-color: #f7f7f7;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.vouchersAvailable{
+    background-color: #e8f1fc;
+}
+
+.order{
+    background-color: #f7f7f7;
+    border: 1px solid grey;
+    padding: 10px;
+
+}
+
+.valueCharge{
+background-color: white;
+border: 1px solid grey;
+font-size: 14px;
+padding: 10px;
+
+}
+
+.amountPayable{
+    border: 1px solid grey;
+}
+
+.circle{
+    
+}
