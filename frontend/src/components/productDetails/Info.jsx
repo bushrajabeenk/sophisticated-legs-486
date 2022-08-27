@@ -1,9 +1,5 @@
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import axios from "axios";
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -31,7 +27,7 @@ const LI1 = styled.li`
   margin: 0;
   padding: 0;
   color: #676767;
-  margin-left: -15px;
+  // margin-left: -15px;
   font-size: 14px;
   margin-bottom: 2px;
   cursor: pointer;
@@ -39,14 +35,14 @@ const LI1 = styled.li`
 const LI2 = styled.li`
   margin: 0;
   padding: 0;
-  margin-left: -30px;
+  margin-left: 10px;
   margin-bottom: 2px;
 `;
 
 const LI3 = styled.li`
   margin: 0;
   padding: 0;
-  margin-left: -30px;
+  margin-left: 20px;
   margin-bottom: 2px;
 `;
 
@@ -56,7 +52,7 @@ const UnderLine = styled.p`
   font-size: 12px;
   color: #666;
   border-bottom: 1px solid #666;
-  width: 35px;
+  width: 40px;
   cursor: pointer;
 `;
 
@@ -132,7 +128,7 @@ const Flex = styled.div`
 
   border-radius: 0.3rem;
   overflow: hidden;
-  padding: 0 10px 10px;
+  padding: 10px 10px 10px;
   border: 1px solid #d0d0d0;
   cursor: pointer;
   :hover {
@@ -179,25 +175,8 @@ const SubImgDiv = styled.div`
   }
 `;
 
-export const Info = () => {
-  const [data, setData] = React.useState([]);
-
-  const path = useLocation().pathname.split("/")[2];
-
-  const state = useSelector((state) => state);
-  // console.log(state.auth,"here")
-  // console.log(path)
-
-  console.log(data);
-
-  useEffect(() => {
-    axios
-      .get(`https://infinite-thicket-15273.herokuapp.com/products/${path}`)
-      .then((res) => {
-        let data = res.data;
-        setData(data);
-      });
-  }, []);
+export const Info = ({data}) => {
+ 
 
   return (
     <Wrapper>
@@ -239,32 +218,32 @@ export const Info = () => {
       <Middle>
         <MainImgDiv>
           <MainImg
-            src="https://www.bigbasket.com/media/uploads/p/l/40075537_5-fresho-onion.jpg"
+            src={data.Image_url}
             alt=""
           />
         </MainImgDiv>
         <SubImgDiv>
           <div>
             <img
-              src="https://www.bigbasket.com/media/uploads/p/l/40075537_5-fresho-onion.jpg"
+              src={data.Image_url}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://www.bigbasket.com/media/uploads/p/l/40075537-2_2-fresho-onion.jpg"
+              src={data.Image_url}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://www.bigbasket.com/media/uploads/p/l/40075537-3_3-fresho-onion.jpg"
+              src={data.Image_url}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://www.bigbasket.com/media/uploads/p/l/40075537-4_1-fresho-onion.jpg"
+              src={data.Image_url}
               alt=""
             />
           </div>
@@ -275,7 +254,7 @@ export const Info = () => {
       <Right>
         <div>
           <UnderLine>Fresho</UnderLine>
-          <Standard>Fresho Onion (Loose), 2 kg</Standard>
+          <Standard>{data.Title}</Standard>
           <p style={{ padding: 0, margin: 0 }}>
             <Span>MRP: </Span>
             <s>
@@ -283,7 +262,7 @@ export const Info = () => {
             </s>
           </p>
           <Standard>
-            Price: Rs 53.50 <Span>(Rs.26.75/kg)</Span>
+            Price: Rs {data.Price} <Span>(Rs.26.75/kg)</Span>
           </Standard>
           <Red>You Save: 27%</Red>
           <p style={{ padding: 0, margin: 0 }}>

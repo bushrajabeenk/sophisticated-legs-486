@@ -1,4 +1,6 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { Details } from "./Details";
 import { Info } from "./Info";
@@ -11,10 +13,25 @@ const Wrapper = styled.div`
   margin-top: 40px;
 `;
 export const ProductDetails = () => {
+
+  const [data, setData] = React.useState([]);
+
+  const path = useLocation().pathname.split("/")[2];
+
+  console.log(data);
+
+  useEffect(() => {
+    axios
+      .get(`https://infinite-thicket-15273.herokuapp.com/products/${path}`)
+      .then((res) => {
+        let data = res.data;
+        setData(data);
+      });
+  }, []);
   return (
     <Wrapper>
-      <Info />
-      <Details />
+      <Info data={data}/>
+      <Details data={data}/>
       <Review />
       <Similar />
     </Wrapper>
