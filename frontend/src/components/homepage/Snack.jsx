@@ -1,6 +1,6 @@
 import React from "react";
 import { HStack, Box, Image, Center } from "@chakra-ui/react";
-const Snak = () => {
+const Snack = () => {
   return (
     <Box w={"80%"} m="auto" mt="2rem">
       <Center fontWeight={"bold"} fontSize={"20px"}>
@@ -61,4 +61,4 @@ const Snak = () => {
   );
 };
 
-export default Snak;
+export default Snack;

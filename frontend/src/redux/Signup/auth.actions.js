@@ -6,7 +6,6 @@ import {
   LOGOUT,
 } from "./auth.types";
 
-// below code is example from reqres api
 export const loginAPI = (data) => (dispatch) => {
   dispatch({ type: LOGIN_LOADING });
   console.log(data, "here");
@@ -22,8 +21,8 @@ export const loginAPI = (data) => (dispatch) => {
       dispatch({ type: LOGIN_ERROR });
     });
 };
-export const getdata=(data)=>(dispatch)=>{
-dispatch({type:"setdata", payload:data});
-}
+export const getdata = (data) => (dispatch) => {
+  dispatch({ type: "setdata", payload: data });
+};
 
 export const logoutAPI = () => ({ type: LOGOUT });

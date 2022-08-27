@@ -4,7 +4,6 @@ import {
   Box,
   IconButton,
   useBreakpointValue,
-  
   Divider,
   Image,
 } from "@chakra-ui/react";
@@ -26,7 +25,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function CaptionCarousel() {
+export default function TopCarousel() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState(null);

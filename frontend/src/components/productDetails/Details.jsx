@@ -16,7 +16,6 @@ const Container = styled.div`
   padding-bottom: 20px;
   box-sizing: border-box;
   margin-bottom: 10px;
-
 `;
 const Flex = styled.div`
   display: flex;
@@ -39,7 +38,7 @@ const Ul = styled.ul`
   color: #666;
   font-size: 13px;
 `;
-export const Details = ({data}) => {
+export const Details = ({ data }) => {
   return (
     <div>
       <HeadLine>{data.Title}</HeadLine>
@@ -51,9 +50,7 @@ export const Details = ({data}) => {
           </Flex>
           <div>
             <Ul>
-              <li>
-                {data.Description}
-              </li>
+              <li>{data.Description}</li>
             </Ul>
           </div>
         </Container>

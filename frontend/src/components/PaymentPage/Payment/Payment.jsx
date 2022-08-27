@@ -5,67 +5,79 @@ const Payment = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.leftSideDiv}>
-
-
-      <div className={styles.giftOrder}>
-        <h4>Is this a gift Order?</h4>
-        <button>ADD MESSAGE</button>
-      </div>
-      <div className={styles.deliveryOptions}>
-        <h4>Delivery Options</h4>
-        <button>Change</button>
-      </div>
-      <div className={styles.paymentOptions}>
-        <h4>Payment Options</h4>
-      </div>
-      <div>
-        <div></div>
-        <div className={styles.optionsAndCard}>
-          <div className={styles.paymentOptions}>
-            <div className={styles.options}>
-              <p>Credit / Debit Card</p>
+        <div className={styles.giftOrder}>
+          <h4>Is this a gift Order?</h4>
+          <button>ADD MESSAGE</button>
+        </div>
+        <div className={styles.deliveryOptions}>
+          <h4>Delivery Options</h4>
+          <button>Change</button>
+        </div>
+        <div className={styles.paymentOptions}>
+          <h4>Payment Options</h4>
+        </div>
+        <div>
+          <div></div>
+          <div className={styles.optionsAndCard}>
+            <div className={styles.paymentOptions}>
+              <div className={styles.options}>
+                <p>Credit / Debit Card</p>
+              </div>
+              <div className={styles.options}>
+                <p>Netbanking</p>
+              </div>
+              <div className={styles.options}>
+                <p>UPI</p>
+              </div>
+              <div className={styles.options}>
+                <p>Wallet</p>
+              </div>
+              <div className={styles.options}>
+                <p>Pay Later</p>
+              </div>
+              <div className={styles.Lastoptions}>
+                <p>Cash/Card on Delivery</p>
+              </div>
             </div>
-            <div className={styles.options}>
-              <p>Netbanking</p>
-            </div>
-            <div className={styles.options}>
-              <p>UPI</p>
-            </div>
-            <div className={styles.options}>
-              <p>Wallet</p>
-            </div>
-            <div className={styles.options}>
-              <p>Pay Later</p>
-            </div>
-            <div className={styles.Lastoptions}>
-              <p>Cash/Card on Delivery</p>
-            </div>
-          </div>
-          <div className={styles.cardDiv}>
-            <div>
-              <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
+            <div className={styles.cardDiv}>
               <div>
-                <p className={styles.smallText}>Card Number</p>
-                <input type="text"  className={styles.cardNumber} maxlength = "11"/>
-              </div>
-              <div className={styles.validCvv}>
-                <div >
-                  <p className={styles.smallText}>Valid Thru</p>
-                  <input type="text" className={styles.cardNumber}  maxlength = "4"/>
-                </div>
-
+                <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
                 <div>
-                  <p className={styles.smallText}>CVV</p>
-                  <input type="text" className={styles.cardNumber} maxlength = "3"/>
+                  <p className={styles.smallText}>Card Number</p>
+                  <input
+                    type="text"
+                    className={styles.cardNumber}
+                    maxlength="11"
+                  />
                 </div>
+                <div className={styles.validCvv}>
+                  <div>
+                    <p className={styles.smallText}>Valid Thru</p>
+                    <input
+                      type="text"
+                      className={styles.cardNumber}
+                      maxlength="4"
+                    />
+                  </div>
+
+                  <div>
+                    <p className={styles.smallText}>CVV</p>
+                    <input
+                      type="text"
+                      className={styles.cardNumber}
+                      maxlength="3"
+                    />
+                  </div>
+                </div>
+                <button className={styles.placeOrderButton}>
+                  Place Order & Pay
+                </button>
               </div>
-              <button className={styles.placeOrderButton}>Place Order & Pay</button>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <Voucher/>
+      <Voucher />
     </div>
   );
 };

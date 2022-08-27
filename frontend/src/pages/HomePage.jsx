@@ -9,13 +9,13 @@ import Deals from "../components/homepage/Deals";
 import FruitsVeggis from "../components/homepage/FruitsVeggis";
 import HomeKitchen from "../components/homepage/HomeKitchen";
 import Makeup from "../components/homepage/Makeup";
-import Snak from "../components/homepage/Snak";
+import Snack from "../components/homepage/Snack";
 import { Box } from "@chakra-ui/react";
-import CaptionCarousel from "../components/homepage/TopCarasoule";
+import TopCarousel from "../components/homepage/TopCarousel";
 const HomePage = () => {
   return (
     <Box>
-      <CaptionCarousel />
+      <TopCarousel />
       <ButtonsLink />
       <Cards />
       <BankOffers />
@@ -23,7 +23,7 @@ const HomePage = () => {
       <Deals />
       <FruitsVeggis />
       <Beverages />
-      <Snak />
+      <Snack />
       <Cleaning />
       <Makeup />
       <HomeKitchen />

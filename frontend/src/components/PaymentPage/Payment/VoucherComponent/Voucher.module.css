@@ -12,11 +12,10 @@
   margin-top: 10px;
 }
 
-
-.boldText{
-    font-weight: 500;
-    color: grey;
-    margin-bottom: 10px;
+.boldText {
+  font-weight: 500;
+  color: grey;
+  margin-bottom: 10px;
 }
 .order {
   background-color: #f7f7f7;

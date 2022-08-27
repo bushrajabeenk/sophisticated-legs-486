@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import axios from "axios"
+import axios from "axios";
 const Wrapper = styled.div`
   box-sizing: border-box;
   display: flex;
@@ -175,13 +175,13 @@ const SubImgDiv = styled.div`
   }
 `;
 
-export const Info = ({data}) => {
- async function addtocart(){
-  let id =localStorage.getItem('id');
-  axios.post(`https://infinite-thicket-15273.herokuapp.com/${id}`,{data}).then((r)=>{
-    
-  })
- }
+export const Info = ({ data }) => {
+  async function addtocart() {
+    let id = localStorage.getItem("id");
+    axios
+      .post(`https://infinite-thicket-15273.herokuapp.com/${id}`, { data })
+      .then((r) => {});
+  }
 
   return (
     <Wrapper>
@@ -222,35 +222,20 @@ export const Info = ({data}) => {
       {/* Middle div */}
       <Middle>
         <MainImgDiv>
-          <MainImg
-            src={data.Image_url}
-            alt=""
-          />
+          <MainImg src={data.Image_url} alt="" />
         </MainImgDiv>
         <SubImgDiv>
           <div>
-            <img
-              src={data.Image_url}
-              alt=""
-            />
+            <img src={data.Image_url} alt="" />
           </div>
           <div>
-            <img
-              src={data.Image_url}
-              alt=""
-            />
+            <img src={data.Image_url} alt="" />
           </div>
           <div>
-            <img
-              src={data.Image_url}
-              alt=""
-            />
+            <img src={data.Image_url} alt="" />
           </div>
           <div>
-            <img
-              src={data.Image_url}
-              alt=""
-            />
+            <img src={data.Image_url} alt="" />
           </div>
         </SubImgDiv>
       </Middle>
