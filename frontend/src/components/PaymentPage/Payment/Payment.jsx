@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./Payment.module.css";
 import Voucher from "./VoucherComponent/Voucher";
+import { Button, useToast } from '@chakra-ui/react'
 const Payment = () => {
+  const toast = useToast()
   return (
     <div className={styles.mainContainer}>
       <div className={styles.leftSideDiv}>
@@ -69,9 +71,18 @@ const Payment = () => {
                     />
                   </div>
                 </div>
-                <button className={styles.placeOrderButton}>
+                <button className={styles.placeOrderButton}   onClick={() =>
+        toast({
+          title: 'Account created.',
+          description: "We've created your account for you.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }>
                   Place Order & Pay
                 </button>
+               
               </div>
             </div>
           </div>
