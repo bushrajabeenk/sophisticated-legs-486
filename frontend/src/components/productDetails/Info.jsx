@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import axios from "axios";
+import { useToast } from '@chakra-ui/react'
+
 const Wrapper = styled.div`
   box-sizing: border-box;
   display: flex;
@@ -176,11 +178,21 @@ const SubImgDiv = styled.div`
 `;
 
 export const Info = ({ data }) => {
+  const toast = useToast()
   async function addtocart() {
     let id = localStorage.getItem("data").id;
     axios
       .post(`https://infinite-thicket-15273.herokuapp.com/${id}`, { ...data,quantity:1 })
       .then((r) => console.log(r));
+
+
+      toast({
+        title: 'Product added.',
+        description: "Product added to basket",
+        status: 'success',
+        duration: 3000,
+        isClosable: true,
+      })
   }
 
   return (
