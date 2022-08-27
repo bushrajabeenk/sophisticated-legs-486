@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import {
   FaTwitter,
-  FaYoutube,
   FaInstagram,
   FaAmazonPay,
   FaGooglePay,

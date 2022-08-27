@@ -17,13 +17,13 @@ const Navbar = () => {
         <div>
           <div className={styles.userLocation}>
             <span>
-              <i className="fa-solid fa-phone num"></i> phone number
+              <i className="fa-solid fa-phone num"></i> 1860 123 1000
             </span>
             <span>
               <i className="fa-solid fa-location-dot add"></i> Bengaluru
             </span>
             <span className={styles.login_main}>
-              <i className="fa-regular fa-user"></i>{" "}
+              <i className="fa-regular fa-user"></i> Login/Signup
             </span>{" "}
             <span className={styles.login}></span>
             <div></div>
@@ -46,7 +46,7 @@ const Navbar = () => {
               <div>
                 <span>My Basket</span>
                 <br />
-                <span>Item</span>
+                <span>0 Items</span>
               </div>
             </div>
           </div>

@@ -1,6 +1,5 @@
 /* .page_layout {
-  position: fixed;
-  top: 0px;
+  color: "#555";
   width: 100%;
   background-color: white;
   z-index: 1;
@@ -29,7 +28,6 @@
   border: none;
   outline: none;
   color: #181818;
-  padding: 14px 14px;
   font-size: 12px;
   background-color: inherit;
   font: inherit;
@@ -37,10 +35,11 @@
 }
 
 .dropbtn {
+  margin-right: 200px;
   border: none;
   outline: none;
   color: white;
-  padding: 5px 10px;
+  padding: 0px 10px;
   word-spacing: 5px;
   font-size: 16px;
   font-weight: 600;
@@ -66,7 +65,7 @@
 }
 
 .dropdowncontent {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: none;
   position: absolute;
@@ -74,7 +73,7 @@
   left: 0;
   box-shadow: 2px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 50px;
+  padding: 30px 30px;
 }
 
 .dropdowncontent .header {
@@ -150,6 +149,7 @@
 }
 
 .search_cart input {
+  margin-top: 25px;
   font-size: 18px;
   padding: 5px;
   width: 600px;
@@ -157,7 +157,10 @@
 }
 
 .search_cart button {
+  margin-right: 250px;
+  text-align: center;
   font-size: 21px;
+  padding-right: 10px;
   padding-bottom: 2px;
   color: white;
   background-color: #84c225;
