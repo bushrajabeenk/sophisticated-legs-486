@@ -8,8 +8,6 @@ import {
 const initState = {
   loading: false,
   error: false,
-  // to convert string to boolean value
-
   token: "",
   data,
 };

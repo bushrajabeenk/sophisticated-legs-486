@@ -6,7 +6,6 @@ import {
   LOGOUT,
 } from "./auth.types";
 
-// below code is example from reqres api
 export const loginAPI = (data) => (dispatch) => {
   dispatch({ type: LOGIN_LOADING });
   console.log("clicked");
