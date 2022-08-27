@@ -24,6 +24,8 @@ export const loginAPI = (data) => (dispatch) => {
       dispatch({ type: LOGIN_ERROR });
     });
 };
-
+export const getdata=(data)=>(dispatch)=>{
+dispatch({type:"setdata", payload:data});
+}
 
 export const logoutAPI = () => ({ type: LOGOUT });

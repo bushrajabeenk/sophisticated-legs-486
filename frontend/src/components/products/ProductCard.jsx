@@ -1,5 +1,7 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { getdata } from "../../redux/Signup/auth.actions";
 
 import styles from "../products/Product.module.css";
 
@@ -7,8 +9,10 @@ import styles from "../products/Product.module.css";
 const ProductCard = ({ data }) => {
   // console.log(data);
   const navigate=useNavigate()
+  const dispatch =useDispatch()
+
 function clickHandler(){
-  console.log(data);
+  dispatch(getdata(data))
   navigate("/productDetails")
 }
 

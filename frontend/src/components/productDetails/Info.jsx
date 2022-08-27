@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -176,6 +177,8 @@ const SubImgDiv = styled.div`
 `;
 
 export const Info = () => {
+  const state=useSelector(state=>state)
+  console.log(state.auth,"here")
   return (
     <Wrapper>
       {/* Left div */}
