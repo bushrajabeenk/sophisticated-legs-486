@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./Payment.module.css";
+import Voucher from "./VoucherComponent/Voucher";
 const Payment = () => {
   return (
     <div className={styles.mainContainer}>
+      <div className={styles.leftSideDiv}>
+
+
       <div className={styles.giftOrder}>
         <h4>Is this a gift Order?</h4>
         <button>ADD MESSAGE</button>
@@ -18,42 +22,50 @@ const Payment = () => {
         <div></div>
         <div className={styles.optionsAndCard}>
           <div className={styles.paymentOptions}>
-            <p>Credit / Debit Card</p>
-            <hr />
-            <p>Netbanking</p>
-            <hr />
-            <p>UPI</p>
-<hr />
-<p>Wallet</p>
-<hr />
-<p>Pay Later</p>
-<hr />
-<p>Cash/Card on Delivery</p>
-<hr />
+            <div className={styles.options}>
+              <p>Credit / Debit Card</p>
+            </div>
+            <div className={styles.options}>
+              <p>Netbanking</p>
+            </div>
+            <div className={styles.options}>
+              <p>UPI</p>
+            </div>
+            <div className={styles.options}>
+              <p>Wallet</p>
+            </div>
+            <div className={styles.options}>
+              <p>Pay Later</p>
+            </div>
+            <div className={styles.Lastoptions}>
+              <p>Cash/Card on Delivery</p>
+            </div>
           </div>
           <div className={styles.cardDiv}>
             <div>
-                <h4>Add Credit/ Debit Card</h4>
-                <div>
-                <p>Card Number</p>
-                <input type="text" />
-                </div>
-               <div>
-                <div>
-                <p>Valid Thru</p>
-                <input type="text" />
+              <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
+              <div>
+                <p className={styles.smallText}>Card Number</p>
+                <input type="text"  className={styles.cardNumber}/>
+              </div>
+              <div className={styles.validCvv}>
+                <div >
+                  <p className={styles.smallText}>Valid Thru</p>
+                  <input type="text" className={styles.cardNumber} />
                 </div>
 
                 <div>
-                    <p>CVV</p>
-                    <input type="text" />
+                  <p className={styles.smallText}>CVV</p>
+                  <input type="text" className={styles.cardNumber}/>
                 </div>
-               </div>
-               <button>Place Order & Pay</button>
+              </div>
+              <button className={styles.placeOrderButton}>Place Order & Pay</button>
             </div>
           </div>
         </div>
       </div>
+      </div>
+      <Voucher/>
     </div>
   );
 };

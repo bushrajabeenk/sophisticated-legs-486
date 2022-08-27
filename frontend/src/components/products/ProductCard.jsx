@@ -25,7 +25,7 @@ const ProductCard = ({ data }) => {
         <div className={styles.prctymbtn}>
           <p className={styles.priceSection}>
             {" "}
-            <span className={styles.mrp}>
+            <span className={styles.mrpDiv}>
               MRP:{" "}
               <span style={{ textDecoration: "line-through" }}>
                 Rs. {data.mrp[0]}{" "}

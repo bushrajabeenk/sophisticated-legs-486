@@ -1,6 +1,8 @@
 .mainContainer{
     width:1080px;
     margin: auto;
+    display: flex;
+    gap: 20px;
 }
 
 
@@ -15,12 +17,16 @@
 }
 
 .giftOrder > button {
-  height: 20px;
-  margin-top: 20px;
+
   color: grey;
   align-items: center;
   background-color: white;
   border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+
+
 }
 
 .deliveryOptions {
@@ -34,13 +40,15 @@
 }
 
 .deliveryOptions > button {
-  height: 20px;
-  margin-top: 20px;
+
   color: grey;
   align-items: center;
   background-color: white;
   border: 1px solid black;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
 }
 
 .paymentOptions {
@@ -55,4 +63,64 @@
     display: flex;
    
    gap: 20px;
+}
+
+.cardDiv{
+  border: 1px solid grey;
+  width: 500px;
+  /* margin: auto; */
+  padding: 20px;
+}
+
+.leftSideDiv{
+  width: 700px;
+}
+
+.boldTexts{
+  font-weight: bold;
+}
+
+.cardNumber{
+ outline: none;
+  border-bottom:gray solid 1px;
+ 
+}
+
+
+.validCvv{
+  display: flex;
+  gap:20px;
+  margin-top: 10px;
+}
+
+.smallText{
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+
+.placeOrderButton{
+  border: 1px solid grey;
+padding-left: 10px;
+padding-right: 10px;
+ font-weight: 600;
+  margin-top: 10px;
+  color: grey;
+}
+
+.options{
+  border: 1px solid grey;
+padding: 10px;
+border-bottom: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.Lastoptions{
+  border: 1px solid grey;
+  padding: 10px;
+ 
+    text-align: center;
+    align-items: center;
 }

@@ -22,6 +22,8 @@ const Product = () => {
     setData([...data]);
   }
 
+
+  
   const handleCheck = (e) => {
     let num = e.target.value;
 
@@ -39,6 +41,18 @@ const Product = () => {
       }else if(num>500 && num<=1000){
         return data.mrp[1] > 500 && data.mrp[1] < Number(num);
       }
+      else if(num=="10%"){
+        return data.offer <= 10;
+      }
+      else if(num=="15%"){
+        return data.offer > 10 && data.offer <= 15;
+      }
+      else if(num=="25%"){
+        return data.offer > 15 && data.offer <= 25;
+      }
+      else if(num=="30%"){
+        return data.offer > 25 ;
+      }
     });
 
     setData([...filterData]);
@@ -50,7 +64,7 @@ const Product = () => {
       <div className={styles.mainContainer}>
         <div className={styles.filterDiv}>
           <div>
-            <p className={styles.inline}>Category</p>
+            <p >Category</p>
             <div className={styles.line}></div>
             <div>
               <p className={styles.checkboxText}>Fruits & Vegetables</p>

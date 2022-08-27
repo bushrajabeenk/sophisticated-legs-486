@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ProductDetails } from './components/productDetails/ProductDetails'
-import { HomePage } from './pages/HomePage'
+
 import Login from './pages/Login'
 
 import Address from './components/PaymentPage/Address'
@@ -12,7 +12,9 @@ import { HomePage } from './pages/HomePage'
 
 const App = () => {
   return (
-    <></>
+    <>
+      <Product />
+    </>
 
 
   )
