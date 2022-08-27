@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { useDispatch, useSelector } from "react-redux";
 
 import {
   Box,
@@ -62,7 +61,7 @@ export const Cart = () => {
             pb={"6px"}
           >
             {/* YOUR BASKET {cart?.length} */}
-            YOUR BASKET (01 item)
+            YOUR BASKET ({cart.lenth}item)
           </Text>
           <TableContainer width="99%">
             <Table variant="simple">
