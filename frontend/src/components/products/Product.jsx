@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../products/Product.module.css";
 import products from "./productData";
 import ProductCard from "../products/ProductCard";
 import Description from "./Description";
+import axios from "axios";
 const Product = () => {
   const [data, setData] = React.useState(products);
   const [checked, setChecked] = React.useState("");
+
+
+
+
 
   function SortD(val) {
     console.log(val);
@@ -23,7 +28,7 @@ const Product = () => {
   }
 
 
-  
+
   const handleCheck = (e) => {
     let num = e.target.value;
 
@@ -57,6 +62,20 @@ const Product = () => {
 
     setData([...filterData]);
   };
+
+
+  useEffect(()=>{
+
+    
+  axios.get("/products:id").then(res => {
+    setData(res.data);
+  })
+
+  console.log(data)
+
+
+  },[data])
+
   
 
   return (
