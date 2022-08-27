@@ -29,7 +29,7 @@ console.log(x)
      <Routes>
     <Route path="/" element={<HomePage/>} />
     <Route path="/cart" element={<Cart/>} />
-    <Route path="/Product" element={<Product/>}/ >
+    <Route path="/Product/*" element={<Product/>}/ >
     <Route path="/payment" element={<Payment/>}/ >
     <Route path="/productDetails" element={<ProductDetails/>} />
    </Routes>

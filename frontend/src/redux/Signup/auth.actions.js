@@ -25,4 +25,5 @@ export const loginAPI = (data) => (dispatch) => {
     });
 };
 
+
 export const logoutAPI = () => ({ type: LOGOUT });

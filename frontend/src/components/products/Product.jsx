@@ -4,11 +4,13 @@ import products from "./productData";
 import ProductCard from "../products/ProductCard";
 import Description from "./Description";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 const Product = () => {
-  const [data, setData] = React.useState(products);
+  const [data, setData] = React.useState([]);
   const [checked, setChecked] = React.useState("");
 
-
+const url =useParams()
+console.log(url)
 
 
 
@@ -67,14 +69,15 @@ const Product = () => {
   useEffect(()=>{
 
     
-  axios.get("/products:id").then(res => {
+  axios.get("https://infinite-thicket-15273.herokuapp.com/products").then(res => {
     setData(res.data);
+    console.log(res.data);
   })
 
-  console.log(data)
 
 
-  },[data])
+
+  },[])
 
   
 
@@ -264,9 +267,9 @@ const Product = () => {
           <div className={styles.mappingDiv}>
             {data.map((e, index) => {
               return (
-                <>
-                  <ProductCard key={index} data={e} />
-                </>
+                <div  key={index}>
+                  <ProductCard data={e} />
+                </div>
               );
             })}
           </div>

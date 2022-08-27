@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Box, Image } from "@chakra-ui/react";
 import styles from "./Navbar.module.css";
 
@@ -105,7 +105,7 @@ const Navbar = () => {
                       <a href="">View All</a>
                     </div>
                     <div className={styles.column}>
-                      <a href="">Fresh Vegetables</a>
+                      <Link to="/products/Fruits_vegetables">Fresh Vegetables</Link>
                       <a href="">Herbs & Seasonings</a>
                       <a href="">Fresh Fruits</a>
                       <a href="">Exotic Fruits & Veggies</a>
