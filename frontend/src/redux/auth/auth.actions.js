@@ -9,17 +9,15 @@ import {
 // below code is example from reqres api
 export const loginAPI = (data) => (dispatch) => {
   dispatch({ type: LOGIN_LOADING });
-  console.log("clicked")
-  console.log(data,'here')
-  axios.post("http://localhost:8080/getemail", {
-      email: data
-     
+  console.log("clicked");
+  console.log(data, "here");
+  axios
+    .post("http://localhost:8080/getemail", {
+      email: data,
     })
     .then((r) => {
-      
       dispatch({ type: LOGIN_SUCCESS, payload: r.data });
-      console.log(r.data,"respose")
-    
+      console.log(r.data, "respose");
     })
     .catch(() => {
       dispatch({ type: LOGIN_ERROR });
