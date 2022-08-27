@@ -6,8 +6,6 @@ import Navbar from "./components/homepage/Navbar";
 
 import { ProductDetails } from "./components/productDetails/ProductDetails";
 
-
-
 import Address from "./components/PaymentPage/Address";
 
 import Payment from "./components/PaymentPage/Payment/Payment";
@@ -23,19 +21,17 @@ const App = () => {
   console.log(x);
   return (
     <div>
-
-     <Navbar/> 
-     <Routes>
-    <Route path="/" element={<HomePage/>} />
-    <Route path="/cart" element={<Cart/>} />
-    <Route path="/Product/*" element={<Product/>}/ >
-    <Route path="/payment" element={<Payment/>}/ >
-    <Route path="/productDetails/:id" element={<ProductDetails/>} />
-    <Route path="/address" element={<Address/>} />
-    <Route path="/payment" element={<Payment/>} />
-   </Routes>
-     <Footer />
-
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/Product/*" element={<Product />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/productDetails/:id" element={<ProductDetails />} />
+        <Route path="/address" element={<Address />} />
+        <Route path="/payment" element={<Payment />} />
+      </Routes>
+      <Footer />
     </div>
   );
 };

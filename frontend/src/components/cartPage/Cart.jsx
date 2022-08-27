@@ -19,7 +19,6 @@ import axios from "axios";
 // import { Navigate, useNavigate } from "react-router";
 // import { Decrement_Products_Qty, GetCartData, Increment_Products_Qty } from "../../redux/actions/action";
 export const Cart = () => {
-
   // const navigate = useNavigate();
   // const dispatch = useDispatch();
   // const cart = useSelector((state) => state.Products?.CartData[0]?.cartItems);
@@ -72,7 +71,6 @@ export const Cart = () => {
                   bg={"#555555"}
                   color={"white"}
                   justifyContent={"space-between"}
-
                 >
                   <Th color={"white"}>ITEM DESCRIPTION</Th>
                   <Th color={"white"}>UNIT PRICE</Th>

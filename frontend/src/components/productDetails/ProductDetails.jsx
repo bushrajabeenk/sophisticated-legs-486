@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   margin-top: 40px;
 `;
 export const ProductDetails = () => {
-
   const [data, setData] = React.useState([]);
 
   const path = useLocation().pathname.split("/")[2];
@@ -30,8 +29,8 @@ export const ProductDetails = () => {
   }, []);
   return (
     <Wrapper>
-      <Info data={data}/>
-      <Details data={data}/>
+      <Info data={data} />
+      <Details data={data} />
       <Review />
       <Similar />
     </Wrapper>

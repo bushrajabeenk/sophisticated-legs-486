@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -12,7 +9,6 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  
   ModalCloseButton,
   Button,
   useDisclosure,
@@ -23,16 +19,15 @@ import Rightbox from "../login/Rightbox";
 import Otp from "../login/Otp";
 import Signup from "../login/Signup";
 const Navbar = () => {
-
   const [show, setShow] = useState(true);
   const [show1, setShow1] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [text,settext]=useState('')
-  let data
-  useEffect(()=>{
-   data=JSON.parse(localStorage.getItem('data'))||null
-   console.log(data,'userefe')
-},[show,show1,onOpen,onClose,data])
+  const [text, settext] = useState("");
+  let data;
+  useEffect(() => {
+    data = JSON.parse(localStorage.getItem("data")) || null;
+    console.log(data, "userefe");
+  }, [show, show1, onOpen, onClose, data]);
   return (
     <div className={styles.page_layout}>
       <div className={`${styles.navbar} ${styles.topnav}`}>
@@ -53,8 +48,8 @@ const Navbar = () => {
               <i className="fa-solid fa-location-dot add"></i> Bengaluru
             </span>
             <span className={styles.login_main} onClick={onOpen}>
-              <i className="fa-regular fa-user"></i> 
-             {data? data.firstname:"Login/Signup"}
+              <i className="fa-regular fa-user"></i>
+              {data ? data.firstname : "Login/Signup"}
             </span>{" "}
             <span className={styles.login}></span>
             <div></div>
@@ -83,7 +78,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
 
       <div className={styles.div2}>
         <ul style={{ listStyleType: "none" }} className={styles.ulnav}>
@@ -161,8 +155,6 @@ const Navbar = () => {
                     <a href="">Vege</a>
                     <hr />
                     <a href="">Veg</a>
-
-      
                   </div>
                 </div>
               </div>
@@ -174,36 +166,44 @@ const Navbar = () => {
         </div> */}
       </div>
       <>
-
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent
-          style={{
-            maxWidth: "715px",
-            height: "510px",
-            backgroundColor: "transparent",
-            boxShadow: "none",
-          }}
-        >
-          <ModalCloseButton
-            marginTop="30px"
-            marginRight="50px"
-            borderRadius="50%"
-            backgroundColor="grey"
-          />
-          <div className={style.flexbox}>
-            <div className={style.leftbox}>
-              {show&&show1 ? <Email setShow={setShow} text={text} settext={settext}/> :null}
-              {!show&&show1?  <Otp setShow={setShow} text={text} isOpen={onClose} setShow1={setShow1}/>:null}
-      {!show&&!show1?<Signup  close={onClose}></Signup>:null}
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            style={{
+              maxWidth: "715px",
+              height: "510px",
+              backgroundColor: "transparent",
+              boxShadow: "none",
+            }}
+          >
+            <ModalCloseButton
+              marginTop="30px"
+              marginRight="50px"
+              borderRadius="50%"
+              backgroundColor="grey"
+            />
+            <div className={style.flexbox}>
+              <div className={style.leftbox}>
+                {show && show1 ? (
+                  <Email setShow={setShow} text={text} settext={settext} />
+                ) : null}
+                {!show && show1 ? (
+                  <Otp
+                    setShow={setShow}
+                    text={text}
+                    isOpen={onClose}
+                    setShow1={setShow1}
+                  />
+                ) : null}
+                {!show && !show1 ? <Signup close={onClose}></Signup> : null}
               </div>
-            <div className={style.rightbox}>
-             <Rightbox  ></Rightbox>
+              <div className={style.rightbox}>
+                <Rightbox></Rightbox>
+              </div>
             </div>
-          </div>
-        </ModalContent>
-      </Modal>
-    </>
+          </ModalContent>
+        </Modal>
+      </>
     </div>
   );
 };

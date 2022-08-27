@@ -1,11 +1,9 @@
-.mainContainer{
-    width:1080px;
-    margin: auto;
-    display: flex;
-    gap: 20px;
+.mainContainer {
+  width: 1080px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
 }
-
-
 
 .giftOrder {
   border: 1px solid grey;
@@ -17,7 +15,6 @@
 }
 
 .giftOrder > button {
-
   color: grey;
   align-items: center;
   background-color: white;
@@ -25,8 +22,6 @@
   padding-left: 10px;
   padding-right: 10px;
   font-size: 14px;
-
-
 }
 
 .deliveryOptions {
@@ -40,7 +35,6 @@
 }
 
 .deliveryOptions > button {
-
   color: grey;
   align-items: center;
   background-color: white;
@@ -59,13 +53,13 @@
   margin-top: 10px;
   color: grey;
 }
-.optionsAndCard{
-    display: flex;
-   background-color: #f6f6f6;
-   gap: 20px;
+.optionsAndCard {
+  display: flex;
+  background-color: #f6f6f6;
+  gap: 20px;
 }
 
-.cardDiv{
+.cardDiv {
   border: 1px solid rgb(189, 187, 187);
   width: 500px;
   margin-top: 20px;
@@ -73,55 +67,52 @@
   padding: 20px;
 }
 
-.leftSideDiv{
+.leftSideDiv {
   width: 700px;
 }
 
-.boldTexts{
+.boldTexts {
   font-weight: bold;
 }
 
-.cardNumber{
- outline: none;
-  border-bottom:gray solid 1px;
- 
+.cardNumber {
+  outline: none;
+  border-bottom: gray solid 1px;
 }
 
-
-.validCvv{
+.validCvv {
   display: flex;
-  gap:20px;
+  gap: 20px;
   margin-top: 10px;
 }
 
-.smallText{
+.smallText {
   font-size: 10px;
   font-weight: 500;
   margin-top: 20px;
 }
 
-
-.placeOrderButton{
+.placeOrderButton {
   border: 1px solid grey;
-padding-left: 10px;
-padding-right: 10px;
- font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
   margin-top: 10px;
   color: grey;
 }
 
-.options{
+.options {
   border: 1px solid grey;
-padding: 10px;
-border-bottom: 10px;
+  padding: 10px;
+  border-bottom: 10px;
   text-align: center;
   align-items: center;
 }
 
-.Lastoptions{
+.Lastoptions {
   border: 1px solid grey;
   padding: 10px;
- 
-    text-align: center;
-    align-items: center;
+
+  text-align: center;
+  align-items: center;
 }
