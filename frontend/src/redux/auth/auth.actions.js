@@ -12,7 +12,7 @@ export const loginAPI = (data) => (dispatch) => {
   console.log("clicked");
   console.log(data, "here");
   axios
-    .post("http://localhost:8080/getemail", {
+    .post("http://infinite-thicket-15273.herokuapp.com/getemail", {
       email: data,
     })
     .then((r) => {

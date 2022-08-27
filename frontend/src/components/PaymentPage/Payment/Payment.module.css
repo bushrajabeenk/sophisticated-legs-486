@@ -67,10 +67,11 @@
 
 .cardDiv{
   border: 1px solid rgb(189, 187, 187);
-  width: 500px;
+  width: 450px;
   margin-top: 20px;
   height: 250px;
   padding: 20px;
+  background-color:white;
 }
 
 .leftSideDiv{
@@ -116,11 +117,13 @@ padding: 10px;
 border-bottom: 10px;
   text-align: center;
   align-items: center;
+  background-color: white;
 }
 
 .Lastoptions{
   border: 1px solid grey;
   padding: 10px;
+  background-color: white;
  
     text-align: center;
     align-items: center;
