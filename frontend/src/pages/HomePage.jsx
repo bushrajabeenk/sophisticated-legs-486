@@ -1,6 +1,4 @@
 
-import Footer from ".././components/homepage/Footer";
-import Navbar from "../components/homepage/Navbar";
 import BankOffers from "../components/homepage/BankOffers";
 import Beverages from "../components/homepage/Beverages";
 import BottomCarousel from "../components/homepage/BottomCarousel";
@@ -15,10 +13,10 @@ import Makeup from "../components/homepage/Makeup";
 import Snak from "../components/homepage/Snak";
 import { Box } from "@chakra-ui/react";
 import CaptionCarousel from '../components/homepage/TopCarasoule'
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <Box>
-      <Navbar />
+  
       <CaptionCarousel />
       <ButtonsLink />
       <Cards />
@@ -33,7 +31,8 @@ export const HomePage = () => {
       <HomeKitchen />
       <BottomCarousel />
       <BrandStore />
-      <Footer />
+      
     </Box>
   );
 };
+export default HomePage;
