@@ -6,7 +6,7 @@ import Navbar from "./components/homepage/Navbar";
 
 import { ProductDetails } from "./components/productDetails/ProductDetails";
 
-import Login from "./pages/Login";
+
 
 import Address from "./components/PaymentPage/Address";
 

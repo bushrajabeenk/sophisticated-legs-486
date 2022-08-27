@@ -11,7 +11,7 @@ export const loginAPI = (data) => (dispatch) => {
   dispatch({ type: LOGIN_LOADING });
   console.log(data, "here");
   axios
-    .post("https://infinite-thicket-15273.herokuapp.com/getemail", {
+    .post("http://infinite-thicket-15273.herokuapp.com/getemail", {
       email: data,
     })
     .then((r) => {

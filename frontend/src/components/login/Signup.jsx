@@ -15,10 +15,10 @@ const Signup = ({close}) => {
     })
   }
   function submitHandler(){
-    console.log(data)
+    
     axios.post('http://localhost:8080/login',{firstname:data.firstname,lastname:data.lastname,email:data.email}).then(r=>{
       
-    localStorage.setItem("id",JSON.stringify(r._id))})
+    localStorage.setItem("data",JSON.stringify(r.data))})
     close()
   }
   return (

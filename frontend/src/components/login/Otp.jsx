@@ -19,7 +19,7 @@ setShow1(false)
 setShow(false)
     }
     else if(data.email){
-      localStorage.setItem("id",data.id)
+      localStorage.setItem("data",JSON.stringify(data))
 // close the box
 isOpen()
     }
