@@ -38,7 +38,7 @@ export const Cart = () => {
 let id=localStorage.getItem('id')
 console.log(id)
 useEffect(() => {
-    axios.get(`http://localhost:8080/cart/${id}`).then(r=>setcart(r.data.cart))
+    axios.get(`https://infinite-thicket-15273.herokuapp.com/cart/${id}`).then(r=>setcart(r.data.cart))
 },[]
     )
   

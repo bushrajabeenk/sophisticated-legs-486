@@ -10,7 +10,7 @@ import {
 export const loginAPI = (data) => (dispatch) => {
   dispatch({ type: LOGIN_LOADING });
   console.log(data,'here')
-  axios.post("http://localhost:8080/getemail", {
+  axios.post("https://infinite-thicket-15273.herokuapp.com/getemail", {
       email: data
      
     })
