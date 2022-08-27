@@ -177,10 +177,10 @@ const SubImgDiv = styled.div`
 
 export const Info = ({ data }) => {
   async function addtocart() {
-    let id = localStorage.getItem("id");
+    let id = localStorage.getItem("data").id;
     axios
-      .post(`https://infinite-thicket-15273.herokuapp.com/${id}`, { data })
-      .then((r) => {});
+      .post(`https://infinite-thicket-15273.herokuapp.com/${id}`, { ...data,quantity:1 })
+      .then((r) => console.log(r));
   }
 
   return (
@@ -248,11 +248,11 @@ export const Info = ({ data }) => {
           <p style={{ padding: 0, margin: 0 }}>
             <Span>MRP: </Span>
             <s>
-              <Span>Rs 73.18</Span>
+              <Span>Rs {data.Price+20}.00</Span>
             </s>
           </p>
           <Standard>
-            Price: Rs {data.Price} <Span>(Rs.26.75/kg)</Span>
+            Price: Rs {data.Price}.00 <Span>(Rs.26.75/kg)</Span>
           </Standard>
           <Red>You Save: 27%</Red>
           <p style={{ padding: 0, margin: 0 }}>
@@ -280,7 +280,7 @@ export const Info = ({ data }) => {
               <p>2 Kg</p>
             </div>
             <InFlex>
-              <p>Rs 55.50</p>
+              <p>Rs {data.Price}</p>
               <p style={{ color: "#979797" }}>
                 <s>MRP: Rs 73.14</s>
               </p>
@@ -299,7 +299,7 @@ export const Info = ({ data }) => {
               <p>2 Kg</p>
             </div>
             <InFlex>
-              <p>Rs 55.00</p>
+              <p>Rs {data.Price}</p>
               <p style={{ color: "#979797" }}>
                 <s>MRP: Rs 73.14</s>
               </p>
