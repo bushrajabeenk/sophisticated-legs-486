@@ -10,7 +10,15 @@ import {
   chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaInstagram,
+  FaAmazonPay,
+  FaGooglePay,
+  FaPaypal,
+  FaFacebookF,
+  FaPinterest,
+} from "react-icons/fa";
 import AppStoreBadge from "../assets/AppStoreBadge";
 import PlayStoreBadge from "../assets/PlayStoreBadge";
 
@@ -49,8 +57,12 @@ const SocialButton = ({ children, label, href }) => {
 export default function Footer() {
   return (
     <Box
+      style={{
+        color: "gray",
+        fontFamily: "sans-serif",
+      }}
       bg={useColorModeValue("white", "white")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      // color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
@@ -95,11 +107,14 @@ export default function Footer() {
               <Text style={{ color: "#6CD138" }}>Get Social With Us</Text>
             </ListHeader>
             <Stack direction={"row"} spacing={4}>
+              <SocialButton label={"Facebook"} href={"#"}>
+                <FaFacebookF />
+              </SocialButton>
+              <SocialButton label={"Pinterest"} href={"#"}>
+                <FaPinterest />
+              </SocialButton>
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />
-              </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
               </SocialButton>
               <SocialButton label={"Instagram"} href={"#"}>
                 <FaInstagram />
@@ -209,14 +224,14 @@ export default function Footer() {
               PAYMENT OPTIONS:
             </Text>
             <Stack direction={"row"} spacing={4}>
-              <SocialButton label={"Twitter"} href={"#"}>
-                <FaTwitter />
+              <SocialButton label={"AmazonPay"} href={"#"}>
+                <FaAmazonPay style={{ height: "200px" }} />
               </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
+              <SocialButton label={"GooglePay"} href={"#"}>
+                <FaGooglePay />
               </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
+              <SocialButton label={"FaPayPal"} href={"#"}>
+                <FaPaypal />
               </SocialButton>
             </Stack>
           </Stack>
@@ -224,8 +239,8 @@ export default function Footer() {
       </Box>
 
       <Box
-        bg={useColorModeValue("beige.700", "beige.200")}
-        color={useColorModeValue("gray.700", "gray.200")}
+        style={{ backgroundColor: "#f2f2f2", color: "gray" }}
+        // color={useColorModeValue("gray.700", "gray.200")}
       >
         <Container
           as={Stack}

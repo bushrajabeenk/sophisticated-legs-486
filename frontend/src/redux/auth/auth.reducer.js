@@ -5,12 +5,11 @@ import {
   LOGOUT,
 } from "./auth.types";
 
-
 const initState = {
   loading: false,
   error: false,
- email:'',
-token:""
+  email: "",
+  token: "",
 };
 
 export const authReducer = (state = initState, { type, payload }) => {
@@ -23,12 +22,12 @@ export const authReducer = (state = initState, { type, payload }) => {
       };
     }
     case LOGIN_SUCCESS: {
-    // console.log('herestate',payload)
+      // console.log('herestate',payload)
       return {
         ...state,
         loading: false,
         error: false,
-        token:payload
+        token: payload,
       };
     }
     case LOGIN_ERROR: {
