@@ -4,7 +4,9 @@ import React from "react";
 
 const Address = () => {
   return (
+    <>
     <div className={styles.mainDiv}>
+      <div>
       <div className={styles.addressDiv}>
         <h3>Delivery Address</h3>
         <div className={styles.detailsDiv}>
@@ -71,19 +73,31 @@ const Address = () => {
        
         <div>
           <p className={styles.smallText}>Choose nick name for this address</p>
-          <button>HOME</button>
-          <button>OFFICE</button>
-          <button>OTHER</button>
-          <div>
+          <button className={styles.homeOfficeOther}>HOME</button>
+          <button  className={styles.homeOfficeOther}>OFFICE</button>
+          <button  className={styles.homeOfficeOther}>OTHER</button>
+          <div className={styles.smallText}>
             <input type="checkbox" />
             Set this as my default delivery address
           </div>
         </div>
-        <div className={styles.buttons}>
-          <button>ADD ADDRESS</button>
-          <button>CANCEL</button>
+        <div className={styles.addAddressButtons}>
+          <button className={styles.addButton}>ADD ADDRESS</button>
+          <button className={styles.cancel}>CANCEL</button>
         </div>
       </div>
+      </div>
+      <div className={styles.giftOrder}>
+      <h4>Is this a gift Order?</h4>
+      <button>ADD MESSAGE</button>
+    </div>
+    <div className={styles.deliveryOptions}>
+      <h4>Delivery Options</h4>
+      <button>Change</button>
+    </div>
+    <div className={styles.paymentOptions}>
+      <h4>Payment Options</h4>
+    </div>
       </div>
       <div className={styles.voucherPriceDiv}>
         <h3>Apply Voucher</h3>
@@ -115,6 +129,8 @@ const Address = () => {
         </div>
       </div>
     </div>
+  
+    </>
   );
 };
 

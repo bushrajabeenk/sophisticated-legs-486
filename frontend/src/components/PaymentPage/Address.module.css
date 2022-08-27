@@ -26,17 +26,21 @@
 
 .firstName {
   width: 150px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
+;
 }
 
 .lastName {
   width: 150px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .number {
   width: 260px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .addressContainer {
@@ -46,12 +50,14 @@
 
 .houseNumber {
   width: 150px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .appName {
   width: 440px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .streetDiv {
@@ -66,27 +72,32 @@
 
 .streetName {
   width: 300px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .landmark {
   width: 290px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .cityName {
   width: 150px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .areaName {
   width: 260px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .pinCode {
   width: 150px;
-  height: 20px;
+  height: 25px;
+  border: 0.5px solid grey;
 }
 
 .voucher {
@@ -197,4 +208,87 @@
     color: grey;
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+.homeOfficeOther{
+  background-color: white;
+  border: 1px solid grey;
+  height:25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.homeOfficeOther:active{
+  color: #84c23d;
+  border: #84c23d 1px solid;
+}
+
+
+.addAddressButtons{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.addButton{
+ color: white;
+ font-weight: 600;
+ /* height: 30px; */
+ border: none;
+ background-color: grey;
+ border-radius: 5px; 
+ padding: 10px 20px;
+
+}
+
+.giftOrder{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+color: grey;
+
+}
+
+.giftOrder>button{
+  height: 20px;
+  margin-top: 20px;
+  color: grey;
+  align-items: center;
+  background-color: white;
+  border: 1px solid  black;
+}
+
+.deliveryOptions{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  
+color: grey;
+}
+
+.deliveryOptions>button{
+  height: 20px;
+  margin-top: 20px;
+ color: grey;
+  align-items: center;
+  background-color: white;
+  border: 1px solid  black;
+  text-align: center;
+}
+
+
+.paymentOptions{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+color: grey;
+  
+
 }
