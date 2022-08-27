@@ -46,17 +46,17 @@ const Payment = () => {
               <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
               <div>
                 <p className={styles.smallText}>Card Number</p>
-                <input type="text"  className={styles.cardNumber}/>
+                <input type="text"  className={styles.cardNumber} maxlength = "11"/>
               </div>
               <div className={styles.validCvv}>
                 <div >
                   <p className={styles.smallText}>Valid Thru</p>
-                  <input type="text" className={styles.cardNumber} />
+                  <input type="text" className={styles.cardNumber}  maxlength = "4"/>
                 </div>
 
                 <div>
                   <p className={styles.smallText}>CVV</p>
-                  <input type="text" className={styles.cardNumber}/>
+                  <input type="text" className={styles.cardNumber} maxlength = "3"/>
                 </div>
               </div>
               <button className={styles.placeOrderButton}>Place Order & Pay</button>

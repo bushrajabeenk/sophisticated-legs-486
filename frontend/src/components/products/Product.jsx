@@ -9,10 +9,8 @@ const Product = () => {
   const [data, setData] = React.useState([]);
   const [checked, setChecked] = React.useState("");
 
-// const url =useParams()
-// console.log(url)
-
-
+  // const url =useParams()
+  // console.log(url)
 
   function SortD(val) {
     console.log(val);
@@ -29,65 +27,51 @@ const Product = () => {
     setData([...data]);
   }
 
-
-
   const handleCheck = (e) => {
     let num = e.target.value;
 
     let filterData = data.filter((data) => {
-      if(num<=20){
-      return data.offer < Number(num);
-      }else if(num>20 && num<=50){
+      if (num <= 20) {
+        return data.offer < Number(num);
+      } else if (num > 20 && num <= 50) {
         return data.mrp[1] > 20 && data.mrp[1] < Number(num);
-      }else if(num>50 && num<=100){
+      } else if (num > 50 && num <= 100) {
         return data.mrp[1] > 50 && data.mrp[1] < Number(num);
-      }else if(num>100 && num<=200){
+      } else if (num > 100 && num <= 200) {
         return data.mrp[1] > 100 && data.mrp[1] < Number(num);
-      }else if(num>200 && num<=500){      
+      } else if (num > 200 && num <= 500) {
         return data.mrp[1] > 200 && data.mrp[1] < Number(num);
-      }else if(num>500 && num<=1000){
+      } else if (num > 500 && num <= 1000) {
         return data.mrp[1] > 500 && data.mrp[1] < Number(num);
-      }
-      else if(num=="10%"){
+      } else if (num == "10%") {
         return data.offer <= 10;
-      }
-      else if(num=="15%"){
+      } else if (num == "15%") {
         return data.offer > 10 && data.offer <= 15;
-      }
-      else if(num=="25%"){
+      } else if (num == "25%") {
         return data.offer > 15 && data.offer <= 25;
-      }
-      else if(num=="30%"){
-        return data.offer > 25 ;
+      } else if (num == "30%") {
+        return data.offer > 25;
       }
     });
 
     setData([...filterData]);
   };
 
-
-
-  useEffect(()=>{
-
-    
-  axios.get("https://infinite-thicket-15273.herokuapp.com/products").then(res => {
-    let data=res.data
-    setData(data);
-  })
-
-
-
-
-  },[])
-
-  
+  useEffect(() => {
+    axios
+      .get("https://infinite-thicket-15273.herokuapp.com/products")
+      .then((res) => {
+        let data = res.data;
+        setData(data);
+      });
+  }, []);
 
   return (
     <>
       <div className={styles.mainContainer}>
         <div className={styles.filterDiv}>
           <div>
-            <p >Category</p>
+            <p>Category</p>
             <div className={styles.line}></div>
             <div>
               <p className={styles.checkboxText}>Fruits & Vegetables</p>
@@ -268,7 +252,7 @@ const Product = () => {
           <div className={styles.mappingDiv}>
             {data.map((e, index) => {
               return (
-                <div  key={index}>
+                <div key={index}>
                   <ProductCard data={e} />
                 </div>
               );

@@ -1,8 +1,16 @@
 import styles from "./Address.module.css";
 
 import React from "react";
+import { useNavigate } from 'react-router';
 
 const Address = () => {
+
+const navigate=useNavigate()
+const handlePayment = (e) => {
+  e.preventDefault();
+  navigate("/payment")
+}
+
   return (
     <>
     <div className={styles.mainDiv}>
@@ -82,7 +90,7 @@ const Address = () => {
           </div>
         </div>
         <div className={styles.addAddressButtons}>
-          <button className={styles.addButton}>ADD ADDRESS</button>
+          <button className={styles.addButton} onClick={handlePayment}>ADD ADDRESS</button>
           <button className={styles.cancel}>CANCEL</button>
         </div>
       </div>

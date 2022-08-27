@@ -61,14 +61,15 @@
 }
 .optionsAndCard{
     display: flex;
-   
+   background-color: #f6f6f6;
    gap: 20px;
 }
 
 .cardDiv{
-  border: 1px solid grey;
+  border: 1px solid rgb(189, 187, 187);
   width: 500px;
-  /* margin: auto; */
+  margin-top: 20px;
+  height: 250px;
   padding: 20px;
 }
 
