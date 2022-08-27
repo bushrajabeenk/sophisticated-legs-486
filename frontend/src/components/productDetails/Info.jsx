@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import axios from "axios"
 const Wrapper = styled.div`
   box-sizing: border-box;
   display: flex;
@@ -176,7 +176,12 @@ const SubImgDiv = styled.div`
 `;
 
 export const Info = ({data}) => {
- 
+ async function addtocart(){
+  let id =localStorage.getItem('id');
+  axios.post(`https://infinite-thicket-15273.herokuapp.com/${id}`,{data}).then((r)=>{
+    
+  })
+ }
 
   return (
     <Wrapper>
@@ -272,7 +277,7 @@ export const Info = ({data}) => {
 
         <BtnDiv>
           <WhiteBtn>1</WhiteBtn>
-          <GreenBtn>ADD TO BASKET</GreenBtn>
+          <GreenBtn onClick={addtocart}>ADD TO BASKET</GreenBtn>
           <WhiteBtn>SAVE</WhiteBtn>
         </BtnDiv>
 
