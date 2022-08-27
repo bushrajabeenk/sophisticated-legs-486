@@ -18,13 +18,19 @@ let PORT = 8080;
 // ----------------------------------------user--Schemas--------------------------------------
 
 const UserSchema = new Schema({
-  first_name: String,
-  last_name: String,
+  firstname: String,
+  lastname: String,
   mobile: String,
   cart: [
     {
       productId: Schema.Types.ObjectId,
       quantity: Number,
+      Title: String,
+      Brand: String,
+      Discription: String,
+      Price: Number,
+      Image_url: String,
+      Category: String,
     },
   ],
   email: String,
@@ -676,7 +682,7 @@ app.post("/getemail", async (req, res) => {
 
   if (user) {
     // const token = jwt.sign({ email: user.email, otp: otp }, "secret");
-    res.send({email: user.email, otp: otp});
+    res.send({email: user.email, otp: otp,id:user._id});
   } else {
     // const token = jwt.sign({ otp }, "secret");
     res.send({otp});
@@ -684,21 +690,28 @@ app.post("/getemail", async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
+  console.log(req.body)
   const user = await new User(req.body);
   user.save();
 
-  let token = jwt.sign({ email: user.email }, "secret");
-  res.send(token);
+  res.send(user);
+  // let token = jwt.sign({ email: user.email }, "secret");
 });
 
 // ----------------------------------cart--------------------------
-app.post("/cart", async (req, res) => {
-  let { id } = req.body;
+app.get("/cart/:id", async (req, res) => {
+  let id=req.params.id;
 
   const cart = await User.findOne({ _id: id });
 
-  res.send(cart.cart);
+res.send(cart)
 });
+app.post("/cart/:id", async (req, res) => {
+  let id=req.params.id;
+  const user = await User.findOne({ _id: id });
+  user.cart.push(req.body)
+  user.save()
+})
 // make the put and update routes for cart-------------------
 app.post('/cart/updateone',async(req,res)=>{
     const {id,productid} = req.body
@@ -713,6 +726,18 @@ app.post('/cart/updateone',async(req,res)=>{
     res.send("done")
     })
 
+app.post('/cart/updatemin',async(req,res)=>{
+    const {id,productid} = req.body
+    let cart = await User.findOne({ _id: id });
+  
+    for(let i=0;i<cart.cart.length;i++){
+        if(cart.cart[i]. productId==productid){
+            cart.cart[i].quantity=cart.cart[i].quantity-1
+    }
+}
+    await User.findOneAndUpdate({ _id: id },cart);
+    res.send("done")
+    })
 // -------------------------------connection --------------------
 
 app.listen(PORT, async () => {

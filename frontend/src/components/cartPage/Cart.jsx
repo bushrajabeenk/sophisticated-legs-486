@@ -15,6 +15,7 @@ import {
     Text,
     Heading,
 } from "@chakra-ui/react";
+import axios from "axios";
 // import { Navigate, useNavigate } from "react-router";
 // import { Decrement_Products_Qty, GetCartData, Increment_Products_Qty } from "../../redux/actions/action";
 export const Cart = () => {
@@ -33,25 +34,14 @@ export const Cart = () => {
     //     dispatch(GetCartData());
 
     // }, [dispatch]);
-
-    let cart = [
-        {
-            Brand: 'BB Royal',
-            Title: 'Organic - Toor Dal/Togari Bele',
-            Description: 'Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.',
-            Image_url: 'https://www.bigbasket.com/media/uploads/p/l/40135858_8-bb-royal-organic-turtoor-dal.jpg',
-            Price: 649,
-            Category: 'Foodgrains_oil_masala'
-          },
-          {
-            Title: 'Milky Mist Farm Fresh Curd/Dahi - Premium, No Preservatives',
-            Brand: 'Milky Mist',
-            Description: 'Milky Mist Curd Farm Fresh is a rich supply of calcium and proteins. Prepared from better quality pasteurised toned milk to provide you with the right width and texture. The live and active bacterial culture included in Milky Mist Curd helps digestion and lets you live a strong active life.',
-            Image_url: 'https://www.bigbasket.com/media/uploads/p/l/40003162_4-milky-mist-curd-farm-fresh.jpg',
-            Price: 43,
-            Category: 'Bakery_cakes_dairy'
-          }
-    ]
+    let [cart,setcart]=useState([])
+let id=localStorage.getItem('id')
+console.log(id)
+useEffect(() => {
+    axios.get(`http://localhost:8080/cart/${id}`).then(r=>setcart(r.data.cart))
+},[]
+    )
+  
 
     let saved = 0;
     return (

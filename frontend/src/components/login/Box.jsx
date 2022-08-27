@@ -43,7 +43,7 @@ const Box = () => {
             <div className={style.leftbox}>
               {show&&show1 ? <Email setShow={setShow} text={text} settext={settext}/> :null}
               {!show&&show1?  <Otp setShow={setShow} text={text} isOpen={onClose} setShow1={setShow1}/>:null}
-      {!show&&!show1?<Signup ></Signup>:null}
+      {!show&&!show1?<Signup  close={onClose}></Signup>:null}
               </div>
             <div className={style.rightbox}>
              <Rightbox  ></Rightbox>
