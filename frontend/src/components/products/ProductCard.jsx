@@ -11,19 +11,20 @@ const ProductCard = ({ data }) => {
   const navigate=useNavigate()
   const dispatch =useDispatch()
 
-function clickHandler(){
-  dispatch(getdata(data))
-  navigate("/productDetails")
+function clickHandler(e){
+  // dispatch(getdata(data))
+  
+  navigate(`/productDetails/${e._id}`)
 }
 
   return (
-    <div className={styles.productMainDiv} onClick={clickHandler}>
-      <div className={styles.productSubDiv}>
+    <div className={styles.productMainDiv} >
+      <div className={styles.productSubDiv} onClick={()=>clickHandler(data)}>
         <div className={styles.productDiscount}><p>Get 15
           {/* changehere */}
           % off</p><img src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png" width="0px" height="0px" alt="" /> </div>
-        <div className={styles.productImage}>
-          <img src={data.Image_url} width="100%" alt="image" />
+        <div className={styles.productImage} >
+          <img src={data.Image_url} width="100%" alt="image"  />
         </div>
         <img
           src="	"

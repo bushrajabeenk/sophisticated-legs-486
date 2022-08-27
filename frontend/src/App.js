@@ -31,7 +31,7 @@ console.log(x)
     <Route path="/cart" element={<Cart/>} />
     <Route path="/Product/*" element={<Product/>}/ >
     <Route path="/payment" element={<Payment/>}/ >
-    <Route path="/productDetails" element={<ProductDetails/>} />
+    <Route path="/productDetails/:id" element={<ProductDetails/>} />
    </Routes>
      <Footer />
     </div>

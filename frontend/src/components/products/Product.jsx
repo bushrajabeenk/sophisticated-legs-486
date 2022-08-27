@@ -9,8 +9,8 @@ const Product = () => {
   const [data, setData] = React.useState([]);
   const [checked, setChecked] = React.useState("");
 
-const url =useParams()
-console.log(url)
+// const url =useParams()
+// console.log(url)
 
 
 
@@ -66,12 +66,13 @@ console.log(url)
   };
 
 
+
   useEffect(()=>{
 
     
   axios.get("https://infinite-thicket-15273.herokuapp.com/products").then(res => {
-    setData(res.data);
-    console.log(res.data);
+    let data=res.data
+    setData(data);
   })
 
 

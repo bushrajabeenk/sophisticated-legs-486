@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
+import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -177,8 +180,25 @@ const SubImgDiv = styled.div`
 `;
 
 export const Info = () => {
-  const state=useSelector(state=>state)
-  console.log(state.auth,"here")
+  const [data, setData] = React.useState([]);
+
+  const path = useLocation().pathname.split("/")[2];
+
+  const state = useSelector((state) => state);
+  // console.log(state.auth,"here")
+  // console.log(path)
+
+  console.log(data);
+
+  useEffect(() => {
+    axios
+      .get(`https://infinite-thicket-15273.herokuapp.com/products/${path}`)
+      .then((res) => {
+        let data = res.data;
+        setData(data);
+      });
+  }, []);
+
   return (
     <Wrapper>
       {/* Left div */}
