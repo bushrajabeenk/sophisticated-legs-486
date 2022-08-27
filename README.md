@@ -16,16 +16,16 @@
 
 # Tech Stack Used
 
-HTML
-CSS
-JavaScript (ES6)
-Styled-components
-React.js
-Redux
-Chakra-UI
-Node.js
-Express.js
-MongoDB
+- HTML
+- CSS
+- JavaScript (ES6) 
+- Styled-components
+- React.js
+- Redux
+- Chakra-UI
+- Node.js
+- Express.js
+- MongoDB
 
 # Team
 
