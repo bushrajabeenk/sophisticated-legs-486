@@ -1,4 +1,10 @@
-import React from "react";
+
+
+
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+
 import { Box, Image } from "@chakra-ui/react";
 import styles from "./Navbar.module.css";
 
@@ -52,6 +58,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
 
       <div className={styles.div2}>
         <ul style={{ listStyleType: "none" }} className={styles.ulnav}>
@@ -129,6 +136,8 @@ const Navbar = () => {
                     <a href="">Vege</a>
                     <hr />
                     <a href="">Veg</a>
+
+      
                   </div>
                 </div>
               </div>

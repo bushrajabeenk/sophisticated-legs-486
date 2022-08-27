@@ -5,7 +5,8 @@ export const HeadLine = styled.p`
   font-size: 24px;
   color: #222222;
   margin-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #eee;
 `;
 
@@ -14,6 +15,8 @@ const Container = styled.div`
   padding: 0 15px;
   padding-bottom: 20px;
   box-sizing: border-box;
+  margin-bottom: 10px;
+
 `;
 const Flex = styled.div`
   display: flex;
@@ -36,10 +39,10 @@ const Ul = styled.ul`
   color: #666;
   font-size: 13px;
 `;
-export const Details = () => {
+export const Details = ({data}) => {
   return (
     <div>
-      <HeadLine>Fresho Onion (Loose)</HeadLine>
+      <HeadLine>{data.Title}</HeadLine>
       <div>
         <Container>
           <Flex>
@@ -49,16 +52,13 @@ export const Details = () => {
           <div>
             <Ul>
               <li>
-                Onions are known to be rich in biotin. Most of the flavonoids
-                which are known as anti-oxidants are concentrated more in the
-                outer layers, so when you peel off the layers, you should remove
-                as little as possible.
+                {data.Description}
               </li>
             </Ul>
           </div>
         </Container>
 
-        <Container>
+        {/* <Container>
           <Flex>
             <p>Benefits</p>
             <i class="fa-solid fa-plus"></i>
@@ -78,7 +78,7 @@ export const Details = () => {
               </li>
             </Ul>
           </div>
-        </Container>
+        </Container> */}
 
         <Container>
           <Flex>

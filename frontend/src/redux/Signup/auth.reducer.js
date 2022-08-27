@@ -9,7 +9,10 @@ const initState = {
   loading: false,
   error: false,
   // to convert string to boolean value
-  token: "",
+
+token:"",
+data
+
 };
 
 export const authReducer = (state = initState, { type, payload }) => {
@@ -41,6 +44,13 @@ export const authReducer = (state = initState, { type, payload }) => {
       return {
         ...state,
       };
+    }
+    case "setdata":{
+      return {
+        ...state,
+        data: payload
+
+      }
     }
     default: {
       return state;

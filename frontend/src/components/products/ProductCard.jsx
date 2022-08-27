@@ -1,24 +1,37 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { getdata } from "../../redux/Signup/auth.actions";
 
 import styles from "../products/Product.module.css";
 
 
 const ProductCard = ({ data }) => {
   // console.log(data);
+  const navigate=useNavigate()
+  const dispatch =useDispatch()
+
+function clickHandler(e){
+  // dispatch(getdata(data))
+  
+  navigate(`/productDetails/${e._id}`)
+}
 
   return (
-    <div className={styles.productMainDiv}>
-      <div className={styles.productSubDiv}>
-        <div className={styles.productDiscount}><p>Get {data.offer}% off</p><img src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png" width="0px" height="0px" alt="" /> </div>
-        <div className={styles.productImage}>
-          <img src={data.imageUrl} width="100%" alt="image" />
+    <div className={styles.productMainDiv} >
+      <div className={styles.productSubDiv} onClick={()=>clickHandler(data)}>
+        <div className={styles.productDiscount}><p>Get 15
+          {/* changehere */}
+          % off</p><img src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png" width="0px" height="0px" alt="" /> </div>
+        <div className={styles.productImage} >
+          <img src={data.Image_url} width="100%" alt="image"  />
         </div>
         <img
           src="	"
           alt=""
         />
         <p className={styles.fresho}>Fresho</p>{" "}
-        <p className={styles.productName}>{data.productName}</p>
+        <p className={styles.productName}>{data.Title}</p>
         {/* <select name="" id="" className={styles.kgPrice}>
           <option value="">Random Data</option>{" "}
         </select>{" "} */}
@@ -28,10 +41,10 @@ const ProductCard = ({ data }) => {
             <span className={styles.mrpDiv}>
               MRP:{" "}
               <span style={{ textDecoration: "line-through" }}>
-                Rs. {data.mrp[0]}{" "}
+                {/* Rs. {data.mrp[0]}{" "} */}
               </span>
             </span>
-            <span className={styles.price}> Rs {data.mrp[1]}</span>
+            <span className={styles.price}> Rs {data.Price}</span>
           </p>
           <div className={styles.stdDiv}>
             <img
