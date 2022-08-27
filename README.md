@@ -8,6 +8,10 @@
 
 # Signup Page
 
+# Products Page
+
+# Product Details Page
+
 # Cart Page
 
 # Checkout Page
