@@ -19,9 +19,9 @@ const ProductCard = ({ data }) => {
         />
         <p className={styles.fresho}>Fresho</p>{" "}
         <p className={styles.productName}>{data.productName}</p>
-        <select name="" id="" className={styles.kgPrice}>
+        {/* <select name="" id="" className={styles.kgPrice}>
           <option value="">Random Data</option>{" "}
-        </select>{" "}
+        </select>{" "} */}
         <div className={styles.prctymbtn}>
           <p className={styles.priceSection}>
             {" "}
@@ -49,7 +49,7 @@ const ProductCard = ({ data }) => {
               <div className={styles.qty}>
                 <p>Qty</p>
               </div>
-              <input type="text" className={styles.Inputnumber} />
+              <input type="text" className={styles.Inputnumber} defaultValue="1" />
             </div>
             <div className={styles.addButtonDiv}>
               <p>ADD</p>

@@ -1,120 +1,294 @@
-.mainDiv{
-    width:1080px;
-    margin: auto;
-    display: flex;
-    gap: 20px;
+.mainDiv {
+  width: 1080px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
 }
 
-.detailsDiv{
-    background-color: antiquewhite;
+.detailsDiv {
+  width: 620px;
+  margin: auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+ 
+  margin-bottom: 20px;
 }
 
-.addressDiv{
-    border: 1px solid grey;
-    width: 700px;
+.addressDiv {
+  border: 1px solid grey;
+  width: 700px;
 }
 
-.personalContainer{
-    display: flex;
-    gap: 20px;
+.personalContainer {
+  display: flex;
+  gap: 20px;
 }
 
-.firstName{
-    width: 150px;
-    height: 20px;
+.firstName {
+  width: 150px;
+  height: 25px;
+  border: 0.5px solid grey;
+;
+}
+
+.lastName {
+  width: 150px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.number {
+  width: 260px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.addressContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.houseNumber {
+  width: 150px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.appName {
+  width: 440px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.streetDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.cityDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.streetName {
+  width: 300px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.landmark {
+  width: 290px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.cityName {
+  width: 150px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.areaName {
+  width: 260px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.pinCode {
+  width: 150px;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+.voucher {
+  background-color: #f7f7f7;
+
+  padding: 10px;
+}
+
+.vouchersAvailable {
+  background-color: #e8f1fc;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.order {
+  background-color: #f7f7f7;
+
+  padding: 10px;
+}
+
+.valueCharge {
+  background-color: white;
+  border: 1px solid grey;
+  font-size: 14px;
+  padding-left: 10px;
+  height: 70px;
+  align-items: center;
+}
+
+.amountPayable {
+  border: 1px solid grey;
+  height: 85px;
+  padding-left: 10px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.circle1 {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #f7f7f7;
+  position: absolute;
+
+  box-shadow: 1px 0 1px rgb(25 115 231 / 50%);
+}
+
+.circle2 {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #f7f7f7;
+  position: absolute;
+  margin-left: 218px;
+  box-shadow: -1px 0 1px rgb(25 115 231 / 50%);
+}
+
+.inputButton {
+  background-color: #f7f7f7;
+  border: 1px solid grey;
+  /* padding: 10px; */
+  height: 30px;
+}
+
+.voucherInput {
+  height: 90%;
+  border: none;
+}
+
+.button {
+  height: 100%;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: grey 1px solid;
+  cursor: pointer;
+}
+
+
+.totlaSaving{
+    color: #84c23d;
+    background-color: #edf6df;
+    width: 98%;
+    margin-top: -10px;
+    height: 30px;
     
+  
+
+   
 }
 
-.lastName{
-    width: 150px;
-    height: 20px;
+.saving{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.smallText{
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-.number{
-    width: 320px;
-    height: 20px;
+.homeOfficeOther{
+  background-color: white;
+  border: 1px solid grey;
+  height:25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
-.addressContainer{
-    display: flex;
-    gap: 20px;
-}
-
-.houseNumber{
-    width: 150px;
-    height: 20px;
-}
-
-.appName{
-    width: 500px;
-    height: 20px;
-}
-
-.streetDiv{
-    display: flex;
-    gap: 20px;
-}
-
-.cityDiv{
-    display: flex;
-    gap: 20px;
-}
-
-.streetName{
-    width: 325px;
-    height: 20px;
-}
-
-.landmark{
-    width: 325px;
-    height: 20px;
+.homeOfficeOther:active{
+  color: #84c23d;
+  border: #84c23d 1px solid;
 }
 
 
-.cityName{
-    width: 150px;
-    height: 20px;
+.addAddressButtons{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
-
-.areaName{
-    width: 320px;
-    height: 20px;
-}
-
-.pinCode{
-    width: 150px;
-    height: 20px;
-}
-
-.voucher{
-    background-color: #f7f7f7;
-    border: 1px solid grey;
-    padding: 10px;
-}
-
-.vouchersAvailable{
-    background-color: #e8f1fc;
-}
-
-.order{
-    background-color: #f7f7f7;
-    border: 1px solid grey;
-    padding: 10px;
+.addButton{
+ color: white;
+ font-weight: 600;
+ /* height: 30px; */
+ border: none;
+ background-color: grey;
+ border-radius: 5px; 
+ padding: 10px 20px;
 
 }
 
-.valueCharge{
-background-color: white;
-border: 1px solid grey;
-font-size: 14px;
-padding: 10px;
+.giftOrder{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+color: grey;
 
 }
 
-.amountPayable{
-    border: 1px solid grey;
+.giftOrder>button{
+  height: 20px;
+  margin-top: 20px;
+  color: grey;
+  align-items: center;
+  background-color: white;
+  border: 1px solid  black;
 }
 
-.circle{
-    
+.deliveryOptions{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  
+color: grey;
+}
+
+.deliveryOptions>button{
+  height: 20px;
+  margin-top: 20px;
+ color: grey;
+  align-items: center;
+  background-color: white;
+  border: 1px solid  black;
+  text-align: center;
+}
+
+
+.paymentOptions{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+color: grey;
+  
+
 }
