@@ -1,6 +1,10 @@
 # Team ID - sophisticated-legs-486
 
-# bigBasket
+# bigBasket.com
+
+BigBasket is an Indian online grocery delivery service.
+The company primarily delivers grocery goods found in 
+convenience stores, home essentials and food supplies to its customers.
 
 # Homepage
 ![Screenshot (409)](https://user-images.githubusercontent.com/74173626/187077792-2ca96520-3d2d-4e64-a864-38a3358c2469.png)
