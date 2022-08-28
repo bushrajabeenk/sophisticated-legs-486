@@ -180,7 +180,7 @@ const SubImgDiv = styled.div`
 export const Info = ({ data }) => {
   const toast = useToast()
   async function addtocart() {
-    let id = localStorage.getItem("data").id;
+    let id = JSON.parse(localStorage.getItem("data"))._id;
     axios
       .post(`https://infinite-thicket-15273.herokuapp.com/cart/${id}`, { ...data,quantity:1 })
       .then((r) => console.log(r));

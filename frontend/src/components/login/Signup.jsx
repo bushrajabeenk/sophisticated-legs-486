@@ -16,7 +16,7 @@ const Signup = ({ close }) => {
   }
   function submitHandler() {
     axios
-      .post("http://localhost:8080/login", {
+      .post("http://infinite-thicket-15273.herokuapp.com/login", {
         firstname: data.firstname,
         lastname: data.lastname,
         email: data.email,
