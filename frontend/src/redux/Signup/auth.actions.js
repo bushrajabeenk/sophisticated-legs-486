@@ -1,28 +1,23 @@
 import axios from "axios";
-import {
-  LOGIN_LOADING,
-  LOGIN_ERROR,
-  LOGIN_SUCCESS,
-  LOGOUT,
-} from "./auth.types";
 
-export const loginAPI = (data) => (dispatch) => {
-  dispatch({ type: LOGIN_LOADING });
+
+export const loginAPI = (data) => async(dispatch) => {
   console.log(data, "here");
-  axios
-    .post("http://infinite-thicket-15273.herokuapp.com/getemail", {
-      email: data,
+  axios.post("http://localhost:8080/getemail", {
+      email: data.toString(),
     })
     .then((r) => {
-      dispatch({ type: LOGIN_SUCCESS, payload: r.data });
+      console.log(r.data)
+      dispatch({ type: "email", payload: r.data });
       console.log(r.data);
     })
-    .catch(() => {
-      dispatch({ type: LOGIN_ERROR });
+    .catch((err) => {
+      console.log(err)
     });
+    
+
 };
 export const getdata = (data) => (dispatch) => {
   dispatch({ type: "setdata", payload: data });
 };
 
-export const logoutAPI = () => ({ type: LOGOUT });

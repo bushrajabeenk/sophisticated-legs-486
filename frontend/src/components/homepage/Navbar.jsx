@@ -23,12 +23,14 @@ const Navbar = () => {
   const [show1, setShow1] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [text, settext] = useState("");
+  const [state,setstate]=useState(false)
   const navigate = useNavigate()
   let data;
   useEffect(() => {
     data = JSON.parse(localStorage.getItem("data")) || null;
-    console.log(data, "userefe");
-  }, [show, show1, onOpen, onClose, data]);
+    console.log(data.firstname,'this')
+    
+  }, [show, show1]);
   return (
     <div className={styles.page_layout}>
       <div className={`${styles.navbar} ${styles.topnav}`}>
@@ -50,7 +52,7 @@ const Navbar = () => {
             </span>
             <span className={styles.login_main} onClick={onOpen}>
               <i className="fa-regular fa-user"></i>
-              {data ? data.firstname : "Login/Signup"}
+              {!state ?"Login/Signup":"Logout"}
             </span>{" "}
             <span className={styles.login}></span>
             <div></div>
@@ -190,13 +192,14 @@ const Navbar = () => {
                 ) : null}
                 {!show && show1 ? (
                   <Otp
+                  login={setstate}
                     setShow={setShow}
                     text={text}
                     isOpen={onClose}
                     setShow1={setShow1}
                   />
                 ) : null}
-                {!show && !show1 ? <Signup close={onClose}></Signup> : null}
+                {!show && !show1 ? <Signup close={onClose} login={setstate} ></Signup> : null}
               </div>
               <div className={style.rightbox}>
                 <Rightbox></Rightbox>

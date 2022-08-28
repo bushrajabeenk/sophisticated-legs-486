@@ -8,6 +8,7 @@ const Payment = () => {
   const toast = useToast()
 
 const navigate=useNavigate()
+
 const handleSubmit=(e)=>{
 
   e.preventDefault()
@@ -18,9 +19,10 @@ const handleSubmit=(e)=>{
           description: "Payment Done Successfully",
           status: 'success',
           duration: 2000,
-          isClosable: true,})
+          isClosable: true,
+        })
         // }
-        setInterval(()=>{
+        setTimeout(()=>{
           navigate("/")
         },2000)
       

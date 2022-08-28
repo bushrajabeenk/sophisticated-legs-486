@@ -59,7 +59,7 @@ const Product = () => {
 
   useEffect(() => {
     axios
-      .get("https://infinite-thicket-15273.herokuapp.com/products")
+      .get("http://localhost:8080/products")
       .then((res) => {
         let data = res.data;
         setData(data);

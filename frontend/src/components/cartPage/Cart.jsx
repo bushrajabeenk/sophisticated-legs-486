@@ -15,39 +15,46 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 // import { Navigate, useNavigate } from "react-router";
 
 export const Cart = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   let [cart, setcart] = useState([]);
-  let id = JSON.parse(localStorage.getItem("data"))._id;
+  let [state ,setstate]=useState(1)
+  let id = JSON.parse(localStorage.getItem("data")).id;
+  console.log(id)
   useEffect(() => {
     axios
-      .get(`http://infinite-thicket-15273.herokuapp.com/cart/${id}`)
+      .get(`http://localhost:8080/cart/${id}`)
       .then((r) => setcart(r.data.cart));
 
-    console.log(cart);
+  
   }, []);
 
   const handleInc = (e) => {
-    let productId = e._id;
+    // let productId = e._id;
+    setstate(e=>e-1)
 
-    axios
-      .post(`http://infinite-thicket-15273.herokuapp.com/cart/updateone`, {
-        id,
-        productId,
-      })
-      .then((r) => console.log(r));
+    
+    // axios
+    //   .post(`http://localhost:8080/cart/updateone`, {
+    //     id,
+    //     productId,
+    //   })
+    //   .then((r) => console.log(r));
   };
   const handleDec = (e) => {
-    let productId = e._id;
+    // let productId = e._id;
 
-    axios
-      .post(`http://infinite-thicket-15273.herokuapp.com/cart/updatemin`, {
-        id,
-        productId,
-      })
-      .then((r) => console.log(r));
+    // axios
+    //   .post(`http://localhost:8080/cart/updatemin`, {
+    //     id,
+    //     productId,
+    //   })
+    //   .then((r) => console.log(r));
+    setstate(e=>e+1)
+
   };
   //   let total = cart.length ? cart.reduce((a,b) => {
   //    return Number(a.Price) + Number(b.Price)
@@ -106,7 +113,7 @@ export const Cart = () => {
 
                     total =
                       total +
-                      Math.floor(e.Price - (10 * e.Price) / 100) * e.quantity;
+                      Math.floor(e.Price - (10 * e.Price) / 100) * state;
                   }
 
                   return (
@@ -128,7 +135,7 @@ export const Cart = () => {
                           -
                         </Button>
                         <Button variant={"outline"} m={"2px"}>
-                          {e.quantity}
+                          {state}
                         </Button>
                         <Button
                           onClick={(e) => handleDec(e)}
@@ -141,7 +148,7 @@ export const Cart = () => {
                       <Td>
                         Rs{" "}
                         {Math.floor(e.Price - (10 * e.Price) / 100) *
-                          e.quantity}
+                          state}
                         .00
                       </Td>
                       <Td></Td>
@@ -205,7 +212,8 @@ export const Cart = () => {
                   variant={"outline"} _hover={{ bg:"linear-gradient(to bottom, #ffff99 0%, #ffcc99 100%)"}}
                   onClick={() => {
                     if (cart.length !== 0) {
-                      // navigate("/address");
+                      localStorage.setItem("total",total)
+                      navigate("/payment");
                     } else {
                       alert(
                         "Your Cart is Empty, Please Add items into cart and after check it out"

@@ -3,13 +3,14 @@ import { RiCreativeCommonsZeroLine } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { loginAPI } from "../../redux/auth/auth.actions";
 import style from "./box.module.css";
-const Email = ({ setShow, text, settext }) => {
+const Email = ({ setShow, text, settext ,login}) => {
   const ref = useRef();
 
   const dispatch = useDispatch();
   function MailHandler() {
     setShow(false);
     dispatch(loginAPI(text));
+    login(true)
   }
 
   function changeHandler() {
