@@ -19,7 +19,7 @@ convenience stores, home essentials and food supplies to its customers.
 ![prodDetailpage](https://user-images.githubusercontent.com/74173626/187077682-0e2ef17e-e1a5-4d6e-ab2f-4caf19ec0558.png)
 
 # Cart Page
-
+![Screenshot (412)](https://user-images.githubusercontent.com/74173626/187078241-13552edb-213a-4607-97a6-51eb169c20fe.png)
 
 # Address Page
 ![Screenshot (94)](https://user-images.githubusercontent.com/74173626/187077902-7fbb4d35-b2fa-49f6-a00f-937df8b9d759.png)
