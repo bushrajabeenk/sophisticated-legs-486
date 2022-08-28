@@ -4,17 +4,13 @@
 
 # Homepage
 
-# Login Page
-
-# Signup Page
+# Login/Signup Page
 
 # Products Page
 
 # Product Details Page
 
 # Cart Page
-
-# Checkout Page
 
 # Payment Page
 
