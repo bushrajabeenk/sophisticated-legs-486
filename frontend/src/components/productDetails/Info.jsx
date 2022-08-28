@@ -182,7 +182,7 @@ export const Info = ({ data }) => {
   async function addtocart() {
     let id = localStorage.getItem("data").id;
     axios
-      .post(`https://infinite-thicket-15273.herokuapp.com/${id}`, { ...data,quantity:1 })
+      .post(`https://infinite-thicket-15273.herokuapp.com/cart/${id}`, { ...data,quantity:1 })
       .then((r) => console.log(r));
 
 
