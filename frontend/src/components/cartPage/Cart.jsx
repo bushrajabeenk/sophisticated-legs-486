@@ -23,7 +23,7 @@ export const Cart = () => {
   let id = JSON.parse(localStorage.getItem("data"))._id;
   useEffect(() => {
     axios
-      .get(`https://infinite-thicket-15273.herokuapp.com/cart/${id}`)
+      .get(`http://infinite-thicket-15273.herokuapp.com/cart/${id}`)
       .then((r) => setcart(r.data.cart));
 
     console.log(cart);
@@ -33,7 +33,7 @@ export const Cart = () => {
     let productId = e._id;
 
     axios
-      .post(`https://infinite-thicket-15273.herokuapp.com/cart/updateone`, {
+      .post(`http://infinite-thicket-15273.herokuapp.com/cart/updateone`, {
         id,
         productId,
       })
@@ -43,7 +43,7 @@ export const Cart = () => {
     let productId = e._id;
 
     axios
-      .post(`https://infinite-thicket-15273.herokuapp.com/cart/updatemin`, {
+      .post(`http://infinite-thicket-15273.herokuapp.com/cart/updatemin`, {
         id,
         productId,
       })
