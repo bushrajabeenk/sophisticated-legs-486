@@ -16,31 +16,46 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 // import { Navigate, useNavigate } from "react-router";
-// import { Decrement_Products_Qty, GetCartData, Increment_Products_Qty } from "../../redux/actions/action";
+
 export const Cart = () => {
   // const navigate = useNavigate();
-  // const dispatch = useDispatch();
-  // const cart = useSelector((state) => state.Products?.CartData[0]?.cartItems);
-  // const total = useSelector((state) => state.Products.total);
-  // console.log("total", total?.total);
-
-  // console.log("cart", cart);
-  //   console.log(cart);
-
-  // useEffect(() => {
-  //     dispatch(GetCartData());
-
-  // }, [dispatch]);
   let [cart, setcart] = useState([]);
-  let id = localStorage.getItem("id");
-  console.log(id);
+  let id = JSON.parse(localStorage.getItem("data"))._id;
   useEffect(() => {
     axios
       .get(`https://infinite-thicket-15273.herokuapp.com/cart/${id}`)
       .then((r) => setcart(r.data.cart));
+
+    console.log(cart);
   }, []);
 
+  const handleInc = (e) => {
+    let productId = e._id;
+
+    axios
+      .post(`https://infinite-thicket-15273.herokuapp.com/cart/updateone`, {
+        id,
+        productId,
+      })
+      .then((r) => console.log(r));
+  };
+  const handleDec = (e) => {
+    let productId = e._id;
+
+    axios
+      .post(`https://infinite-thicket-15273.herokuapp.com/cart/updatemin`, {
+        id,
+        productId,
+      })
+      .then((r) => console.log(r));
+  };
+  //   let total = cart.length ? cart.reduce((a,b) => {
+  //    return Number(a.Price) + Number(b.Price)
+  //   },0):0
+  //  console.log(cart)
+
   let saved = 0;
+  let total = 0;
   return (
     <Box width="100%">
       {/* <Topnavbar /> */}
@@ -88,6 +103,10 @@ export const Cart = () => {
                       saved +
                       (Math.floor(e.Price) -
                         Math.floor(e.Price - (10 * e.Price) / 100));
+
+                    total =
+                      total +
+                      Math.floor(e.Price - (10 * e.Price) / 100) * e.quantity;
                   }
 
                   return (
@@ -98,11 +117,11 @@ export const Cart = () => {
                       </Td>
                       <Td>
                         <br></br>
-                        <span>Rs. {e.Price}</span>
+                        <span>Rs. {e.Price}.00</span>
                       </Td>
                       <Td>
                         <Button
-                          // onClick={() => dispatch(Decrement_Products_Qty(e._id))}
+                          onClick={(e) => handleInc(e)}
                           variant={"outline"}
                           m={"2px"}
                         >
@@ -112,7 +131,7 @@ export const Cart = () => {
                           {e.quantity}
                         </Button>
                         <Button
-                          // onClick={() => dispatch(Increment_Products_Qty(e._id))}
+                          onClick={(e) => handleDec(e)}
                           variant={"outline"}
                           m={"2px"}
                         >
@@ -123,15 +142,18 @@ export const Cart = () => {
                         Rs{" "}
                         {Math.floor(e.Price - (10 * e.Price) / 100) *
                           e.quantity}
+                        .00
                       </Td>
+                      <Td></Td>
+
                       <Td>
                         {" "}
                         Rs{" "}
                         {Math.floor(
                           e.Price - Math.floor(e.Price - (10 * e.Price) / 100)
                         )}
+                        .00
                       </Td>
-                      <Td></Td>
                     </Tr>
                   );
                 })}
@@ -153,32 +175,34 @@ export const Cart = () => {
                 fontWeight={400}
               >
                 <Box>
-                  <Text>rs</Text>
                   <Text>Delivery Charges</Text>
+                  <Text>Rs. 0</Text>
                 </Box>
                 <Box>
-                  <Text>Rs</Text>
-                  <Text>***</Text>
+                  {/* <Text>Rs</Text> */}
+                  {/* <Text>***</Text> */}
                 </Box>
                 <Box borderLeft={"1px solid #e8e8e8"} color="red" pl="2px">
                   <Text>You saved!</Text>
-                  <Text>Rs</Text>
+                  <Text>Rs {saved}.00</Text>
                 </Box>
               </Flex>
               <Flex
                 textAlign={"left"}
                 border={"1px solid #e8e8e8"}
                 padding="2rem"
-                justify={"space-around"}
+                justify={"space-between"}
               >
-                <Heading as={"h6"} fontWeight="250"></Heading>
-                <Heading as={"h6"} fontWeight="250">
-                  {/* ₹{total} */}₹ 300.00
+                <Heading as={"h6"} fontWeight="350">
+                  TOTAL
+                </Heading>
+                <Heading as={"h6"} fontWeight="350">
+                  ₹{total}.00
                 </Heading>
               </Flex>
               <Box float={"right"}>
-                <Button
-                  variant={"outline"}
+                <Button p="30px 55px" fontSize="20px" bg="linear-gradient(to bottom, #ffcc99 0%, #ffff99 100%)" 
+                  variant={"outline"} _hover={{ bg:"linear-gradient(to bottom, #ffff99 0%, #ffcc99 100%)"}}
                   onClick={() => {
                     if (cart.length !== 0) {
                       // navigate("/address");
@@ -191,7 +215,7 @@ export const Cart = () => {
                   }}
                 >
                   {" "}
-                  CheckOut
+                  CHECKOUT
                 </Button>
               </Box>
             </Box>
