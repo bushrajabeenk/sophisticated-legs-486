@@ -87,74 +87,74 @@ const Navbar = () => {
               <div className={styles.dropdowncontent}>
                 <div className={styles.row}>
                   <div className={styles.column}>
-                    <a href="">Fruits & Vegetables</a>
+                    <Link to="/product">Fruits & Vegetables</Link>
                     <hr />
-                    <a href="">Foodgrains, Oil & Masala</a>
+                    <Link to="/product">Foodgrains, Oil & Masala</Link>
                     <hr />
-                    <a href="">Bakery, Cakes & Dairy</a>
+                    <Link to="/product">Bakery, Cakes & Dairy</Link>
                     <hr />
-                    <a href="">Beverages</a>
+                    <Link to="/product">Beverages</Link>
                     <hr />
-                    <a href="">Snacks & Branded Foods</a>
+                    <Link to="/product">Snacks & Branded Foods</Link>
                     <hr />
-                    <a href="">Beauty & Hygiene</a>
+                    <Link to="/product">Beauty & Hygiene</Link>
                     <hr />
-                    <a href="">Cleaning & Household</a>
+                    <Link to="/product">Cleaning & Household</Link>
                     <hr />
-                    <a href="">Kitche, Garden & Pets</a>
+                    <Link to="/product">Kitche, Garden & Pets</Link>
                     <hr />
-                    <a href="">Eggs, Meat & Fish</a>
+                    <Link to="/product">Eggs, Meat & Fish</Link>
                     <hr />
-                    <a href="">Gourmet & World Food</a>
+                    <Link to="/product">Gourmet & World Food</Link>
                     <hr />
-                    <a href="">Baby Care</a>
+                    <Link to="/product">Baby Care</Link>
                     <hr />
-                    <a href="">View All</a>
+                    <Link to="/product">View All</Link>
                   </div>
                   <div className={styles.column}>
-                    <a href="">Fresh Vegetables</a>
+                    <Link to="/product">Fresh Vegetables</Link>
                     <hr />
-                    <a href="">Herbs & Seasonings</a>
+                    <Link to="/product">Herbs & Seasonings</Link>
                     <hr />
-                    <a href="">Fresh Fruits</a>
+                    <Link to="/product">Fresh Fruits</Link>
                     <hr />
-                    <a href="">Exotic Fruits & Veggies</a>
+                    <Link to="/product">Exotic Fruits & Veggies</Link>
                     <hr />
-                    <a href="">Cuts & Sprouts</a>
+                    <Link to="/product">Cuts & Sprouts</Link>
                     <hr />
-                    <a href="">Flower Bouqets, Bunches</a>
+                    <Link to="/product">Flower Bouqets, Bunches</Link>
                   </div>
                   <div className={styles.column}>
-                    <a href="">Potato Onion & Tomato</a>
+                    <Link to="/product">Potato Onion & Tomato</Link>
                     <hr />
-                    <a href="">Cucumber &amp; Capsicum</a>
+                    <Link to="/product">Cucumber &amp; Capsicum</Link>
                     <hr />
-                    <a href="">Beans Brinjals & Okra</a>
+                    <Link to="/product">Beans Brinjals & Okra</Link>
                     <hr />
-                    <a href="">Leafy Vegetables</a>
+                    <Link to="/product">Leafy Vegetables</Link>
                     <hr />
-                    <a href="">Cabbage & Cauliflower</a>
+                    <Link to="/product">Cabbage & Cauliflower</Link>
                     <hr />
-                    <a href="">Root Vegetables</a>
+                    <Link to="/product">Root Vegetables</Link>
                     <hr />
-                    <a href="">Gourd, Pumpkin, Drumstick</a>
+                    <Link to="/product">Gourd, Pumpkin, Drumstick</Link>
                     <hr />
-                    <a href="">Specialty</a>
+                    <Link to="/product">Specialty</Link>
                   </div>
                   <div className={styles.column}>
-                    <a href="">Popular Searches</a>
+                    <Link to="/product">Popular Searches</Link>
                     <hr />
-                    <a href="">Vegetables</a>
+                    <Link to="/product">Vegetables</Link>
                     <hr />
-                    <a href="">Cucumber</a>
+                    <Link to="/product">Cucumber</Link>
                     <hr />
-                    <a href="">Vegetable</a>
+                    <Link to="/product">Vegetable</Link>
                     <hr />
-                    <a href="">Chinese Cabbage</a>
+                    <Link to="/product">Chinese Cabbage</Link>
                     <hr />
-                    <a href="">Vege</a>
+                    <Link to="/product">Vege</Link>
                     <hr />
-                    <a href="">Veg</a>
+                    <Link to="/product">Veg</Link>
                   </div>
                 </div>
               </div>
