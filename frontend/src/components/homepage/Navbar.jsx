@@ -23,19 +23,16 @@ const Navbar = () => {
   const [show1, setShow1] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [text, settext] = useState("");
-  const [state,setstate]=useState(false)
-  const navigate = useNavigate()
+  const [state, setstate] = useState(false);
+  const navigate = useNavigate();
   let data;
   useEffect(() => {
     data = JSON.parse(localStorage.getItem("data")) || null;
-   
-    
   }, [show, show1]);
 
-
-  const toggle = ()=>{
-    setstate(true)
-  }
+  const toggle = () => {
+    setstate(true);
+  };
   return (
     <div className={styles.page_layout}>
       <div className={`${styles.navbar} ${styles.topnav}`}>
@@ -57,7 +54,7 @@ const Navbar = () => {
             </span>
             <span className={styles.login_main} onClick={onOpen}>
               <i className="fa-regular fa-user"></i>
-              {!state ?"Login/Signup":"Logout"}
+              {!state ? "Login/Signup" : "Logout"}
             </span>{" "}
             <span className={styles.login}></span>
             <div></div>
@@ -73,7 +70,7 @@ const Navbar = () => {
                 <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
-            <div className={styles.cart} onClick={()=>navigate("/basket")}>
+            <div className={styles.cart} onClick={() => navigate("/basket")}>
               <Box>
                 <i className="fa-solid fa-basket-shopping"></i>
               </Box>
@@ -197,14 +194,16 @@ const Navbar = () => {
                 ) : null}
                 {!show && show1 ? (
                   <Otp
-                  login={toggle}
+                    login={toggle}
                     setShow={setShow}
                     text={text}
                     isOpen={onClose}
                     setShow1={setShow1}
                   />
                 ) : null}
-                {!show && !show1 ? <Signup close={onClose} login={toggle} ></Signup> : null}
+                {!show && !show1 ? (
+                  <Signup close={onClose} login={toggle}></Signup>
+                ) : null}
               </div>
               <div className={style.rightbox}>
                 <Rightbox></Rightbox>

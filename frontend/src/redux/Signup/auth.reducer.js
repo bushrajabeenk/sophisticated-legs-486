@@ -1,14 +1,10 @@
-
-
 const initState = {
-
   token: "",
   data,
 };
 
 export const authReducer = (state = initState, { type, payload }) => {
   switch (type) {
-    
     case "email": {
       // console.log('herestate',payload)
       return {
@@ -16,8 +12,7 @@ export const authReducer = (state = initState, { type, payload }) => {
         token: payload,
       };
     }
- 
-  
+
     case "setdata": {
       return {
         ...state,

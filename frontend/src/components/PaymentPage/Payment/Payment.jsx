@@ -1,33 +1,29 @@
 import React from "react";
 import styles from "./Payment.module.css";
 import Voucher from "./VoucherComponent/Voucher";
-import { Button, useToast } from '@chakra-ui/react'
-import { useNavigate } from 'react-router';
+import { Button, useToast } from "@chakra-ui/react";
+import { useNavigate } from "react-router";
 const Payment = () => {
-  const [details,setDetails]  = React.useState({})
-  const toast = useToast()
+  const [details, setDetails] = React.useState({});
+  const toast = useToast();
 
-const navigate=useNavigate()
+  const navigate = useNavigate();
 
-const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  e.preventDefault()
+    // if(!details==null){
+    toast({
+      title: "Payment Successfull.",
+      description: "Payment Done Successfully",
+      status: "success",
+      duration: 2000,
+      isClosable: true,
+    });
+    // }
 
-  // if(!details==null){
-        toast({
-          title: 'Payment Successfull.',
-          description: "Payment Done Successfully",
-          status: 'success',
-          duration: 2000,
-          isClosable: true,
-        })
-        // }
-    
-          navigate("/")
-    
-      
-            
-}
+    navigate("/");
+  };
 
   return (
     <div className={styles.mainContainer}>
@@ -67,7 +63,7 @@ const handleSubmit=(e)=>{
               </div>
             </div>
             <div className={styles.cardDiv}>
-              <form  onSubmit={(e)=>handleSubmit(e)}>
+              <form onSubmit={(e) => handleSubmit(e)}>
                 <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
                 <div>
                   <p className={styles.smallText}>Card Number</p>
@@ -76,21 +72,25 @@ const handleSubmit=(e)=>{
                     className={styles.cardNumber}
                     maxLength="11"
                     required
-                    onChange={(e)=>{setDetails({...details,cardNumber:e.target.value})}}
+                    onChange={(e) => {
+                      setDetails({ ...details, cardNumber: e.target.value });
+                    }}
                     pattern="\d*"
                   />
                 </div>
                 <div className={styles.validCvv}>
                   <div>
-                    <p className={styles.smallText} >Valid Thru</p>
+                    <p className={styles.smallText}>Valid Thru</p>
                     <input
                       type="text"
                       className={styles.cardNumber}
                       maxLength="4"
                       required
                       inputMode="numeric"
-                    onChange={(e)=>{setDetails({...details,cardNumber:e.target.value})}}
-                    pattern="\d*"
+                      onChange={(e) => {
+                        setDetails({ ...details, cardNumber: e.target.value });
+                      }}
+                      pattern="\d*"
                     />
                   </div>
 
@@ -101,16 +101,16 @@ const handleSubmit=(e)=>{
                       className={styles.cardNumber}
                       maxLength="3"
                       required
-                    onChange={(e)=>{setDetails({...details,cardNumber:e.target.value})}}
-                    pattern="\d*"
+                      onChange={(e) => {
+                        setDetails({ ...details, cardNumber: e.target.value });
+                      }}
+                      pattern="\d*"
                     />
                   </div>
                 </div>
-                <button className={styles.placeOrderButton} type="submit"  >
-   
+                <button className={styles.placeOrderButton} type="submit">
                   Place Order & Pay
                 </button>
-               
               </form>
             </div>
           </div>

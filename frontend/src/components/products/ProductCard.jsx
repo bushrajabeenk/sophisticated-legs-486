@@ -5,31 +5,36 @@ import { getdata } from "../../redux/Signup/auth.actions";
 
 import styles from "../products/Product.module.css";
 
-
 const ProductCard = ({ data }) => {
   // console.log(data);
-  const navigate=useNavigate()
-  const dispatch =useDispatch()
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-function clickHandler(e){
-  // dispatch(getdata(data))
-  
-  navigate(`/productDetails/${e._id}`)
-}
+  function clickHandler(e) {
+    // dispatch(getdata(data))
+
+    navigate(`/productDetails/${e._id}`);
+  }
 
   return (
-    <div className={styles.productMainDiv} >
-      <div className={styles.productSubDiv} >
-        <div className={styles.productDiscount}><p>Get 15
-          {/* changehere */}
-          % off</p><img src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png" width="0px" height="0px" alt="" /> </div>
-        <div className={styles.productImage}  onClick={()=>clickHandler(data)} >
-          <img src={data.Image_url} width="100%" alt="image"  />
+    <div className={styles.productMainDiv}>
+      <div className={styles.productSubDiv}>
+        <div className={styles.productDiscount}>
+          <p>
+            Get 15
+            {/* changehere */}% off
+          </p>
+          <img
+            src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png"
+            width="0px"
+            height="0px"
+            alt=""
+          />{" "}
         </div>
-        <img
-          src="	"
-          alt=""
-        />
+        <div className={styles.productImage} onClick={() => clickHandler(data)}>
+          <img src={data.Image_url} width="100%" alt="image" />
+        </div>
+        <img src="	" alt="" />
         <p className={styles.fresho}>Fresho</p>{" "}
         <p className={styles.productName}>{data.Title}</p>
         {/* <select name="" id="" className={styles.kgPrice}>
@@ -62,11 +67,14 @@ function clickHandler(e){
               <div className={styles.qty}>
                 <p>Qty</p>
               </div>
-              <input type="text" className={styles.Inputnumber} defaultValue="1" />
+              <input
+                type="text"
+                className={styles.Inputnumber}
+                defaultValue="1"
+              />
             </div>
             <div className={styles.addButtonDiv}>
               <p>ADD</p>
-              
             </div>
           </div>
         </div>

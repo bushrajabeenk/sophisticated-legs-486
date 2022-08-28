@@ -16,16 +16,14 @@ export const ProductDetails = () => {
   const [data, setData] = React.useState([]);
 
   const path = useLocation().pathname.split("/")[2];
-console.log(path)
+  console.log(path);
   console.log(data);
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:8080/products/${path}`)
-      .then((res) => {
-        let data = res.data;
-        setData(data);
-      });
+    axios.get(`http://localhost:8080/products/${path}`).then((res) => {
+      let data = res.data;
+      setData(data);
+    });
   }, []);
   return (
     <Wrapper>

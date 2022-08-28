@@ -19,11 +19,11 @@ const Voucher = () => {
         <h3 className={styles.boldText}>Order Summary</h3>
         <div className={styles.order}>
           <div className={styles.valueCharge}>
-            <p>Basket Value Rs{" "+localStorage.getItem('total')}</p>
+            <p>Basket Value Rs{" " + localStorage.getItem("total")}</p>
             <p>Delivery Charge FREE</p>
           </div>
           <div className={styles.amountPayable}>
-            <h4>Total Amount Rs{" "+localStorage.getItem('total')}</h4>
+            <h4>Total Amount Rs{" " + localStorage.getItem("total")}</h4>
             <div className={styles.totlaSaving}>
               <h5 className={styles.saving}>Total Savings Rs58.98</h5>
             </div>

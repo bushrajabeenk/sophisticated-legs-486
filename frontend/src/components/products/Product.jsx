@@ -58,12 +58,10 @@ const Product = () => {
   };
 
   useEffect(() => {
-    axios
-      .get("http://localhost:8080/products")
-      .then((res) => {
-        let data = res.data;
-        setData(data);
-      });
+    axios.get("http://localhost:8080/products").then((res) => {
+      let data = res.data;
+      setData(data);
+    });
   }, []);
 
   return (

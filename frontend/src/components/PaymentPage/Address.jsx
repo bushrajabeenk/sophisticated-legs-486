@@ -22,7 +22,7 @@ const Address = () => {
                 <div className={styles.personalContainer}>
                   <div>
                     <p className={styles.smallText}>Enter First Name</p>
-                    <input type="text" className={styles.firstName} required  />
+                    <input type="text" className={styles.firstName} required />
                   </div>
 
                   <div>
@@ -41,11 +41,15 @@ const Address = () => {
                 <div className={styles.addressContainer}>
                   <div>
                     <p className={styles.smallText}>House No</p>
-                    <input type="text" className={styles.houseNumber} required/>
+                    <input
+                      type="text"
+                      className={styles.houseNumber}
+                      required
+                    />
                   </div>
                   <div>
                     <p className={styles.smallText}>Enter apartment name</p>
-                    <input type="text" className={styles.appName} required/>
+                    <input type="text" className={styles.appName} required />
                   </div>
                 </div>
               </div>
@@ -53,20 +57,20 @@ const Address = () => {
               <div className={styles.streetDiv}>
                 <div>
                   <p className={styles.smallText}>Enter street details</p>
-                  <input type="text" className={styles.streetName} required/>
+                  <input type="text" className={styles.streetName} required />
                 </div>
                 <div>
                   <p className={styles.smallText}>
                     Enter landmark for easy reach out
                   </p>
-                  <input type="text" className={styles.landmark} required/>
+                  <input type="text" className={styles.landmark} required />
                 </div>
               </div>
 
               <div className={styles.cityDiv}>
                 <div>
                   <p className={styles.smallText}>Enter city name</p>
-                  <input type="text" className={styles.cityName} required/>
+                  <input type="text" className={styles.cityName} required />
                 </div>
 
                 <div>
@@ -76,7 +80,7 @@ const Address = () => {
 
                 <div>
                   <p className={styles.smallText}>Enter Pincode</p>
-                  <input type="text" className={styles.pinCode} required/>
+                  <input type="text" className={styles.pinCode} required />
                 </div>
               </div>
 
@@ -84,19 +88,27 @@ const Address = () => {
                 <p className={styles.smallText}>
                   Choose nick name for this address
                 </p>
-                <button className={styles.homeOfficeOther} type="button">HOME</button>
-                <button className={styles.homeOfficeOther}  type="button">OFFICE</button>
-                <button className={styles.homeOfficeOther}  type="button">OTHER</button>
+                <button className={styles.homeOfficeOther} type="button">
+                  HOME
+                </button>
+                <button className={styles.homeOfficeOther} type="button">
+                  OFFICE
+                </button>
+                <button className={styles.homeOfficeOther} type="button">
+                  OTHER
+                </button>
                 <div className={styles.smallText}>
                   <input type="checkbox" />
                   Set this as my default delivery address
                 </div>
               </div>
               <div className={styles.addAddressButtons}>
-                <button className={styles.addButton} type="submit" >
+                <button className={styles.addButton} type="submit">
                   ADD ADDRESS
                 </button>
-                <button className={styles.cancel} type="reset">CANCEL</button>
+                <button className={styles.cancel} type="reset">
+                  CANCEL
+                </button>
               </div>
             </form>
           </div>

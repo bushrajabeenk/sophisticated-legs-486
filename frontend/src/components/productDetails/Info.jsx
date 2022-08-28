@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import axios from "axios";
-import { useToast } from '@chakra-ui/react'
+import { useToast } from "@chakra-ui/react";
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -178,21 +178,20 @@ const SubImgDiv = styled.div`
 `;
 
 export const Info = ({ data }) => {
-  const toast = useToast()
+  const toast = useToast();
   async function addtocart() {
     let id = JSON.parse(localStorage.getItem("data")).id;
     axios
-      .post(`http://localhost:8080/cart/${id}`, { ...data,quantity:1 })
+      .post(`http://localhost:8080/cart/${id}`, { ...data, quantity: 1 })
       .then((r) => console.log(r));
 
-
-      toast({
-        title: 'Product added.',
-        description: "Product added to basket",
-        status: 'success',
-        duration: 3000,
-        isClosable: true,
-      })
+    toast({
+      title: "Product added.",
+      description: "Product added to basket",
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+    });
   }
 
   return (
@@ -260,7 +259,7 @@ export const Info = ({ data }) => {
           <p style={{ padding: 0, margin: 0 }}>
             <Span>MRP: </Span>
             <s>
-              <Span>Rs {data.Price+20}.00</Span>
+              <Span>Rs {data.Price + 20}.00</Span>
             </s>
           </p>
           <Standard>

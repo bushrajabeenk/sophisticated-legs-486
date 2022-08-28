@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./signup.module.css";
 import axios from "axios";
-const Signup = ({ close ,login }) => {
+const Signup = ({ close, login }) => {
   const [data, setdata] = useState({
     firstname: "",
 
@@ -24,7 +24,7 @@ const Signup = ({ close ,login }) => {
       .then((r) => {
         localStorage.setItem("data", JSON.stringify(r.data));
       });
-      login()
+    login();
     close();
   }
   return (

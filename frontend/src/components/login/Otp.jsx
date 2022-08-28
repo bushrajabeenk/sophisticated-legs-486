@@ -4,7 +4,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import { HStack, PinInput, PinInputField } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 
-const Otp = ({ email, setShow, setShow1, text, isOpen ,login}) => {
+const Otp = ({ email, setShow, setShow1, text, isOpen, login }) => {
   const [pin, setPin] = useState("");
   email = text;
   const data = useSelector((state) => state.auth.token);
@@ -18,9 +18,8 @@ const Otp = ({ email, setShow, setShow1, text, isOpen ,login}) => {
     } else if (data.email) {
       localStorage.setItem("data", JSON.stringify(data));
       // close the box
-      login()
+      login();
       isOpen();
-      
     }
   }
 

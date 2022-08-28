@@ -21,22 +21,19 @@ import { useNavigate } from "react-router-dom";
 export const Cart = () => {
   const navigate = useNavigate();
   let [cart, setcart] = useState([]);
-  let [state ,setstate]=useState(1)
+  let [state, setstate] = useState(1);
   let id = JSON.parse(localStorage.getItem("data")).id;
-  console.log(id)
+  console.log(id);
   useEffect(() => {
     axios
       .get(`http://localhost:8080/cart/${id}`)
       .then((r) => setcart(r.data.cart));
-
-  
   }, []);
 
   const handleInc = (e) => {
     // let productId = e._id;
-    setstate(e=>e-1)
+    setstate((e) => e - 1);
 
-    
     // axios
     //   .post(`http://localhost:8080/cart/updateone`, {
     //     id,
@@ -53,8 +50,7 @@ export const Cart = () => {
     //     productId,
     //   })
     //   .then((r) => console.log(r));
-    setstate(e=>e+1)
-
+    setstate((e) => e + 1);
   };
   //   let total = cart.length ? cart.reduce((a,b) => {
   //    return Number(a.Price) + Number(b.Price)
@@ -146,9 +142,7 @@ export const Cart = () => {
                         </Button>
                       </Td>
                       <Td>
-                        Rs{" "}
-                        {Math.floor(e.Price - (10 * e.Price) / 100) *
-                          state}
+                        Rs {Math.floor(e.Price - (10 * e.Price) / 100) * state}
                         .00
                       </Td>
                       <Td></Td>
@@ -208,11 +202,17 @@ export const Cart = () => {
                 </Heading>
               </Flex>
               <Box float={"right"}>
-                <Button p="30px 55px" fontSize="20px" bg="linear-gradient(to bottom, #ffcc99 0%, #ffff99 100%)" 
-                  variant={"outline"} _hover={{ bg:"linear-gradient(to bottom, #ffff99 0%, #ffcc99 100%)"}}
+                <Button
+                  p="30px 55px"
+                  fontSize="20px"
+                  bg="linear-gradient(to bottom, #ffcc99 0%, #ffff99 100%)"
+                  variant={"outline"}
+                  _hover={{
+                    bg: "linear-gradient(to bottom, #ffff99 0%, #ffcc99 100%)",
+                  }}
                   onClick={() => {
                     if (cart.length !== 0) {
-                      localStorage.setItem("total",total)
+                      localStorage.setItem("total", total);
                       navigate("/address");
                     } else {
                       alert(
