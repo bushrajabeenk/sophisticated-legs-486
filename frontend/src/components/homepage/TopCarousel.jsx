@@ -92,7 +92,7 @@ export default function TopCarousel() {
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
           {cards.map((card, index) => (
-            <Box>
+            <Box key={index}>
               <Image h={"500px"} src={card.image} />
             </Box>
           ))}
