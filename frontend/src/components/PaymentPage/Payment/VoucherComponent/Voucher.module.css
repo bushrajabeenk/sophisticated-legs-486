@@ -78,6 +78,7 @@
 .voucherInput {
   height: 90%;
   border: none;
+  outline: none;
 }
 
 .button {

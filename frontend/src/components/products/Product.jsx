@@ -16,11 +16,11 @@ const Product = () => {
     console.log(val);
     let buy = data.sort((a, b) => {
       if (val == "lth") {
-        return a.mrp[1] - b.mrp[1];
+        return a.Price - b.Price;
       } else if (val == "htl") {
-        return b.mrp[1] - a.mrp[1];
+        return b.Price - a.Price;
       } else if (val == "alphabetical") {
-        return a.productName.localeCompare(b.productName);
+        return a.Title.localeCompare(b.Title);
       }
     });
 
@@ -34,15 +34,15 @@ const Product = () => {
       if (num <= 20) {
         return data.offer < Number(num);
       } else if (num > 20 && num <= 50) {
-        return data.mrp[1] > 20 && data.mrp[1] < Number(num);
+        return data.Price > 20 && data.Price < Number(num);
       } else if (num > 50 && num <= 100) {
-        return data.mrp[1] > 50 && data.mrp[1] < Number(num);
+        return data.Price > 50 && data.Price < Number(num);
       } else if (num > 100 && num <= 200) {
-        return data.mrp[1] > 100 && data.mrp[1] < Number(num);
+        return data.Price > 100 && data.Price < Number(num);
       } else if (num > 200 && num <= 500) {
-        return data.mrp[1] > 200 && data.mrp[1] < Number(num);
+        return data.Price > 200 && data.Price < Number(num);
       } else if (num > 500 && num <= 1000) {
-        return data.mrp[1] > 500 && data.mrp[1] < Number(num);
+        return data.Price > 500 && data.Price < Number(num);
       } else if (num == "10%") {
         return data.offer <= 10;
       } else if (num == "15%") {

@@ -2,8 +2,31 @@ import React from "react";
 import styles from "./Payment.module.css";
 import Voucher from "./VoucherComponent/Voucher";
 import { Button, useToast } from '@chakra-ui/react'
+import { useNavigate } from 'react-router';
 const Payment = () => {
+  const [details,setDetails]  = React.useState({})
   const toast = useToast()
+
+const navigate=useNavigate()
+const handleSubmit=(e)=>{
+
+  e.preventDefault()
+
+  // if(!details==null){
+        toast({
+          title: 'Payment Successfull.',
+          description: "Payment Done Successfully",
+          status: 'success',
+          duration: 2000,
+          isClosable: true,})
+        // }
+        setInterval(()=>{
+          navigate("/")
+        },2000)
+      
+            
+}
+
   return (
     <div className={styles.mainContainer}>
       <div className={styles.leftSideDiv}>
@@ -42,23 +65,30 @@ const Payment = () => {
               </div>
             </div>
             <div className={styles.cardDiv}>
-              <div>
+              <form  onClick={handleSubmit}>
                 <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
                 <div>
                   <p className={styles.smallText}>Card Number</p>
                   <input
                     type="text"
                     className={styles.cardNumber}
-                    maxlength="11"
+                    maxLength="11"
+                    required
+                    onChange={(e)=>{setDetails({...details,cardNumber:e.target.value})}}
+                    pattern="\d*"
                   />
                 </div>
                 <div className={styles.validCvv}>
                   <div>
-                    <p className={styles.smallText}>Valid Thru</p>
+                    <p className={styles.smallText} >Valid Thru</p>
                     <input
                       type="text"
                       className={styles.cardNumber}
-                      maxlength="4"
+                      maxLength="4"
+                      required
+                      inputMode="numeric"
+                    onChange={(e)=>{setDetails({...details,cardNumber:e.target.value})}}
+                    pattern="\d*"
                     />
                   </div>
 
@@ -67,23 +97,19 @@ const Payment = () => {
                     <input
                       type="text"
                       className={styles.cardNumber}
-                      maxlength="3"
+                      maxLength="3"
+                      required
+                    onChange={(e)=>{setDetails({...details,cardNumber:e.target.value})}}
+                    pattern="\d*"
                     />
                   </div>
                 </div>
-                <button className={styles.placeOrderButton}   onClick={() =>
-        toast({
-          title: 'Account created.',
-          description: "We've created your account for you.",
-          status: 'success',
-          duration: 9000,
-          isClosable: true,
-        })
-      }>
+                <button className={styles.placeOrderButton} type="submit"  >
+   
                   Place Order & Pay
                 </button>
                
-              </div>
+              </form>
             </div>
           </div>
         </div>

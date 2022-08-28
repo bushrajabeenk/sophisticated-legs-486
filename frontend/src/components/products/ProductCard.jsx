@@ -19,11 +19,11 @@ function clickHandler(e){
 
   return (
     <div className={styles.productMainDiv} >
-      <div className={styles.productSubDiv} onClick={()=>clickHandler(data)}>
+      <div className={styles.productSubDiv} >
         <div className={styles.productDiscount}><p>Get 15
           {/* changehere */}
           % off</p><img src="https://www.bbassets.com/static/v2578/custPage/build/content/img/product-deck-sprite.png" width="0px" height="0px" alt="" /> </div>
-        <div className={styles.productImage} >
+        <div className={styles.productImage}  onClick={()=>clickHandler(data)} >
           <img src={data.Image_url} width="100%" alt="image"  />
         </div>
         <img

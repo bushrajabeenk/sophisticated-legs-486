@@ -30,18 +30,23 @@
   width: 150px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
 }
 
 .lastName {
   width: 150px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .number {
   width: 260px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .addressContainer {
@@ -54,12 +59,16 @@
   width: 150px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .appName {
   width: 440px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .streetDiv {
@@ -71,18 +80,24 @@
 .cityDiv {
   display: flex;
   gap: 20px;
+  outline: none;
+
 }
 
 .streetName {
   width: 300px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .landmark {
   width: 290px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .cityName {
@@ -90,18 +105,24 @@
   height: 25px;
   border: 0.5px solid grey;
   margin-bottom: 20px;
+  outline: none;
+
 }
 
 .areaName {
   width: 260px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .pinCode {
   width: 150px;
   height: 25px;
   border: 0.5px solid grey;
+  outline: none;
+
 }
 
 .voucher {
@@ -179,6 +200,7 @@
 .voucherInput {
   height: 90%;
   border: none;
+  outline: none;
 }
 
 .button {
