@@ -22,9 +22,9 @@ const handleSubmit=(e)=>{
           isClosable: true,
         })
         // }
-        setTimeout(()=>{
+    
           navigate("/")
-        },2000)
+    
       
             
 }
@@ -67,7 +67,7 @@ const handleSubmit=(e)=>{
               </div>
             </div>
             <div className={styles.cardDiv}>
-              <form  onClick={handleSubmit}>
+              <form  onSubmit={(e)=>handleSubmit(e)}>
                 <h3 className={styles.boldTexts}>Add Credit/ Debit Card</h3>
                 <div>
                   <p className={styles.smallText}>Card Number</p>

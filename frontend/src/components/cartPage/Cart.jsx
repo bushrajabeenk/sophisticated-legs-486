@@ -213,7 +213,7 @@ export const Cart = () => {
                   onClick={() => {
                     if (cart.length !== 0) {
                       localStorage.setItem("total",total)
-                      navigate("/payment");
+                      navigate("/address");
                     } else {
                       alert(
                         "Your Cart is Empty, Please Add items into cart and after check it out"
