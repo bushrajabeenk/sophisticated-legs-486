@@ -23,6 +23,7 @@ const Navbar = () => {
   const [show1, setShow1] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [text, settext] = useState("");
+  const navigate = useNavigate()
   let data;
   useEffect(() => {
     data = JSON.parse(localStorage.getItem("data")) || null;
@@ -65,14 +66,14 @@ const Navbar = () => {
                 <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
-            <div className={styles.cart}>
+            <div className={styles.cart} onClick={()=>navigate("/basket")}>
               <Box>
                 <i className="fa-solid fa-basket-shopping"></i>
               </Box>
               <div>
                 <span>My Basket</span>
                 <br />
-                <span>0 Items</span>
+                {/* <span>0 Items</span> */}
               </div>
             </div>
           </div>
