@@ -21,7 +21,7 @@ export const ProductDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://infinite-thicket-15273.herokuapp.com/products/${path}`)
+      .get(`https://localhost:8080/products/${path}`)
       .then((res) => {
         let data = res.data;
         setData(data);

@@ -28,7 +28,7 @@ const Navbar = () => {
   let data;
   useEffect(() => {
     data = JSON.parse(localStorage.getItem("data")) || null;
-    console.log(data.firstname,'this')
+   
     
   }, [show, show1]);
 

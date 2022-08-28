@@ -18,8 +18,9 @@ const Otp = ({ email, setShow, setShow1, text, isOpen ,login}) => {
     } else if (data.email) {
       localStorage.setItem("data", JSON.stringify(data));
       // close the box
+      login()
       isOpen();
-      login(true)
+      
     }
   }
 

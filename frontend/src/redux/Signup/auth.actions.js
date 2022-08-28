@@ -7,9 +7,9 @@ export const loginAPI = (data) => async(dispatch) => {
       email: data.toString(),
     })
     .then((r) => {
-      console.log(r.data)
       dispatch({ type: "email", payload: r.data });
-      console.log(r.data);
+      console.log(r.data)
+   
     })
     .catch((err) => {
       console.log(err)

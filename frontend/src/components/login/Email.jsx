@@ -10,7 +10,7 @@ const Email = ({ setShow, text, settext ,login}) => {
   function MailHandler() {
     setShow(false);
     dispatch(loginAPI(text));
-    login(true)
+
   }
 
   function changeHandler() {
