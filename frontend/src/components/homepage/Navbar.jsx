@@ -31,6 +31,11 @@ const Navbar = () => {
     console.log(data.firstname,'this')
     
   }, [show, show1]);
+
+
+  const toggle = ()=>{
+    setstate(true)
+  }
   return (
     <div className={styles.page_layout}>
       <div className={`${styles.navbar} ${styles.topnav}`}>
@@ -192,14 +197,14 @@ const Navbar = () => {
                 ) : null}
                 {!show && show1 ? (
                   <Otp
-                  login={setstate}
+                  login={toggle}
                     setShow={setShow}
                     text={text}
                     isOpen={onClose}
                     setShow1={setShow1}
                   />
                 ) : null}
-                {!show && !show1 ? <Signup close={onClose} login={setstate} ></Signup> : null}
+                {!show && !show1 ? <Signup close={onClose} login={toggle} ></Signup> : null}
               </div>
               <div className={style.rightbox}>
                 <Rightbox></Rightbox>
