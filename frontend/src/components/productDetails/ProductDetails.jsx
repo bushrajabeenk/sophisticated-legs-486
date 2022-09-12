@@ -20,7 +20,7 @@ export const ProductDetails = () => {
   console.log(data);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/products/${path}`).then((res) => {
+    axios.get(`https://bigbasketbackend.herokuapp.com/products/${path}`).then((res) => {
       let data = res.data;
       setData(data);
     });

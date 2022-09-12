@@ -11,7 +11,7 @@ export const loginAPI = (data) => (dispatch) => {
   console.log("clicked");
   console.log(data, "here");
   axios
-    .post("http://localhost:8080/getemail", {
+    .post("https://bigbasketbackend.herokuapp.com/getemail", {
       email: data,
     })
     .then((r) => {
@@ -22,5 +22,6 @@ export const loginAPI = (data) => (dispatch) => {
       dispatch({ type: LOGIN_ERROR });
     });
 };
+
 
 export const logoutAPI = () => ({ type: LOGOUT });

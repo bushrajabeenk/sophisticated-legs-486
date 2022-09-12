@@ -3,7 +3,7 @@ import axios from "axios";
 export const loginAPI = (data) => async (dispatch) => {
   console.log(data, "here");
   axios
-    .post("http://localhost:8080/getemail", {
+    .post("https://bigbasketbackend.herokuapp.com/getemail", {
       email: data.toString(),
     })
     .then((r) => {

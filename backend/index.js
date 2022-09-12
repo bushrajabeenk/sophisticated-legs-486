@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 require("dotenv").config();
 // -------------------------------------for dotenv --------------------------------
 
-let PORT = 8080;
+// let PORT = 8080;
 
 // ----------------------------------------user--Schemas--------------------------------------
 
@@ -60,7 +60,7 @@ const Product = mongoose.model("Product", ProductSchema);
 // })
 
 // ------------------------------------------product api--------------------------------
-
+//this is changed
 app.get("/products", async (req, res) => {
   const products = await Product.find({});
   res.send(products);
@@ -91,10 +91,10 @@ app.post("/getemail", async (req, res) => {
   let user = await User.findOne({ email });
   const mail = await nodeMailer.createTransport({
     service: "gmail",
-    port: 587, //465
+    port: 465, //465
     auth: {
       user: "cyno28cyno@gmail.com",
-      pass: process.env.PASS,
+      pass: process.env.PASSD,
     },
   });
   let otp = Math.floor(Math.random() * 1000000);
@@ -747,10 +747,10 @@ app.post("/cart/updatemin", async (req, res) => {
 });
 // -------------------------------connection --------------------
 
-app.listen(PORT, async () => {
+app.listen(process.env.PORT, async () => {
   try {
     await connection;
-    console.log(`Listenting on port ${PORT}...`);
+    console.log(`Listenting on port...`);
   } catch {
     console.log("runtime err");
   }

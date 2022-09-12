@@ -16,7 +16,7 @@ const Signup = ({ close, login }) => {
   }
   function submitHandler() {
     axios
-      .post("http://localhost:8080/login", {
+      .post("https://bigbasketbackend.herokuapp.com/login", {
         firstname: data.firstname,
         lastname: data.lastname,
         email: data.email,

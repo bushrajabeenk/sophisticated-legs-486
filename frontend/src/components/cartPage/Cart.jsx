@@ -26,7 +26,7 @@ export const Cart = () => {
   console.log(id);
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/cart/${id}`)
+      .get(`https://bigbasketbackend.herokuapp.com/cart/${id}`)
       .then((r) => setcart(r.data.cart));
   }, []);
 
