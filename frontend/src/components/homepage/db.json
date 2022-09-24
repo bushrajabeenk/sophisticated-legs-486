@@ -1,0 +1,362 @@
+[
+  {
+    "ObjectId": "62d793c234c06fbb85f726ae",
+    "Title": "MAGGI 2-Minute Instant Noodles - Masala",
+    "Brand": "Maggi",
+    "Description": "India’s favourite Masala Noodles, MAGGI 2-minute Noodles, now comes with the goodness of Iron. Each portion (70g) of MAGGI Masala Noodles provides you with 15% of your daily Iron requirement (*as per the Daily Dietary Allowances for an Adult Sedentary Male (ICMR 2010). Containing your favourite masala taste, MAGGI noodles are made with the choicest quality spices. Make your bowl of MAGGI even better by chopping up some vegetables, dropping in an egg or throwing in your favourite ingredients. ",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/266109_19-maggi-2-minute-instant-noodles-masala.jpg",
+    "Price": 109,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a3",
+    "Title": "Organic - Sona Masoori Raw Rice/Akki",
+    "Brand": "BB Royal",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40072489_12-bb-royal-organic-sona-masoori-raw-rice.jpg",
+    "Price": 349,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b4",
+    "Title": "Fresho Whole Wheat Bread - Safe, Preservative Free",
+    "Brand": "Milky Mist",
+    "Description": "Soft and irresistible, freshly baked bread is everyone's favourite gluttony. Baked fresh with the finest of ingredients and full of love, BigBasket brings you Fresho's Whole Wheat bread. Fresho's range of whole wheat, multigrain and brown bread is a must-try for every health-conscious eater. Grab Fresho's Whole Wheat loaf to make scrumptious finger sandwiches that no one can resist.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40025355_6-fresho-whole-wheat-bread-safe-preservative-free.jpg",
+    "Price": 39,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726bf",
+    "Title": "Tasties Banana Salted Chips",
+    "Brand": "Tasties",
+    "Description": "Made with premium quality ingredients, Tasties Namkeen - Salted Banana Chips is all set to be a family favourite savoury snack. These super thin banana chips are usually served as tea-time snacks or can be binged on during a family gathering. You can also serve them during parties if you're looking for more options. Explore Tasties' other range of snacks including bhujias, boondi or moong dal, a must-try for every munchies lover.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40200873_3-tasties-namkeen-salted-banana-chips.jpg",
+    "Price": 79,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a0",
+    "Brand": "BB Royal",
+    "Title": "Organic - Toor Dal/Togari Bele",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40135858_8-bb-royal-organic-turtoor-dal.jpg",
+    "Price": 649,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726af",
+    "Title": "Milky Mist Farm Fresh Curd/Dahi - Premium, No Preservatives",
+    "Brand": "Milky Mist",
+    "Description": "Milky Mist Curd Farm Fresh is a rich supply of calcium and proteins. Prepared from better quality pasteurised toned milk to provide you with the right width and texture. The live and active bacterial culture included in Milky Mist Curd helps digestion and lets you live a strong active life.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40003162_4-milky-mist-curd-farm-fresh.jpg",
+    "Price": 43,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b7",
+    "Title": "Capsicum - Green (Loose)",
+    "Brand": "Fresho",
+    "Description": "Leaving a moderately pungent taste on the tongue, Green capsicums, also known as green peppers are bell shaped, medium-sized fruit pods. They have thick and shiny skin with a fleshy texture inside.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
+    "Price": 87,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726bc",
+    "Title": "PEPPY Cheese Balls - 30% Less Oil, No Onion Or Garlic, Preservative Free",
+    "Brand": "Peppy",
+    "Description": "The Peppy Cheese Balls are a perennial favourite for snackers of all ages, deliciously cheesy and sweet without being unhealthy. Made from whole corn and using an elaborate extrusion process, Peppy Cheese Balls are coated with a finger-licking cheese flavour. Their unique USP, a melt-in-the mouthfeel, makes gorging on Peppy Cheese Balls, such an out-of-the-world experience. Peppy Cheese Balls are baked and not fried and have no onion and garlic. They have 30% less oil than regular potato chips.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40177071_6-peppy-cheeseball.jpg",
+    "Price": 60,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f72699",
+    "Title": "Nandini GoodLife UHT Treated Toned Milk",
+    "Brand": "Amul",
+    "Description": "Nandini Good life is hygienically gathered from tract of Holstein - Friesian cows. It is excellent for your bones and it also gives your body with a vitamin and protein boost. And with excellent Life milk, you obtain a no-boil, no-fuss product that is simple to use and tasty in flavor.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/244999_1-nandini-goodlife-toned-milk.jpg",
+    "Price": 520,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a2",
+    "Title": "Cumin/Jeera/Jeerige - Whole",
+    "Brand": "BB Royal",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/mm/30000308_10-bb-royal-cuminjeera-whole.jpg",
+    "Price": 20,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b2",
+    "Title": "iD Fresho Soft & Creamy Paneer",
+    "Brand": "Fresho",
+    "Description": "iD Fresho brings to you Fresh Paneer that is soft, creamy and nutritious. It is made with the natural lemon juice. Paneer is an excellent source of protein and a rich source of selenium and potassium. It does not contain any added artificial chemicals or acids.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40137716_10-id-natural-paneer.jpg",
+    "Price": 101,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b3",
+    "Title": "Coriander Leaves",
+    "Brand": "Fresho",
+    "Description": "Coriander leaves are green, fragile with a decorative appearance. They contain minimal aroma and have a spicy sweet taste. Now do not bother wasting time cutting off the roots as we value your money and time and provide you the freshest leafy edible parts .",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000097_19-fresho-coriander-leaves.jpg",
+    "Price": 190,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726c0",
+    "Title": "Cauliflower",
+    "Brand": "Fresho",
+    "Description": "Cauliflower is made up of tightly bound clusters of soft, crumbly, sweet cauliflower florets that form a dense head.Resembling a classic tree, the florets are attached to a central edible white trunk which is firm and tender.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+    "Price": 40,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726aa",
+    "Title": "Amul Pasteurised Butter",
+    "Brand": "Amul",
+    "Description": "Amul is synonymous with Butter in India. Several Generation of Indian consumers have grown up with the taste of Amul Butter for the six decades. Utterly Butterly Delicious taste of Amul Butter is must on breakfast table of almost every Indian Household.Utterly Cute Amul Butter Girl has been a part of Indian Consumers since 1950.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/104864_8-amul-butter-pasteurised.jpg",
+    "Price": 225,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726be",
+    "Title": "Britannia NutriChoice Digestive High Fibre Biscuits - Made From Whole Wheat & Bran, Healthy Snack",
+    "Brand": "Britannia",
+    "Description": "Britannia NutriChoice Digestive Biscuits are fibre rich biscuits packed with the richness of wheat flour (atta) and bran. With every bite, you experience the coarseness of this fibre rich healthy biscuit. These Digestive cookies are baked to precision, making it a perfect healthy snack.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40197803_4-britannia-nutrichoice-digestive-high-fibre-biscuits-super-saver-family-pack.jpg",
+    "Price": 177,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f7269a",
+    "Title": "Onion",
+    "Brand": "Fresho",
+    "Description": "Onion is a vegetable which is almost like a staple in Indian food. This is also known to be one of the essential ingredients of raw salads. They come in different colours like white, red or yellow and are quite in demand in cold salads and hot soups. You can dice, slice or cut it in rings and put it in burgers and sandwiches. Onions emit a sharp flavour and fragrance once they are fried; it is due to the sulphur compound in the vegetable.Onions are known to be rich in biotin. Most of the flavonoids which are known as anti-oxidants are concentrated more in the outer layers, so when you peel off the layers, you should remove as little as possible.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000148_30-fresho-onion.jpg",
+    "Price": 26,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726ac",
+    "Title": "Tasty Refined Cooking oil | Blended Rice bran & Corn oil | Pro Fitness Conscious",
+    "Brand": "Saffola",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/mm/100554_7-saffola-tasty-refined-cooking-oil-blended-rice-bran-corn-oil-pro-fitness-conscious.jpg",
+    "Price": 192,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726ba",
+    "Title": "Nestle KitKat Share Bag - 2 Fingers Pack, Shareable Snack",
+    "Brand": "Nestle",
+    "Description": "Share your favourite treats with your favourite people. This Share bag contains 7 individually wrapped Kitkat® 2 Finger packs. Just unwrap your Kitkat®, break off one of the fingers, snap into two and savour the delicious crispy treat Have A Break, Have A Kitkat®.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40122231_8-nestle-kitkat-share-bag-2-fingers-pack.jpg",
+    "Price": 100,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726bd",
+    "Title": "Fresho Frozen Green Peas",
+    "Brand": "Fresho",
+    "Description": "Fresho Frozen Green Peas are peeled, sorted and packed properly to retain that freshness. With no added preservatives, chemicals and artificial colours get the best quality of green peas at home. Peas are an excellent source of protein, antioxidants, fibers and Vitamins. It's good for your digestive health as well as for heart health. It's low in calories and high in nutrition therefore, ideal for weight watchers to include in their diet. Explore Fresho full range of Frozen Veggie and Snacks, Frozen Vegetables, Frozen Veg Snacks and more.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40163718_11-fresho-frozen-green-peas.jpg",
+    "Price": 189,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f7269d",
+    "Title": "Britannia Atta Bread",
+    "Brand": "Britannia",
+    "Description": "Made from 51% wholewheat flour and enriched with essential B Vitamins (15% RDA from 100 gms) it is enriched with fibre with the distinct flavour of malt extract.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40091805_2-britannia-atta-bread.jpg",
+    "Price": 55,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f7269c",
+    "Title": "Tomato - Local",
+    "Brand": "Fresho",
+    "Description": "Local tomatoes are partly sour and partly sweet and contain many seeds inside which are edible. The red colour present in tomatoes is due to lycopene, an anti-oxidant.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000203_16-fresho-tomato-local.jpg",
+    "Price": 20,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a4",
+    "Title": "Atta/Godihittu - Whole Wheat",
+    "Brand": "Aashirvaad",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/126906_8-aashirvaad-atta-whole-wheat.jpg",
+    "Price": 448,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a5",
+    "Title": "Atta - Whole Wheat 5 kg + Iodised Salt 1 kg",
+    "Brand": "Aashirvaad",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/1220743_1-aashirvaad-atta-whole-wheat-5-kg-iodised-salt-1-kg.jpg",
+    "Price": 296,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a8",
+    "Title": "iD Creamy Thick Curd",
+    "Brand": "Fresho",
+    "Description": "Bring home Id wholesome natural curd that's easy to love, really hard to share! This thick, creamy & healthy Id Dahi is made with farm-fresh milk & natural culture with no artificial preservatives or harmful chemicals. ",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/40202190_1-id-creamy-thick-curd.jpg",
+    "Price": 36.1,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f7269b",
+    "Title": "Tomato - Hybrid",
+    "Brand": "Fresho",
+    "Description": "Tomato Hybrids are high-quality fruits compared to desi, local tomatoes. They contain numerous edible seeds and are red in colour due to lycopene, an anti-oxidant.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000200_17-fresho-tomato-hybrid.jpg",
+    "Price": 18.54,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f7269e",
+    "Title": "Potato",
+    "Brand": "Fresho",
+    "Description": "New Potatoes: If you are looking for soft, slightly sweet but creamy-textured potatoes. These are a special variant early harvest of potatoes (not to be confused with our regular Fresho Potato) and are easily distinguishable with their thin/ tender skin which makes them easy-to-peel off even it can be used without peeling. These freshly picked potatoes are a great choice for roasting or boiling. They give essential nutrients to your body along with high dietary fibre and carbohydrates. Combined with great taste and nutrients this vegetable is the most popular and loved amongst households. Fresho New potatoes are either Round or Oblong which is about 45mm-65 mm in diameter. Consume them within a few days of purchase.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/40048457_9-fresho-potato-new-crop.jpg",
+    "Price": 37.59,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f7269f",
+    "Title": "Sona Masoori Raw Rice/Akki",
+    "Brand": "BB Royal",
+    "Description": "Sona masoori rice is triple polished, double silky, sorted rice. It is extremely sweet-smelling and due to its smell, it is measured to be of greater quality. It is simple to digest and sorted dirt-free quality, broken under 2%, moisture 14% max; it is believed to be of greater quality.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/20001214_15-bb-royal-sona-masoori-raw-rice.jpg",
+    "Price": 1275,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a1",
+    "Title": "Idli - Sooji 2kg + Sugar 2kg + Peanuts/ Mungaphali/Shengdana - Raw 500gm",
+    "Brand": "BB Royal",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/1205385_1-bb-royal-idli-sooji-2kg-sugar-2kg-peanuts-mungaphalishengdana-raw-500gm.jpg",
+    "Price": 251,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726ad",
+    "Title": "Britannia Marie Gold Biscuits",
+    "Brand": "Britannia",
+    "Description": "Britannia Marie Gold Biscuits are crisp and light biscuits packed with the goodness of vitamins and minerals. Being low fat and zero cholesterol snacks, Marie Gold biscuits act as a perfect companion for your cup of tea. Britannia biscuits and cookies for long has been a part of every home, sharing those moments of joy Believing in delivering fresh and healthy products, Britannia India manufactures some of India's favourite brands like 50-50, Tiger, NutriChoice, Bourbon, Good Day, Milk Bikis and Little Hearts.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/264572_7-britannia-marie-gold-biscuits.jpg",
+    "Price": 20,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a6",
+    "Title": "Ladies Finger (Loose)",
+    "Brand": "Fresho",
+    "Description": "Ladies finger is a green vegetable with a tip at the end and a lighter green head, which is inedibe and to be thrown away. It tastes mild and slightly grassy",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
+    "Price": 51,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b5",
+    "Title": "Amul Cheese Slices - Rich In Protein, Wholesome, No Added Sugar",
+    "Brand": "Amul",
+    "Description": "Amul Cheese can enhance the taste of any dish, whether you consume it whole or melt it in your food. Amul Cheese Processed Cheese Spread is made from high-quality ingredients and is prepared using graded cow/buffalo milk and microbial rennet. It can be used in hundreds of ways in any dish. It's delicately flavoured gives a lip-smacking flavour to every dish. Cheese is a delicious component and is used to prepare sweet dishes. ",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/104808_9-amul-cheese-slices.jpg",
+    "Price": 127,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726bb",
+    "Title": "Sunfeast Dark Fantasy Choco Fills - Original Filled Cookies With Choco Creme",
+    "Brand": "Sunfeast",
+    "Description": "Experience heavenly bliss like never before with Sunfeast Dark Fantasy Choco Fills. With every bite of this delectable cookie, you'll find yourself deeper into an indulgent fantasy. So, take a bite and you can turn on the Din Khatam, Fantasy Shuru mode.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40077104_4-sunfeast-dark-fantasy-biscuits-cookies-choco-fills.jpg",
+    "Price": 127,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b1",
+    "Title": "Milky Mist Paneer - Premium Fresh",
+    "Brand": "Milky Mist",
+    "Description": "Milky Mist is a brand that is known for its various dairy products. The pure and protein rich products are renowned for their high quality goodness. Paneer is a product which is also known as cottage cheese. This is a healthy dairy product that is produced and marketed by Milky Mist.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/264679_3-milky-mist-paneer-premium-fresh.jpg",
+    "Price": 170,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726ab",
+    "Title": "Gold Refined Cooking oil | Blended Rice Bran & Sunflower oil | Helps Keeps Heart Healthy",
+    "Brand": "Saffola",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/mm/147491_8-saffola-gold-refined-cooking-oil-blended-rice-bran-sunflower-oil-helps-keeps-heart-healthy.jpg",
+    "Price": 212,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b8",
+    "Title": "Carrot - Orange (Loose)",
+    "Brand": "Fresho",
+    "Description": "A popular sweet-tasting root vegetable, Carrots are narrow and cone shaped. They have thick, fleshy, deeply colored root, which grows underground, and feathery green leaves that emerge above the ground. While these greens are fresh tasting and slightly bitter, the carrot roots are crunchy textured with a sweet and minty aromatic taste. Fresho brings you the flavour and richness of the finest crispy and juicy carrots that are locally grown and the best of the region.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000072_16-fresho-carrot-orange.jpg",
+    "Price": 88.58,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a9",
+    "Title": "Oil - Gingelly",
+    "Brand": "Idhayam",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/148682_1-idhayam-oil-gingelly.jpg",
+    "Price": 117,
+    "Category": "Foodgrains_oil_masala"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b0",
+    "Title": "Milky Mist Mozzarella Pizza Shredded Cheese - Made from Pasteurized Cow's Milk",
+    "Brand": "Milky Mist",
+    "Description": "Thin Crust Pizza with mozzarella cheese topped with tomato, mushrooms, spinach & bell peppers.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/40206820_1-milky-mist-pizza-cheese-mozzarella-shredded.jpg",
+    "Price": 120,
+    "Category": "Bakery_cakes_dairy"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b6",
+    "Title": "Cucumber (Loose)",
+    "Brand": "Fresho",
+    "Description": "Cucumbers keep our body hydrated. Its hard skin has good amount of fiber and minerals. Eating cucumber improves digestion and reduces stress. It reduces the risk of breast, ovarian, uterine and prostate cancers. The anti-inflammatory compounds in cucumbers help remove waste from the body and reduce skin irritation and it contains anti-wrinkling and anti-ageing properties as well.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg",
+    "Price": 38,
+    "Category": "Fruits_vegetables"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726b9",
+    "Title": "iD Fresho Idly & Dosa Batter",
+    "Brand": "Fresho",
+    "Description": "The ID Fresho idli/dosa batter is a ready-made mix that saves your time and energy to create a dosa batter from scratch. Idli and dosa are the most popular healthy south Indian foods.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/l/271205_14-id-fresho-idly-dosa-batter.jpg",
+    "Price": 75.5,
+    "Category": "Snacks_branded_foods"
+  },
+  {
+    "ObjectId": "62d793c234c06fbb85f726a7",
+    "Title": "Sunflower Refined Oil - Sun Lite",
+    "Brand": "Fortune",
+    "Description": "Toor Dal is not only delicious but also has nutritional value. It contains a good amount of fibre. Toor dal is an excellent source of nutrients and plant protein, and it also contains dietary fibre. In essence, legumes are nutritional though they represent a low-fat and low-cholesterol alternative. Legumes such as toor dal provide essential nutrients, fibre and protein for vegetarians. Toor dal rich in protein, vitamins and iron is often served with rich spices over rice and Rotis.",
+    "Image_url": "https://www.bigbasket.com/media/uploads/p/s/1204455_2-fortune-sunflower-refined-oil-sun-lite.jpg",
+    "Price": 549,
+    "Category": "Foodgrains_oil_masala"
+  }
+]
